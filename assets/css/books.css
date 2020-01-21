@@ -1,0 +1,25 @@
+.cls-1 {fill: #fff;}.cls-2 {fill: #433e44;fill-rule: evenodd;}
+
+#wrap {
+	opacity: 1;
+	background-image: url('../images/madueke/Prayer-M.-Madueke-lg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
+
+.gallery-item .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 576px) {
+	#wrap {
+		background-image: url('../images/madueke/Prayer-M.-Madueke-sm.jpg');
+		background-position: center top;
+	}
+}
+
+#panel-logo-menu .bg-wrap {
+}

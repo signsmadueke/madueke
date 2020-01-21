@@ -1,0 +1,136 @@
+/*Homepage*/
+#bestsellers .bg {
+	background-image: url('../images/madueke/Prayer-M.-Madueke-lg.png');
+	opacity: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom right;
+}
+
+@media (min-width: 768px) {
+	#bestsellers.md .bg {
+		background-image: url('../images/madueke/Prayer-M.-Madueke-lg.png');
+		opacity: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: bottom right;
+	}
+}
+
+@media (max-width: 768px) {
+	#bestsellers.sm .bg {
+		background-image: url('../images/madueke/Prayer-M.-Madueke-sm.jpg');
+		opacity: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+	}
+}
+
+
+/*Books*/
+#books .bg.lg {
+	background-image: url('../images/madueke/Prayer-M.-Madueke-lg.png');
+	opacity: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom right;
+}
+
+@media (max-width: 768px) {
+	#books .bg.sm {
+		background-image: url('../images/madueke/Prayer-M.-Madueke-sm.jpg');
+		opacity: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+	}
+}
+
+
+/*Contact*/
+#contacts .bg.lg {
+	background-image: url('../images/madueke/Prayer-M.-Madueke-lg.png');
+	opacity: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom right;
+}
+
+@media (max-width: 768px) {
+	#contacts .bg.sm {
+		background-image: url('../images/madueke/Prayer-M.-Madueke-sm.jpg');
+		opacity: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+	}
+}
+
+#contacts .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#contacts .container .row {
+	display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-column-align: center;
+    justify-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+	#contacts .container .row {
+		-ms-grid-columns: 1fr;
+    	grid-template-columns: 1fr;
+    	padding-top: 50%;
+    	padding-bottom: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	#contacts .container .row {
+		-ms-grid-columns: 1fr;
+    	grid-template-columns: 1fr;
+    	padding-top: 20%;
+    	padding-bottom: 15%;
+	}
+}
+
+@media (min-width: 1230px) {
+	#contacts .container .row {
+		-ms-grid-columns: 1fr 1fr;
+    	grid-template-columns: 1fr 1fr;
+    	padding-top: 20%;
+    	padding-bottom: 15%;
+	}
+}
+
+#contacts .container .row h1 {
+	color: white;
+}
+
+#contacts .container .row a {
+	color: white;
+	letter-spacing: 0;
+}
