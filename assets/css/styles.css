@@ -573,7 +573,9 @@ body.sidebar-opened {
 }
 
 @media (max-width: 576px) {
-	
+	#bestsellers #books {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 100%));
+	}
 }
 
 
@@ -809,14 +811,14 @@ body.dark{
 
 #bestsellers #books {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 230px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     grid-gap: 30px;
     align-items: center;
 }
 
 #bestsellers #books .book {
     width: 100% !important;
-    height: 355px;
+    height: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -828,6 +830,7 @@ body.dark{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-top: 148%;
 }
 
 #books .book a {
