@@ -577,6 +577,10 @@ body.sidebar-opened {
 	#bestsellers #books {
 		grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
 	}
+
+	#all-books #books {
+		grid-template-columns: repeat(auto-fit, minmax(230px, 100%)) !important;
+    }
 }
 
 
@@ -743,7 +747,7 @@ body.dark #sidebar #logo a {
 
 .menu .icon-bar {
     display: block;
-    width: 30px;
+    width: 35px;
     height: 2px;
     -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
     transition: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
@@ -861,7 +865,7 @@ body.dark{
     align-items: center;
 }
 
-#bestsellers #books .book {
+#books .book {
     width: 100% !important;
     height: 0;
     background-position: center;
@@ -890,6 +894,7 @@ body.dark{
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 23px;
+	text-align: left;
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -899,9 +904,10 @@ body.dark{
 
 #books .book .book-description {
 	color: white;
-	font-weight: 400;
+	font-weight: 40000;
 	font-size: 14px;
 	line-height: 21px;
+	text-align: left;
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -975,3 +981,50 @@ body.dark{
 	fill: white;
 }
 
+
+
+
+/*----------------------------------------------------------------------------------------
+                                    HOME
+----------------------------------------------------------------------------------------*/
+#all-books {
+	display: grid;
+	grid-gap: 15px;
+	width: 100%;
+}
+
+#all-books .section-title {
+	font-family: 'CircularStd';
+	font-size: 50px;
+    line-height: 50px;
+}
+
+#all-books #books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 400px));
+    grid-gap: 50px;
+    align-items: center;
+}
+
+#all-books #books .book .book-name {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 40px;
+	-webkit-line-clamp: 3;
+}
+
+#all-books #books .book .book-description {
+	font-size: 17px;
+    line-height: 26px;
+	-webkit-line-clamp: 7;
+}
+
+#all-books #books .book .btn-view span {
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#all-books #books .book .btn-view svg,
+#all-books #books .book .btn-view img {
+	width: 20px;
+}
