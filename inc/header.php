@@ -72,19 +72,8 @@
     </button>
 </section>
 <section id="sidebar">
-    <div id="logo">
-        <a href="index.php">
-            <div class="logo-icon">
-                <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
-            </div>
-            <div class="logo-text">
-                <h3 class="logo-name">Prayer M. Madueke</h3>
-                <p class="logo-tagline">CHRISTIAN AUTHOR</p>
-            </div>
-        </a>
-    </div>
 
-    <div id="space"></div>
+    <div id="sidebar-space"></div>
 
     <nav>
         <ul>
@@ -102,8 +91,34 @@
             </li>
         </ul>
     </nav>
+    
+    <div id="social">
+        <ul>
+            <li>
+                <a href="https://facebook.com/prayermadueke">
+                    <img class="svg" src="assets/images/icons/facebook.svg" height="15px" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/prayermadueke">
+                    <img class="svg" src="assets/images/icons/instagram.svg" height="15px" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/prayermadueke">
+                    <img class="svg" src="assets/images/icons/twitter.svg" height="15px" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://amazon.com/author/prayermadueke">
+                    <img class="svg" src="assets/images/icons/amazon.svg" height="15px" alt="Amazon">
+                </a>
+            </li>
+        </ul>
+    </div>
 
-    <div id="space"></div>
+    <div id="sidebar-space"></div>
 
+    <p class="copyright">© 2020 Prayer Madueke. All rights reserved.</p>
 
 </section>
