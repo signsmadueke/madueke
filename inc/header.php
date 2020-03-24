@@ -51,7 +51,7 @@
     <nav>
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
                 <a class="nav-link" href="books.php">Books</a>
@@ -89,17 +89,17 @@
 
         <nav>
             <ul>
-                <li class="">
-                    <a class="nav-link" href="/">Home</a>
+                <li class="<?php if ($title == "Home"){echo "active";} ?>">
+                    <a href="/">Home</a>
                 </li>
-                <li class="active">
-                    <a class="nav-link" href="books.php">Books</a>
+                <li class="<?php if ($title == "Books"){echo "active";} ?>">
+                    <a href="books.php">Books</a>
                 </li>
-                <li class="">
-                    <a class="nav-link" href="#">About</a>
+                <li class="<?php if ($title == "About"){echo "active";} ?>">
+                    <a href="#">About</a>
                 </li>
-                <li class="">
-                    <a class="nav-link" href="contact.php">Contact</a>
+                <li class="<?php if ($title == "Contact"){echo "active";} ?>">
+                    <a href="contact.php">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -116,16 +116,16 @@
     <nav>
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a class="nav-link" href="/">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                <a class="nav-link" href="books.php">Books</a>
+                <a href="books.php">Books</a>
             </li>
             <li class="<?php if ($title == "About"){echo "active";} ?>">
-                <a class="nav-link" href="#">About</a>
+                <a href="about.php">About</a>
             </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
-                <a class="nav-link" href="contact.php">Contact</a>
+                <a href="contact.php">Contact</a>
             </li>
         </ul>
     </nav>
