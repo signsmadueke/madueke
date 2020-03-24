@@ -72,6 +72,17 @@
     </button>
 </section>
 <section id="sidebar">
+    <div id="logo">
+        <a href="index.php">
+            <div class="logo-icon">
+                <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+            </div>
+            <div class="logo-text">
+                <h3 class="logo-name">Prayer M. Madueke</h3>
+                <p class="logo-tagline">CHRISTIAN AUTHOR</p>
+            </div>
+        </a>
+    </div>
 
     <div id="sidebar-space"></div>
 
