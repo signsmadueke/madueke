@@ -443,7 +443,7 @@ h1 {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  line-height: 2.9375rem;
+  line-height: 47px;
   font-weight: bold;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 35px;
@@ -453,7 +453,7 @@ h2 {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  line-height: 2.9375rem;
+  line-height: 30px;
   font-weight: bold;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 30px;
@@ -463,7 +463,7 @@ h3 {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  line-height: 2.9375rem;
+  line-height: 25px;
   font-weight: bold;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 25px;
@@ -473,7 +473,7 @@ h4 {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  line-height: 2.9375rem;
+  line-height: 20px;
   font-weight: bold;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 20px;
@@ -483,7 +483,7 @@ h5 {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  line-height: 2.9375rem;
+  line-height: 15px;
   font-weight: bold;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 15px;
@@ -493,7 +493,7 @@ h6 {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  line-height: 2.9375rem;
+  line-height: 10px;
   font-weight: bold;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 10px;
@@ -656,9 +656,9 @@ body.dark #sidebar {
 }
 
 body.dark #sidebar #logo a {
-  -ms-grid-columns: (max-content)[2] !important;
-      grid-template-columns: repeat(2, -webkit-max-content) !important;
-      grid-template-columns: repeat(2, max-content) !important;
+  -ms-grid-columns: max-content max-content !important;
+      grid-template-columns: -webkit-max-content -webkit-max-content !important;
+      grid-template-columns: max-content max-content !important;
 }
 
 body.dark #navigation a {
@@ -745,9 +745,9 @@ body.container {
 #sidebar #social ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (max-content)[4];
-      grid-template-columns: repeat(4, -webkit-max-content);
-      grid-template-columns: repeat(4, max-content);
+  -ms-grid-columns: max-content max-content max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content max-content max-content;
   grid-gap: 30px;
 }
 
@@ -853,8 +853,8 @@ body.sidebar-opened .copyright {
 #navigation nav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
   grid-gap: 0px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -878,9 +878,9 @@ body.sidebar-opened .copyright {
 #logo a {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (max-content)[2];
-      grid-template-columns: repeat(2, -webkit-max-content);
-      grid-template-columns: repeat(2, max-content);
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
   grid-gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -890,8 +890,8 @@ body.sidebar-opened .copyright {
 #logo .logo-text {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   grid-gap: 5px;
   padding: 6px 0;
 }
@@ -974,8 +974,8 @@ body.sidebar-opened .copyright {
 #footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1006,8 +1006,8 @@ body.sidebar-opened .copyright {
 #footer #social ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
   grid-gap: 0px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1240,6 +1240,39 @@ body.sidebar-opened .copyright {
   width: 20px;
 }
 
+#book-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 1fr;
+      grid-template-columns: 400px 1fr;
+  grid-gap: 100px;
+}
+
+#book-details .book-image {
+  width: 100%;
+  height: auto;
+}
+
+#book-details .details {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+#book-details .details .description {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+#book-details .formats {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 35px;
@@ -1302,12 +1335,12 @@ body.sidebar-opened .copyright {
     display: none !important;
   }
   body.dark #logo a {
-    -ms-grid-columns: (auto)[1] !important;
-        grid-template-columns: repeat(1, auto) !important;
+    -ms-grid-columns: auto !important;
+        grid-template-columns: auto !important;
   }
   #footer {
-    -ms-grid-columns: (1fr)[1] !important;
-        grid-template-columns: repeat(1, 1fr) !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
   }
   #footer #social {
     display: none;
