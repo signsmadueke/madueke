@@ -87,23 +87,6 @@
 
         <div class="nav-space"></div>
 
-        <nav>
-            <ul>
-                <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                    <a href="/">Home</a>
-                </li>
-                <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                    <a href="books.php">Books</a>
-                </li>
-                <li class="<?php if ($title == "About"){echo "active";} ?>">
-                    <a href="#">About</a>
-                </li>
-                <li class="<?php if ($title == "Contact"){echo "active";} ?>">
-                    <a href="contact.php">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
         <button class="menu" type="button">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -134,22 +117,22 @@
         <ul>
             <li>
                 <a href="https://facebook.com/prayermadueke">
-                    <img class="svg" src="assets/images/icons/facebook.svg" height="15px" alt="Facebook">
+                    <img class="svg" src="assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="https://instagram.com/prayermadueke">
-                    <img class="svg" src="assets/images/icons/instagram.svg" height="15px" alt="Instagram">
+                    <img class="svg" src="assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/prayermadueke">
-                    <img class="svg" src="assets/images/icons/twitter.svg" height="15px" alt="Twitter">
+                    <img class="svg" src="assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
                 </a>
             </li>
             <li>
                 <a href="https://amazon.com/author/prayermadueke">
-                    <img class="svg" src="assets/images/icons/amazon.svg" height="15px" alt="Amazon">
+                    <img class="svg" src="assets/images/icons/social/amazon.svg" height="15px" alt="Amazon">
                 </a>
             </li>
         </ul>

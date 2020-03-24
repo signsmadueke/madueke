@@ -456,8 +456,9 @@ li {
 .btn-spaced {
 	display: grid;
 	grid-template-columns: max-content max-content;
-	grid-gap: 10px;
+	grid-gap: 15px;
 	align-items: center;
+	padding: 15px 0;
 }
 
 .btn-spaced:hover {
@@ -524,7 +525,7 @@ body.sidebar-opened {
 	}
 
 	.logo-name {
-		font-size: 18px !important;
+		font-size: 20px !important;
 		line-height: 18px !important;
 	}
 
@@ -794,7 +795,7 @@ body.dark #sidebar #logo a {
 #logo .logo-text {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-gap: 8px;
+    grid-gap: 5px;
     padding: 6px 0;
 }
 
@@ -825,6 +826,10 @@ body.dark #sidebar #logo a {
 	padding: 6.25px 12.5px;
 	display: none;
 	z-index: 2;
+}
+
+#sidebar .menu {
+	display: block;
 }
 
 .menu .icon-bar {
@@ -1003,6 +1008,8 @@ body.dark{
 #books .book .btn-view{
 	display: grid;
 	margin-top: 30px;
+	padding-bottom: 0;
+	display: block;
 }
 
 #books .book .btn-view span {
@@ -1080,8 +1087,8 @@ body.dark{
 
 #all-books .section-title {
 	font-family: 'CircularStd';
-	font-size: 50px;
-    line-height: 50px;
+	font-size: 45px;
+	line-height: 45px;
 }
 
 #all-books #books {
