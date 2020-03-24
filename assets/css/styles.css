@@ -513,7 +513,7 @@ body.container {
 }
 
 body.sidebar-opened {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 @media (max-width: 1000px) {
@@ -542,11 +542,11 @@ body.sidebar-opened {
 	}
 	
 	#navigation {
-		grid-template-columns: 1fr auto !important;
+		grid-template-columns: auto 1fr auto !important;
 	}
 
 	#navigation .nav-space {
-		display: none;
+		/* display: none; */
 	}
 
 	body.dark #logo a {
@@ -664,8 +664,8 @@ body.dark .logo-icon {
 	display: none;
 }
 
-body.dark #sidebar .logo-icon {
-	/* display: block; */
+#sidebar #logo .logo-icon {
+	display: block;
 }
 
 body.dark #sidebar #logo a {
@@ -675,7 +675,7 @@ body.dark #sidebar #logo a {
 #navigation {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-gap: 30px;
+    grid-gap: 15px;
     -webkit-box-align: center;
     align-items: center;
 }
@@ -715,6 +715,7 @@ body.dark #sidebar #logo a {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-gap: 8px;
+    padding: 6px 0;
 }
 
 #logo img {
@@ -742,13 +743,13 @@ body.dark #sidebar #logo a {
 .menu {
 	padding: 6.25px 12.5px;
 	display: none;
-	z-index: 3;
+	z-index: 2;
 }
 
 .menu .icon-bar {
     display: block;
     width: 35px;
-    height: 2px;
+    height: 1px;
     -webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
     transition: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
     background: #444;
@@ -757,21 +758,25 @@ body.dark #sidebar #logo a {
 }
 
 .menu .icon-bar + .icon-bar {
-    margin-top: -2px;
-    /* width: 30px; */
-}
-
-.menu.collapsed .icon-bar + .icon-bar {
+    transform: none;
     margin-top: 7px;
 }
 
-.menu .icon-bar:nth-child(2) {
-	/* width: 25px; */
+.menu.collapsed .icon-bar + .icon-bar {
+    transform: none;
+    margin-top: 0px;
 }
 
-.menu .icon-bar:nth-child(3) {
-	/* width: 20px; */
+.menu.collapsed .icon-bar:nth-child(1) {opacity: 0;transform: translate3d(0,0px,0);}
+
+.menu.collapsed .icon-bar:nth-child(2) {
+    transform: translate3d(0,-2px,0) rotate(-45deg);
 }
+
+.menu.collapsed .icon-bar:nth-child(3) {
+    transform: translate3d(0,-3px,0) rotate(-135deg);
+}
+
 
 /*----------------------------------------------------------------------------------------
                                     FOOTER
@@ -903,7 +908,7 @@ body.dark{
 
 #books .book .book-description {
 	color: white;
-	font-weight: 40000;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
 	text-align: left;
@@ -1007,14 +1012,14 @@ body.dark{
 
 #all-books #books .book .book-name {
 	font-weight: bold;
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 25px;
+	line-height: 35px;
 	-webkit-line-clamp: 3;
 }
 
 #all-books #books .book .book-description {
-	font-size: 17px;
-    line-height: 26px;
+	font-size: 16px;
+	line-height: 24px;
 	-webkit-line-clamp: 7;
 }
 

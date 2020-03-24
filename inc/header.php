@@ -65,24 +65,51 @@
         </ul>
     </nav>
 
-    <button class="menu collapsed" type="button">
+    <button class="menu" type="button">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
 </section>
 <section id="sidebar">
-    <div id="logo">
-        <a href="index.php">
-            <div class="logo-icon">
-                <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
-            </div>
-            <div class="logo-text">
-                <h3 class="logo-name">Prayer M. Madueke</h3>
-                <p class="logo-tagline">CHRISTIAN AUTHOR</p>
-            </div>
-        </a>
-    </div>
+    <section id="navigation">
+        <div id="logo">
+            <a href="index.php">
+                <div class="logo-icon">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                </div>
+                <div class="logo-text">
+                    <h3 class="logo-name">Prayer M. Madueke</h3>
+                    <p class="logo-tagline">CHRISTIAN AUTHOR</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="nav-space"></div>
+
+        <nav>
+            <ul>
+                <li class="">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="active">
+                    <a class="nav-link" href="books.php">Books</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="menu" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </section>
 
     <div id="sidebar-space"></div>
 
