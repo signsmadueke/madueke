@@ -24,10 +24,18 @@
             <div class="formats">
                 <div class="format">
                     <div class="name">
-                        <img class="svg" src="assets/images/formats/amazon.svg">
+                        <img src="assets/images/formats/amazon.svg">
                         <span>Paperback</span>
                     </div>
                     <h1 class="price">&#36;18.99</h1>
+                </div>
+
+                <div class="format">
+                    <div class="name">
+                        <img src="assets/images/formats/kindle.svg">
+                        <span>Kindle</span>
+                    </div>
+                    <h1 class="price">&#36;7.99</h1>
                 </div>
             </div>
         </div>

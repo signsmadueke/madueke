@@ -529,7 +529,7 @@ body.sidebar-opened {
 		line-height: 18px !important;
 	}
 
-	#logo img {
+	#logo .logo-icon {
 		width: 45px !important;
 		height: 45px !important;
 	}
@@ -799,9 +799,14 @@ body.dark #sidebar #logo a {
     padding: 6px 0;
 }
 
-#logo img {
+#logo .logo-icon {
 	width: 50px;
 	height: 50px;
+}
+
+#logo img {
+	width: 100%;
+	height: 100%;
 	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 	border-radius: 100px;
 }
@@ -963,7 +968,7 @@ body.dark{
     background-size: cover;
     position: relative;
     padding: 20px 25px;
-    cursor: pointer;
+    cursor: default;
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     display: flex;
@@ -1009,7 +1014,11 @@ body.dark{
 	display: grid;
 	margin-top: 30px;
 	padding-bottom: 0;
-	display: block;
+	grid-gap: 10px;
+}
+
+#books .book .btn-view:hover {
+	grid-gap: 15px;
 }
 
 #books .book .btn-view span {
@@ -1060,9 +1069,12 @@ body.dark{
 	opacity: 1;
 }
 
-#books .book:hover .book-name,
-#books .book:hover .book-description {
+#books .book:hover .book-name {
 	opacity: 1;
+}
+
+#books .book:hover .book-description {
+	opacity: 0.9;
 }
 
 #books .book:hover .btn-view {
@@ -1120,3 +1132,10 @@ body.dark{
 #all-books #books .book .btn-view img {
 	width: 20px;
 }
+
+
+
+
+/*----------------------------------------------------------------------------------------
+                                    BOOK DETAILS
+----------------------------------------------------------------------------------------*/
