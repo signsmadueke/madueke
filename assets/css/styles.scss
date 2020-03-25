@@ -139,6 +139,7 @@ a {
 	-webkit-text-decoration-skip: objects;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	text-rendering: geometricPrecision;
+
 	color: #222222;
 	margin: 0;
 	text-decoration: none;
@@ -426,6 +427,7 @@ label {
 
 h1 {
 	text-rendering: geometricPrecision;
+	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
 	line-height: 47px;
@@ -436,6 +438,7 @@ h1 {
 
 h2 {
 	text-rendering: geometricPrecision;
+	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
 	line-height: 30px;
@@ -446,6 +449,7 @@ h2 {
 
 h3 {
 	text-rendering: geometricPrecision;
+	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
 	line-height: 25px;
@@ -456,6 +460,7 @@ h3 {
 
 h4 {
 	text-rendering: geometricPrecision;
+	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
 	line-height: 20px;
@@ -466,6 +471,7 @@ h4 {
 
 h5 {
 	text-rendering: geometricPrecision;
+	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
 	line-height: 15px;
@@ -476,6 +482,7 @@ h5 {
 
 h6 {
 	text-rendering: geometricPrecision;
+	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
 	line-height: 10px;
@@ -491,7 +498,7 @@ p {
 	font-size: 18px;
 	line-height: 35px;
 	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 li {
@@ -506,6 +513,7 @@ li {
 
 span {
 	text-rendering: geometricPrecision;
+
 	color: #222222;
 	margin: 0;
 }
@@ -1205,6 +1213,12 @@ body.sidebar-opened {
 	grid-template-columns: 400px 1fr;
 	grid-gap: 100px;
 
+	@media (max-width: 800px) {
+		grid-template-columns: none;
+		grid-auto-flow: row;
+		grid-gap: 50px;
+	}
+
 	.book-image {
 		width: 100%;
 		height: auto;
@@ -1213,22 +1227,221 @@ body.sidebar-opened {
 	.details {
 		display: grid;
 		grid-gap: 30px;
+		grid-auto-rows: max-content;
 
 		.description {
 			display: grid;
 			grid-gap: 20px;
+			grid-auto-rows: max-content;
 			padding-bottom: 30px;
 			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 		}
-	}
+		
+		.channels {
+			display: grid;
+			grid-gap: 10px;
+			grid-auto-flow: row;
+			grid-auto-rows: max-content;
+			padding-bottom: 30px;
+			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+	
+			.formats {
+				display: grid;
+				grid-gap: 20px;
+				grid-auto-flow: column;
+				grid-auto-rows: max-content;
+				grid-template-columns: minmax(max-content, 230px) minmax(max-content, 230px);
+	
+				.format {
+					display: grid;
+					grid-gap: 10px;
+					grid-auto-flow: row;
+					border: 1px solid rgba(68, 68, 68, 0.1);
+					box-sizing: border-box;
+					border-radius: 10px;
+					border: 1px solid rgba(68, 68, 68, 0.1);
+					border-radius: 10px;
+					padding: 15px;
+	
+					&:hover {
+						background-color: rgba(68, 68, 68, 0.05);
+					}
+	
+					.name {
+						display: grid;
+						grid-gap: 10px;
+						grid-auto-flow: column;
+						grid-auto-columns: max-content;
+						align-items: center;
+	
+						img {
+							height: 25px;
+						}
+	
+						span {
+							font-weight: 500;
+							font-size: 12px;
+							line-height: 25px;
+							letter-spacing: 3.4px;
+							text-transform: uppercase;
+						}
+					}
+	
+					.price {
+						font-family: 'CircularStd';
+						font-weight: 700;
+						font-size: 35px;
+						line-height: 35px;
+					}
+				}
+			}
+		}
+		
+		.attributes {
+			display: grid;
+			grid-gap: 50px;
+			grid-auto-flow: column;
+			grid-auto-columns: max-content;
+			padding-bottom: 30px;
+			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 
-	.formats {
-		display: grid;
-		grid-gap: 30px;
+			@media (max-width: 800px) {
+				grid-template-columns: none;
+				grid-auto-flow: row;
+				grid-gap: 30px;
+			}
+
+			.pages {
+				display: grid;
+				grid-gap: 15px;
+				grid-auto-flow: column;
+				grid-auto-columns: max-content;
+				align-items: center;
+
+				img {
+					height: 35px;
+				}
+
+				p {
+					font-weight: 500;
+
+					span {
+						font-weight: 400;
+					}
+				}
+			}
+
+			.dimensions {
+				display: grid;
+				grid-gap: 15px;
+				grid-auto-flow: column;
+				grid-auto-columns: max-content;
+				align-items: center;
+
+				img {
+					height: 35px;
+				}
+
+				p {
+					font-weight: 500;
+
+					span {
+						font-weight: 400;
+					}
+				}
+			}
+
+
+		}
 	}
 }
 
-@media screen and (max-width: 600px) {
+
+@media (max-width: 1000px) {
+	h2 {
+		font-size: 30px;
+	}
+	
+	h3 {
+		font-size: 25px;
+	}
+
+	.logo-tagline {
+		font-size: 11px !important;
+		line-height: 11px !important;
+		letter-spacing: 0.3em !important;
+	}
+	
+	.logo-name {
+		font-size: 20px !important;
+		line-height: 18px !important;
+	}
+	
+	#logo {
+		.logo-icon {
+			width: 45px !important;
+			height: 45px !important;
+		}
+	}
+	
+	.menu {
+		display: block !important;
+	}
+	
+	#navigation {
+		nav {
+			display: none !important;
+		}
+
+		grid-template-columns: auto 1fr auto !important;
+	}
+	
+	body.dark {
+		#logo {
+			a {
+				grid-template-columns: auto !important;
+			}
+		}
+	}
+	
+	#footer {
+		#social {
+			display: none;
+		}
+
+		grid-template-columns: 1fr !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 576px) {
+	#bestsellers {
+		#books {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
+		}
+	}
+
+	#all-books {
+		#books {
+			grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
+			grid-gap: 15px !important;
+		}
+	}
+
+	body.dark {
+		background-image: url('../images/madueke/Prayer-M.-Madueke-sm.jpg') !important;
+		background-position: center top !important;
+	}
+
 	h1 {
 		font-size: 35px;
 	}
@@ -1247,98 +1460,5 @@ body.sidebar-opened {
 
 	p {
 		font-size: 18px;
-	}
-}
-
-@media screen and (max-width: 980px) {
-	h2 {
-		font-size: 30px;
-	}
-
-	h3 {
-		font-size: 25px;
-	}
-}
-
-@media (max-width: 768px) {
-	.container {
-		width: 100%;
-		padding-right: 30px;
-		padding-left: 30px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
-
-@media (max-width: 1000px) {
-	.logo-tagline {
-		font-size: 11px !important;
-		line-height: 11px !important;
-		letter-spacing: 0.3em !important;
-	}
-
-	.logo-name {
-		font-size: 20px !important;
-		line-height: 18px !important;
-	}
-
-	#logo {
-		.logo-icon {
-			width: 45px !important;
-			height: 45px !important;
-		}
-	}
-
-	.menu {
-		display: block !important;
-	}
-
-	#navigation {
-		nav {
-			display: none !important;
-		}
-
-		grid-template-columns: auto 1fr auto !important;
-	}
-
-	body.dark {
-		#logo {
-			a {
-				grid-template-columns: auto !important;
-			}
-		}
-	}
-
-	#footer {
-		#social {
-			display: none;
-		}
-
-		grid-template-columns: 1fr !important;
-	}
-}
-
-@media (max-width: 576px) {
-	#bestsellers {
-		#books {
-			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
-		}
-	}
-
-	#all-books {
-		#books {
-			grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
-			grid-gap: 15px !important;
-		}
-	}
-}
-
-
-
-
-@media (max-width: 575.98px) {
-	body.dark {
-		background-image: url('../images/madueke/Prayer-M.-Madueke-sm.jpg') !important;
-		background-position: center top !important;
 	}
 }

@@ -441,6 +441,7 @@ label {
 
 h1 {
   text-rendering: geometricPrecision;
+  font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
   line-height: 47px;
@@ -451,6 +452,7 @@ h1 {
 
 h2 {
   text-rendering: geometricPrecision;
+  font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
   line-height: 30px;
@@ -461,6 +463,7 @@ h2 {
 
 h3 {
   text-rendering: geometricPrecision;
+  font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
   line-height: 25px;
@@ -471,6 +474,7 @@ h3 {
 
 h4 {
   text-rendering: geometricPrecision;
+  font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
   line-height: 20px;
@@ -481,6 +485,7 @@ h4 {
 
 h5 {
   text-rendering: geometricPrecision;
+  font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
   line-height: 15px;
@@ -491,6 +496,7 @@ h5 {
 
 h6 {
   text-rendering: geometricPrecision;
+  font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
   line-height: 10px;
@@ -506,7 +512,7 @@ p {
   font-size: 18px;
   line-height: 35px;
   font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 li {
@@ -1248,6 +1254,15 @@ body.sidebar-opened .copyright {
   grid-gap: 100px;
 }
 
+@media (max-width: 800px) {
+  #book-details {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    grid-auto-flow: row;
+    grid-gap: 50px;
+  }
+}
+
 #book-details .book-image {
   width: 100%;
   height: auto;
@@ -1257,60 +1272,167 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
 }
 
 #book-details .details .description {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
   padding-bottom: 30px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
-#book-details .formats {
+#book-details .details .channels {
   display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 35px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  h5 {
-    font-size: 15px;
-  }
-  h6 {
-    font-size: 10px;
-  }
-  p {
-    font-size: 18px;
+#book-details .details .channels .formats {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  -ms-grid-columns: minmax(max-content, 230px) minmax(max-content, 230px);
+      grid-template-columns: minmax(-webkit-max-content, 230px) minmax(-webkit-max-content, 230px);
+      grid-template-columns: minmax(max-content, 230px) minmax(max-content, 230px);
+}
+
+#book-details .details .channels .formats .format {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#book-details .details .channels .formats .format:hover {
+  background-color: rgba(68, 68, 68, 0.05);
+}
+
+#book-details .details .channels .formats .format .name {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#book-details .details .channels .formats .format .name img {
+  height: 25px;
+}
+
+#book-details .details .channels .formats .format .name span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 3.4px;
+  text-transform: uppercase;
+}
+
+#book-details .details .channels .formats .format .price {
+  font-family: 'CircularStd';
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+#book-details .details .attributes {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 800px) {
+  #book-details .details .attributes {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    grid-auto-flow: row;
+    grid-gap: 30px;
   }
 }
 
-@media screen and (max-width: 980px) {
+#book-details .details .attributes .pages {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#book-details .details .attributes .pages img {
+  height: 35px;
+}
+
+#book-details .details .attributes .pages p {
+  font-weight: 500;
+}
+
+#book-details .details .attributes .pages p span {
+  font-weight: 400;
+}
+
+#book-details .details .attributes .dimensions {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#book-details .details .attributes .dimensions img {
+  height: 35px;
+}
+
+#book-details .details .attributes .dimensions p {
+  font-weight: 500;
+}
+
+#book-details .details .attributes .dimensions p span {
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
   h2 {
     font-size: 30px;
   }
   h3 {
     font-size: 25px;
   }
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media (max-width: 1000px) {
   .logo-tagline {
     font-size: 11px !important;
     line-height: 11px !important;
@@ -1347,6 +1469,16 @@ body.sidebar-opened .copyright {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 576px) {
   #bestsellers #books {
     -ms-grid-columns: (minmax(250px, 100%))[auto-fit] !important;
@@ -1357,12 +1489,24 @@ body.sidebar-opened .copyright {
         grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
     grid-gap: 15px !important;
   }
-}
-
-@media (max-width: 575.98px) {
   body.dark {
     background-image: url("../images/madueke/Prayer-M.-Madueke-sm.jpg") !important;
     background-position: center top !important;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
