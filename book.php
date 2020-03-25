@@ -59,7 +59,7 @@
 
 </section>
 
-<section class="other-books" hidden>
+<section id="other-books">
 
     <div class="prev-book">
         <a href="#" class="btn btn-spaced btn-view">
@@ -71,6 +71,8 @@
             <h1>Prayer Retreat</h1>
         </div>
     </div>
+
+    <div></div>
 
     <div class="next-book">
         <a href="#" class="btn btn-spaced btn-view">

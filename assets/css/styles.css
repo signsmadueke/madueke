@@ -1426,6 +1426,23 @@ body.sidebar-opened .copyright {
   font-weight: 400;
 }
 
+#other-books {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: max-content 1fr max-content;
+      grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
+      grid-template-columns: max-content 1fr max-content;
+}
+
+#other-books .prev-book img {
+  width: 100px;
+}
+
+#other-books .next-book img {
+  width: 100px;
+}
+
 @media (max-width: 1000px) {
   h2 {
     font-size: 30px;
