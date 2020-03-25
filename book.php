@@ -4,7 +4,7 @@
     require_once 'inc/header.php';
 ?>
 
-<a href="#" class="btn btn-spaced btn-view">
+<a href="#" class="btn btn-spaced">
     <img class="svg" src="assets/images/icons/arrow-left.svg">
     <span>Back to Books</span>
 </a>
@@ -61,29 +61,29 @@
 
 <section id="other-books">
 
-    <div class="prev-book">
-        <a href="#" class="btn btn-spaced btn-view">
+    <a href="book.php" class="prev-book">
+        <div class="btn btn-spaced">
             <img class="svg" src="assets/images/icons/arrow-left.svg">
             <span>Previous Book</span>
-        </a>
+        </div>
         <div class="prev-book-details">
             <img src="assets/images/books/book3.jpg" alt="Book Cover of Prayer Retreat">
             <h1>Prayer Retreat</h1>
         </div>
-    </div>
+    </a>
 
     <div></div>
 
-    <div class="next-book">
-        <a href="#" class="btn btn-spaced btn-view">
+    <a href="book.php" class="next-book">
+        <div class="btn btn-spaced">
             <span>Next Book</span>
             <img class="svg" src="assets/images/icons/arrow-right.svg">
-        </a>
-        <div class="next-book-details">
-            <img src="assets/images/books/book4.jpg" alt="Book Cover of Breaking Evil Yokes">
-            <h1>Breaking Evil Yokes</h1>
         </div>
-    </div>
+        <div class="next-book-details">
+            <h1>Breaking Evil Yokes</h1>
+            <img src="assets/images/books/book4.jpg" alt="Book Cover of Breaking Evil Yokes">
+        </div>
+    </a>
 
 </section>
 
