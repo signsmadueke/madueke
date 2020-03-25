@@ -59,7 +59,7 @@
 
 </section>
 
-<section class="other-books">
+<section class="other-books" hidden>
 
     <div class="prev-book">
         <a href="#" class="btn btn-spaced btn-view">
