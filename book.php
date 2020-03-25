@@ -1,10 +1,10 @@
 <?php
-    $title = 'Books';
+    $title = '21/40 Nights of Decrees and Your Enemies Will Surrender';
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
 
-<a href="#" class="btn btn-spaced">
+<a href="books.php" class="btn btn-spaced">
     <img class="svg" src="assets/images/icons/arrow-left.svg">
     <span>Back to Books</span>
 </a>
@@ -22,7 +22,7 @@
             <div class="channels">
                 <p>Formats</p>
                 <div class="formats">
-                    <a href="#" class="format">
+                    <a href="https://www.amazon.com/dp/9780720944" class="format">
                         <div class="name">
                             <img src="assets/images/formats/amazon.svg">
                             <span>Paperback</span>
@@ -30,7 +30,7 @@
                         <h1 class="price">&#36;18.99</h1>
                     </a>
 
-                    <a href="#" class="format">
+                    <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
                         <div class="name">
                             <img src="assets/images/formats/kindle.svg">
                             <span>Kindle</span>
@@ -68,7 +68,7 @@
         </div>
         <div class="prev-book-details">
             <img src="assets/images/books/book3.jpg" alt="Book Cover of Prayer Retreat">
-            <h1>Prayer Retreat</h1>
+            <h3>Prayer Retreat</h3>
         </div>
     </a>
 
@@ -80,7 +80,7 @@
             <img class="svg" src="assets/images/icons/arrow-right.svg">
         </div>
         <div class="next-book-details">
-            <h1>Breaking Evil Yokes</h1>
+            <h3>Breaking Evil Yokes</h3>
             <img src="assets/images/books/book4.jpg" alt="Book Cover of Breaking Evil Yokes">
         </div>
     </a>

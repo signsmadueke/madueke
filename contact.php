@@ -1,5 +1,6 @@
 <?php
     $title = 'Contact';
+    $extraBodyClasses = 'dark contact';
     require_once 'inc/header.php';
 ?>
 

@@ -93,7 +93,7 @@ window.addEventListener('load', function () {
 
     var $window = $(window);
     $window.on('scroll', function () {
-        var $nav = $('nav.show-on-scroll');
+        var $nav = $('#navigation.fixed-nav');
         var height = $nav.outerHeight();
         var scrollTop = $window.scrollTop();
         if (scrollTop > height * 2) {
@@ -103,6 +103,7 @@ window.addEventListener('load', function () {
         }
 
     });
+    
 
 
     //------------------------------------------------------------------------
