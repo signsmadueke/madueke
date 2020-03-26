@@ -464,6 +464,7 @@ h2 {
 h3 {
   text-rendering: geometricPrecision;
   font-variant-numeric: lining-nums;
+  font-feature-settings: 'pnum' on, 'lnum' on, 'ordn' on, 'case' on, 'cpsp' on;
   color: #222222;
   margin: 0;
   line-height: 25px;
@@ -1694,27 +1695,30 @@ body.sidebar-opened .copyright {
     font-size: 25px;
   }
   .logo-tagline {
-    font-size: 11px !important;
-    line-height: 11px !important;
-    letter-spacing: 0.3em !important;
+    font-size: 10px !important;
+    line-height: 10px !important;
+    letter-spacing: 0.2em !important;
   }
   .logo-name {
-    font-size: 20px !important;
+    font-size: 18px !important;
     line-height: 18px !important;
   }
   #logo .logo-icon {
-    width: 45px !important;
-    height: 45px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .menu {
     display: block !important;
   }
   #navigation {
-    -ms-grid-columns: auto 1fr auto !important;
-        grid-template-columns: auto 1fr auto !important;
+    -ms-grid-columns: 1fr auto !important;
+        grid-template-columns: 1fr auto !important;
   }
   #navigation nav {
     display: none !important;
+  }
+  #navigation .nav-space {
+    display: none;
   }
   body.dark #logo a {
     -ms-grid-columns: auto !important;

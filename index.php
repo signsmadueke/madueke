@@ -32,7 +32,7 @@
         <div class="book" style="background-image: url(assets/images/books/book3.jpg)">
             <a href="book.php"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
             <a href="book.php"><p class="book-description">35 Special Dangerous Decrees is a collection of targeted prayers addressing 35 most important areas of the Christian life.</p></a>
-            <a href="#" class="btn btn-spaced btn-view">
+            <a href="book.php" class="btn btn-spaced btn-view">
                 <span>View Details</span>
                 <img class="svg" src="assets/images/icons/arrow-right.svg">
             </a>
