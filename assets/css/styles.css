@@ -1356,9 +1356,9 @@ body.sidebar-opened .copyright {
   grid-auto-flow: column;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
-  -ms-grid-columns: minmax(max-content, 230px) minmax(max-content, 230px);
-      grid-template-columns: minmax(-webkit-max-content, 230px) minmax(-webkit-max-content, 230px);
-      grid-template-columns: minmax(max-content, 230px) minmax(max-content, 230px);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 500px;
 }
 
 #book-details .details .channels .formats .format {
@@ -1394,7 +1394,7 @@ body.sidebar-opened .copyright {
 
 #book-details .details .channels .formats .format .name span {
   font-weight: 500;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 25px;
   letter-spacing: 2px;
   text-transform: uppercase;

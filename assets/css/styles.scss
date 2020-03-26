@@ -1290,7 +1290,8 @@ body.sidebar-opened {
 				grid-gap: 20px;
 				grid-auto-flow: column;
 				grid-auto-rows: max-content;
-				grid-template-columns: minmax(max-content, 230px) minmax(max-content, 230px);
+				grid-template-columns: 1fr 1fr;
+				max-width: 500px;
 	
 				.format {
 					display: grid;
@@ -1317,7 +1318,7 @@ body.sidebar-opened {
 	
 						span {
 							font-weight: 500;
-							font-size: 10px;
+							font-size: 11px;
 							line-height: 25px;
 							letter-spacing: 2px;
 							text-transform: uppercase;
@@ -1328,7 +1329,6 @@ body.sidebar-opened {
 						font-family: 'CircularStd';
 						font-weight: 700;
 						font-size: 30px;
-						
 						line-height: 30px;
 					}
 				}
