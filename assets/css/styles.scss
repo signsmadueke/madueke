@@ -1262,9 +1262,13 @@ body.sidebar-opened {
 	width: 100%;
 
 	.section-title {
-		font-family: 'CircularStd';
 		font-size: 45px;
 		line-height: 45px;
+
+		@media (max-width: 1000px) {
+			font-size: 25px;
+			line-height: 25px;
+		}
 	}
 
 	#books {

@@ -1327,9 +1327,15 @@ body.sidebar-opened .copyright {
 }
 
 #all-books .section-title {
-  font-family: 'CircularStd';
   font-size: 45px;
   line-height: 45px;
+}
+
+@media (max-width: 1000px) {
+  #all-books .section-title {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 #all-books #books {
