@@ -4,7 +4,7 @@
     require_once 'inc/header.php';
 ?>
 
-<a href="books.php" class="btn btn-spaced">
+<a href="books" class="btn btn-spaced">
     <img class="svg" src="assets/images/icons/arrow-left.svg">
     <span>Back to Books</span>
 </a>
@@ -61,7 +61,7 @@
 
 <section id="other-books">
 
-    <a href="book.php" class="prev-book">
+    <a href="book" class="prev-book">
         <div class="btn btn-spaced">
             <img class="svg" src="assets/images/icons/arrow-left.svg">
             <span>Previous Book</span>
@@ -74,7 +74,7 @@
 
     <div></div>
 
-    <a href="book.php" class="next-book">
+    <a href="book" class="next-book">
         <div class="btn btn-spaced">
             <span>Next Book</span>
             <img class="svg" src="assets/images/icons/arrow-right.svg">

@@ -10,7 +10,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Prayer Madueke">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="index.php">
+    <meta property="og:url" content="index">
     <meta property="og:image" content="assets/images/madueke/prayermadueke.jpg">
     <meta property="og:description" content="Prayer Madueke, Christian Author of over 100 books on Amazon">
 
@@ -35,7 +35,7 @@
 <body class="container <?php echo $extraBodyClasses; ?>">
 <section id="navigation">
     <div id="logo">
-        <a href="index.php">
+        <a href="index">
             <div class="logo-icon">
                 <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
             </div>
@@ -51,16 +51,16 @@
     <nav>
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a href="index.php">Home</a>
+                <a href="index">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                <a href="books.php">Books</a>
+                <a href="books">Books</a>
             </li>
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
-                <a href="podcasts.php">Podcasts</a>
+                <a href="podcasts">Podcasts</a>
             </li> -->
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
-                <a href="contact.php">Contact</a>
+                <a href="contact">Contact</a>
             </li>
         </ul>
     </nav>
@@ -75,7 +75,7 @@
 <section id="sidebar">
     <section id="navigation">
         <div id="logo">
-            <a href="index.php">
+            <a href="index">
                 <div class="logo-icon">
                     <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
                 </div>
@@ -100,16 +100,16 @@
     <nav>
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a href="index.php">Home</a>
+                <a href="index">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                <a href="books.php">Books</a>
+                <a href="books">Books</a>
             </li>
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
-                <a href="podcasts.php">Podcasts</a>
+                <a href="podcasts">Podcasts</a>
             </li> -->
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
-                <a href="contact.php">Contact</a>
+                <a href="contact">Contact</a>
             </li>
         </ul>
     </nav>
