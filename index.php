@@ -8,7 +8,15 @@
 <div id="space"></div>
 
 <section id="bestsellers">
-	<p class="spaced-text">Best Selling Books</p>
+	
+    <div class="title">
+        <h1>Best Sellers</h1>
+        
+        <a href="books.php" class="btn btn-spaced btn-view">
+            <span>More Books</span>
+            <img class="svg" src="assets/images/icons/arrow-right.svg">
+        </a>
+    </div>
 	
 	<div id="books">
         <div class="book" style="background-image: url(assets/images/books/book1.jpg)">
@@ -38,11 +46,6 @@
             </a>
         </div>
     </div>
-
-    <a href="books.php" class="btn btn-spaced btn-view">
-        <span>More Books</span>
-        <img class="svg" src="assets/images/icons/arrow-right.svg">
-    </a>
 </section>
 
 

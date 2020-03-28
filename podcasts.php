@@ -8,11 +8,18 @@
 
 <section id="now-playing">
     <div class="details">
-        <img src="assets/images/podcasts/podcast1.svg" alt="">
+        <div class="image">
+            <img src="assets/images/podcasts/podcast1.svg" alt="">
+            <img class="shadow" src="assets/images/podcasts/podcast1.svg" alt="">
+        </div>
         <div class="name">
             <p>Now Playing</p>
             <h3>Speaking things into Existence</h3>
         </div>
+    </div>
+
+    <div class="player-controls">
+        
     </div>
 </section>
 
