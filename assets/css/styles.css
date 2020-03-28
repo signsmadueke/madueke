@@ -1149,13 +1149,6 @@ body.sidebar-opened .copyright {
   line-height: 45px;
 }
 
-@media (max-width: 1000px) {
-  #bestsellers .title h1 {
-    font-size: 25px;
-    line-height: 25px;
-  }
-}
-
 #bestsellers .title .btn-spaced {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -1329,13 +1322,6 @@ body.sidebar-opened .copyright {
 #all-books .section-title {
   font-size: 45px;
   line-height: 45px;
-}
-
-@media (max-width: 1000px) {
-  #all-books .section-title {
-    font-size: 25px;
-    line-height: 25px;
-  }
 }
 
 #all-books #books {

@@ -1101,10 +1101,10 @@ body.sidebar-opened {
 			font-size: 35px;
 			line-height: 45px;
 
-			@media (max-width: 1000px) {
-				font-size: 25px;
-				line-height: 25px;
-			}
+			// @media (max-width: 1000px) {
+			// 	font-size: 25px;
+			// 	line-height: 25px;
+			// }
 		}
 
 		.btn-spaced {
@@ -1264,11 +1264,6 @@ body.sidebar-opened {
 	.section-title {
 		font-size: 45px;
 		line-height: 45px;
-
-		@media (max-width: 1000px) {
-			font-size: 25px;
-			line-height: 25px;
-		}
 	}
 
 	#books {
