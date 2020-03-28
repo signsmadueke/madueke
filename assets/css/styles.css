@@ -464,7 +464,6 @@ h2 {
 h3 {
   text-rendering: geometricPrecision;
   font-variant-numeric: lining-nums;
-  font-feature-settings: 'pnum' on, 'lnum' on, 'ordn' on, 'case' on, 'cpsp' on;
   color: #222222;
   margin: 0;
   line-height: 25px;
@@ -1685,6 +1684,16 @@ body.sidebar-opened .copyright {
 
 #contacts a:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+
+#now-playing {
+  width: 100%;
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  padding: 30px;
 }
 
 @media (max-width: 1000px) {

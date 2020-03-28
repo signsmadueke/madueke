@@ -71,44 +71,7 @@
         <span class="icon-bar"></span>
     </button>
 </section>
-<!-- <section id="navigation" class="fixed-nav">
-    <div id="logo">
-        <a href="index.php">
-            <div class="logo-icon">
-                <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
-            </div>
-            <div class="logo-text">
-                <h3 class="logo-name">Prayer M. Madueke</h3>
-                <p class="logo-tagline">CHRISTIAN AUTHOR</p>
-            </div>
-        </a>
-    </div>
 
-    <div class="nav-space"></div>
-
-    <nav>
-        <ul>
-            <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a href="index.php">Home</a>
-            </li>
-            <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                <a href="books.php">Books</a>
-            </li>
-            <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
-                <a href="podcasts.php">Podcasts</a>
-            </li>
-            <li class="<?php if ($title == "Contact"){echo "active";} ?>">
-                <a href="contact.php">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <button class="menu" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-</section> -->
 <section id="sidebar">
     <section id="navigation">
         <div id="logo">

@@ -1,49 +1,22 @@
 <?php
-    $title = 'Home';
-    $extraBodyClasses = 'dark';
+    $title = 'Podcasts';
+    $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
 
+<h1>Podcasts</h1>
 
-<div id="space"></div>
-
-<section id="bestsellers">
-	<p class="spaced-text">Best Selling Books</p>
-	
-	<div id="books">
-        <div class="book" style="background-image: url(assets/images/books/book1.jpg)">
-            <a href="book.php"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book.php"><p class="book-description">35 Special Dangerous Decrees is a collection of targeted prayers addressing 35 most important areas of the Christian life.</p></a>
-            <a href="book.php" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book2.jpg)">
-            <a href="book.php"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book.php"><p class="book-description">35 Special Dangerous Decrees is a collection of targeted prayers addressing 35 most important areas of the Christian life.</p></a>
-            <a href="book.php" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book3.jpg)">
-            <a href="book.php"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book.php"><p class="book-description">35 Special Dangerous Decrees is a collection of targeted prayers addressing 35 most important areas of the Christian life.</p></a>
-            <a href="#" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
+<section id="now-playing">
+    <div class="details">
+        <img src="assets/images/podcasts/podcast1.svg" alt="">
+        <div class="name">
+            <p>Now Playing</p>
+            <h3>Speaking things into Existence</h3>
         </div>
     </div>
-
-    <a href="books.php" class="btn btn-spaced btn-view">
-        <span>More Books</span>
-        <img class="svg" src="assets/images/icons/arrow-right.svg">
-    </a>
 </section>
+
+
 
 
 <?php

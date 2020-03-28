@@ -1571,6 +1571,35 @@ body.sidebar-opened {
 	}
 }
 
+
+
+
+
+#now-playing {
+	width: 100%;
+	min-height: 150px;
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(100px);
+	border: 1px solid rgba(68, 68, 68, 0.1);
+	padding: 30px;
+
+	.details {
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
 	h2 {
 		font-size: 30px;
@@ -1596,8 +1625,8 @@ body.sidebar-opened {
 			width: 40px !important;
 			height: 40px !important;
 		}
-	}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-	
+	}
+
 	.menu {
 		display: block !important;
 	}
@@ -1610,7 +1639,7 @@ body.sidebar-opened {
 		grid-template-columns: 1fr auto !important;
 
 		.nav-space {
-			display: none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+			display: none;
 		}
 	}
 	
