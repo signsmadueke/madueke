@@ -6,8 +6,6 @@
 
 <div id="space"></div>
 
-<div id="space"></div>
-
 <section id="all-books">
     
     <h1 class="section-title">Books</h1>

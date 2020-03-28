@@ -1071,6 +1071,10 @@ body.sidebar-opened {
 	width: 100%;
 	height: 100px;
 	background: transparent;
+
+	@media (max-width: 1000px) {
+		height: 0;
+	}
 }
 
 #bestsellers {
@@ -1081,7 +1085,7 @@ body.sidebar-opened {
 
 	@media (max-width: 1000px) {
 		max-width: none;
-		grid-gap: 15px;
+		grid-gap: 50px;
 	}
 
 	.title {
@@ -1260,6 +1264,10 @@ body.sidebar-opened {
 	display: grid;
 	grid-gap: 15px;
 	width: 100%;
+
+	@media (max-width: 1000px) {
+		grid-gap: 50px;
+	}
 
 	.section-title {
 		font-size: 45px;

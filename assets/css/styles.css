@@ -1103,6 +1103,12 @@ body.sidebar-opened .copyright {
   background: transparent;
 }
 
+@media (max-width: 1000px) {
+  #space {
+    height: 0;
+  }
+}
+
 #bestsellers {
   display: -ms-grid;
   display: grid;
@@ -1115,7 +1121,7 @@ body.sidebar-opened .copyright {
 @media (max-width: 1000px) {
   #bestsellers {
     max-width: none;
-    grid-gap: 15px;
+    grid-gap: 50px;
   }
 }
 
@@ -1317,6 +1323,12 @@ body.sidebar-opened .copyright {
   display: grid;
   grid-gap: 15px;
   width: 100%;
+}
+
+@media (max-width: 1000px) {
+  #all-books {
+    grid-gap: 50px;
+  }
 }
 
 #all-books .section-title {
