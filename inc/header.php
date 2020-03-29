@@ -24,8 +24,6 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
     <link rel="icon" href="favicon.png">
     <meta name="theme-color" content="#222222">
