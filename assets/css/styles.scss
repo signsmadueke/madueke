@@ -52,7 +52,7 @@
 }
 
 html {
-	font-family: sans-serif;
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	line-height: 1.15;
 	font-size: 62.5%;
 	-ms-text-size-adjust: 100%;
@@ -69,7 +69,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: "CircularStd";
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 18px;
 }
 
@@ -237,7 +237,7 @@ svg {
 }
 
 button {
-	font-family: sans-serif;
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -261,7 +261,7 @@ button {
 }
 
 input {
-	font-family: sans-serif;
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -270,14 +270,14 @@ input {
 }
 
 optgroup {
-	font-family: sans-serif;
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
 }
 
 select {
-	font-family: sans-serif;
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -286,7 +286,7 @@ select {
 }
 
 textarea {
-	font-family: sans-serif;
+	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -579,6 +579,57 @@ span {
 		img {
 			width: 14px;
 		}
+	}
+}
+
+input {
+	padding: 20px 30px;
+	border: 1px solid rgba(68, 68, 68, 0.2);
+	color: #444444;
+	font-size: 16px;
+	line-height: 16px;
+	outline: 0;
+
+	&::placeholder {
+		color: #444444;
+		opacity: 0.5;
+		font-weight: 500;
+		letter-spacing: 0.3em;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	&:hover {
+		background-color: rgba(68, 68, 68, 0.05);
+		border: 1px solid rgba(68, 68, 68, 0.3);
+	}
+
+	&:focus {
+		background-color: rgba(68, 68, 68, 0.05);
+		border: 1px solid rgba(68, 68, 68, 0.3);
+	}
+}
+
+input[type="submit"] {
+	background-color: #222222;
+	color: white;
+	padding: 20px 40px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	outline: 0;
+
+	&:hover {
+		background-color: #111111;
+		border: 1px solid #111111;
+	}
+
+	&:focus {
+		background-color: #111111;
+		border: 1px solid #111111;
 	}
 }
 
@@ -1023,16 +1074,6 @@ body.sidebar-opened {
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 
-	.copyright {
-		color: #444444;
-		justify-self: start;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 14px;
-		opacity: 0.6;
-	}
-
 	#social {
 		justify-self: end;
 
@@ -1060,9 +1101,17 @@ body.sidebar-opened {
 			-webkit-box-align: center;
 			align-items: center;
 		}
-	}
-	
-	
+	}	
+}
+
+.copyright {
+	color: #444444;
+	justify-self: start;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 14px;
+	opacity: 0.6;
 }
 
 
@@ -1706,9 +1755,128 @@ body.sidebar-opened {
 
 
 
+#devotional-title {
+	max-width: 600px;
+	justify-self: center;
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 30px;
+	grid-auto-rows: max-content;
+	padding: 100px 0px;
+	
+	.text {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 10px;
+		
+		p {
+			line-height: 30px;
+		}
+	}
+	
+	form {
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 15px;
+		grid-template-columns: 1fr max-content;
+	}
+	
+	@media (max-width: 768px) {
+		max-width: none;
+		
+		form {
+			grid-auto-flow: row;
+			grid-template-columns: none;
+		}
+	}
+}
 
+#all-devotionals {
+	display: grid;
+	grid-gap: 30px;
+	width: 100%;
 
+	.devotionals {
+		display: grid;
+		grid-auto-flow: row;
+		grid-column-gap: 50px;
+		grid-row-gap: 100px;
+		grid-auto-rows: max-content;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+}
 
+.devotional {
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 30px;
+	grid-auto-rows: max-content;
+
+	&:hover {
+		.image {
+			opacity: 0.7;
+		}
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+		position: relative;
+
+		img {
+			width: 100%;
+			border-radius: 10px;
+			// z-index: 1;
+		}
+
+		.shadow {
+			filter: blur(10px) opacity(0.5);
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			right: 0;
+			width: 90%;
+			height: 90%;
+			z-index: -1;
+		}
+	}
+
+	.details {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 10px;
+		grid-auto-rows: max-content;
+
+		h3 {
+			font-size: 25px;
+			line-height: 33px;
+			text-transform: capitalize;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 30px;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0%;
+				bottom: 0;
+				left: 0%;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				background: linear-gradient(180deg, rgba(255, 255, 255, 0) 67.5%, #FFFFFF 100%);
+			}
+		}
+	}
+}
 
 
 

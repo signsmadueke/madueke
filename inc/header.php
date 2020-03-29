@@ -59,6 +59,9 @@
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
+            <li class="<?php if ($title == "Devotionals"){echo "active";} ?>">
+                <a href="devotionals">Devotionals</a>
+            </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
@@ -108,6 +111,9 @@
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
+            <li class="<?php if ($title == "Devotionals"){echo "active";} ?>">
+                <a href="devotionals">Devotionals</a>
+            </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
