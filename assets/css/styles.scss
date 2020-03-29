@@ -17,6 +17,12 @@
 }
 
 @font-face {
+	font-family: 'PalatinoLinotype';
+	src: url('../fonts/Palatino_Linotype/pala.ttf') format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
 	font-family: 'PlayfairDisplay';
 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
 	font-weight: 400;
@@ -1595,6 +1601,7 @@ body.sidebar-opened {
 		
 		&:hover {
 			background-color: rgba(68, 68, 68, 0.05);
+			box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
 
 			img {
 				box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.2);
@@ -1682,6 +1689,7 @@ body.sidebar-opened {
 
 		&:hover {
 			background: rgba(0, 0, 0, 0.8);
+			backdrop-filter: blur(5px);
 		}
 	}
 }
@@ -1768,6 +1776,7 @@ body.sidebar-opened {
 		display: grid;
 		grid-auto-flow: row;
 		grid-gap: 10px;
+		text-align: center;
 		
 		p {
 			line-height: 30px;
@@ -1783,6 +1792,11 @@ body.sidebar-opened {
 	
 	@media (max-width: 768px) {
 		max-width: none;
+
+		.text {
+			text-align: left;
+		}
+
 		
 		form {
 			grid-auto-flow: row;
@@ -1795,14 +1809,14 @@ body.sidebar-opened {
 	display: grid;
 	grid-gap: 30px;
 	width: 100%;
+	padding-bottom: 100px;
 
 	.devotionals {
 		display: grid;
 		grid-auto-flow: row;
-		grid-column-gap: 50px;
-		grid-row-gap: 100px;
+		grid-gap: 100px;
 		grid-auto-rows: max-content;
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
 		@media (max-width: 576px) {
 			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
@@ -1863,7 +1877,8 @@ body.sidebar-opened {
 			overflow: hidden;
 			display: -webkit-box;
 			-webkit-line-clamp: 4;
-			-webkit-box-orient: vertical;
+			// -webkit-box-orient: vertical;
+			height: 120px;
 			position: relative;
 
 			&:before {
@@ -1884,6 +1899,231 @@ body.sidebar-opened {
 
 
 
+
+
+
+
+
+#devotional-header {
+	width: 100%;
+	width: 100%;
+	max-width: 1100px;
+	justify-self: center;
+	height: auto;
+	position: relative;
+
+	img {
+		width: 100%;
+		border-radius: 10px;
+		// z-index: 1;
+	}
+
+	.shadow {
+		filter: blur(10px) opacity(0.5);
+		position: absolute;
+		top: 10%;
+		left: 5%;
+		right: 0;
+		width: 90%;
+		height: 90%;
+		z-index: -1;
+	}
+}
+
+#devotional-post {
+	display: grid;
+	grid-gap: 30px;
+	width: 100%;
+	max-width: 900px;
+	justify-self: center;
+	padding: 0px 0 100px 0;
+
+	p {
+		font-family: "PalatinoLinotype";
+		text-align: justify;
+	}
+}
+
+#other-devotionals {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: max-content 1fr max-content;
+
+	.prev-devotional {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 15px;
+		justify-items: start;
+		padding: 30px;
+		border: 1px solid rgba(68, 68, 68, 0.1);
+
+		&:hover {
+			background-color: rgba(68, 68, 68, 0.05);
+			box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+
+			img {
+				box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.2);
+			}
+
+			.btn-spaced {
+				grid-gap: 20px;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			padding: 15px;
+			grid-template-columns: none;
+		}
+
+		.btn-spaced {
+			@media (max-width: 1000px) {
+				padding: 0;
+				grid-template-columns: none;
+			}
+
+			span {
+				@media (max-width: 1000px) {
+					display: none;
+				}
+			}
+		}
+
+		.prev-devotional-details {
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-columns: max-content 1fr;
+			align-items: center;
+			grid-gap: 30px;
+
+			@media (max-width: 1000px) {
+				grid-template-columns: none;
+			}
+
+			h3 {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				line-height: 30px;
+				max-width: 300px;
+				white-space: nowrap;
+
+				@media (max-width: 1000px) {
+					display: none;
+				}
+			}
+
+			img {
+				width: 100px;
+				border: 1px solid rgba(68, 68, 68, 0.2);
+			}
+		}
+
+
+	}
+
+	.next-devotional {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 15px;
+		justify-items: end;
+		padding: 30px;
+		border: 1px solid rgba(68, 68, 68, 0.1);
+
+		&:hover {
+			background-color: rgba(68, 68, 68, 0.05);
+			box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+
+			img {
+				box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.2);
+			}
+
+			.btn-spaced {
+				grid-gap: 20px;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			padding: 15px;
+			grid-template-columns: none;
+		}
+
+		.btn-spaced {
+			@media (max-width: 1000px) {
+				padding: 0;
+				grid-template-columns: none;
+			}
+
+			span {
+				@media (max-width: 1000px) {
+					display: none;
+				}
+			}
+		}
+
+		.next-devotional-details {
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-columns: max-content 1fr;
+			align-items: center;
+			grid-gap: 30px;
+
+			@media (max-width: 1000px) {
+				grid-template-columns: none;
+			}
+
+			h3 {
+				text-overflow: ellipsis;
+				overflow: hidden;
+				max-width: 300px;
+				line-height: 30px;
+				white-space: nowrap;
+
+				@media (max-width: 1000px) {
+					display: none;
+				}
+			}
+
+			img {
+				width: 100px;
+				border: 1px solid rgba(68, 68, 68, 0.2);
+			}
+		}
+
+
+	}
+}
+
+#devotional-subscription {
+	padding: 100px 150px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	grid-gap: 100px;
+	border: 1px solid rgba(68, 68, 68, 0.2);
+
+	.text {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 10px;
+	}
+
+	form {
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 15px;
+	}
+
+	@media (max-width: 1000px) {
+		padding: 30px 0px;
+		grid-auto-flow: row;
+		grid-template-columns: none;
+		align-items: center;
+		grid-gap: 30px;
+		border: none;
+	}
+}
+
+
 @media (max-width: 1000px) {
 	h2 {
 		font-size: 30px;
@@ -1894,20 +2134,20 @@ body.sidebar-opened {
 	}
 
 	.logo-tagline {
-		font-size: 12px !important;
-		line-height: 12px !important;
+		font-size: 11px !important;
+		line-height: 11px !important;
 		letter-spacing: 0.2em !important;
 	}
 	
 	.logo-name {
-		font-size: 22px !important;
-		line-height: 22px !important;
+		font-size: 19px !important;
+		line-height: 19px !important;
 	}
 	
 	#logo {
 		.logo-icon {
-			width: 40px !important;
-			height: 40px !important;
+			width: 45px !important;
+			height: 45px !important;
 		}
 	}
 
