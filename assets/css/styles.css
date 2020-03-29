@@ -1976,6 +1976,13 @@ body.sidebar-opened .copyright {
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
+@media (max-width: 576px) {
+  #all-devotionals .devotionals {
+    -ms-grid-columns: (minmax(250px, 100%))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
+  }
+}
+
 .devotional {
   display: -ms-grid;
   display: grid;

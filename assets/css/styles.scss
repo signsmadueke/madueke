@@ -1803,6 +1803,10 @@ body.sidebar-opened {
 		grid-row-gap: 100px;
 		grid-auto-rows: max-content;
 		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+		@media (max-width: 576px) {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
+		}
 	}
 }
 
