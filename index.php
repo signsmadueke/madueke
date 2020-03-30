@@ -10,7 +10,7 @@
 <section id="bestsellers">
 	
     <div class="title">
-        <h1>Best Seller</h1>
+        <h1>Best Sellers</h1>
         
         <a href="books" class="btn btn-spaced btn-view">
             <span>More Books</span>
