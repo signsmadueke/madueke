@@ -9,6 +9,15 @@
     <img class="shadow" src="assets/images/devotionals/devotional1-lg.jpg" alt="">
 </section>
 
+<section id="devotional-details">
+    <h1 class="devotional-name">Speaking things into Existence</h1>
+    <div class="devotional-author">
+        <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+        <p><span>by </span>Prayer M. Madueke</p>
+    </div>
+    <p><span>Posted on </span>Monday, March 31, 2020</p>
+</section>
+
 <section id="devotional-post">
     <h3>The Word of Faith</h3>
     <p>
@@ -36,7 +45,12 @@
         </div>
         <div class="prev-devotional-details">
             <img src="assets/images/devotionals/devotional1.jpg" alt="">
-            <h3>Speaking things into Existence</h3>
+            <div class="name">
+                <h3>Speaking things into Existence</h3>
+                <div class="date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+            </div>
         </div>
     </a>
 
@@ -48,7 +62,10 @@
             <img class="svg" src="assets/images/icons/arrow-right.svg">
         </div>
         <div class="next-devotional-details">
-            <h3>Speaking things into Existence</h3>
+            <div class="name">
+                <h3>Speaking things into Existence</h3>
+                <p><span>Posted on </span>Monday, March 31, 2020</p>
+            </div>
             <img src="assets/images/devotionals/devotional1.jpg" alt="">
         </div>
     </a>

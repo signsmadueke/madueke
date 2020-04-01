@@ -251,6 +251,12 @@ video {
 
 img {
   border-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  pointer-events: none;
 }
 
 svg:not(:root) {
@@ -602,6 +608,30 @@ span {
   .btn-spaced svg,
   .btn-spaced img {
     width: 14px;
+  }
+}
+
+.btn-spaced.chevron {
+  grid-gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.btn-spaced.chevron svg {
+  height: 10px;
+}
+
+.btn-spaced.chevron:hover {
+  grid-gap: 13px !important;
+}
+
+@media (max-width: 1000px) {
+  .btn-spaced.chevron svg {
+    height: 10px;
+  }
+  .btn-spaced.chevron:hover {
+    grid-gap: 13px !important;
   }
 }
 
@@ -1481,8 +1511,8 @@ body.sidebar-opened .copyright {
 #book-details .book-image {
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.4);
 }
 
 #book-details .details {
@@ -2006,14 +2036,14 @@ body.sidebar-opened .copyright {
   grid-auto-rows: max-content;
 }
 
-.devotional:hover .image {
-  opacity: 0.7;
-}
-
 .devotional .image {
   width: 100%;
   height: auto;
   position: relative;
+}
+
+.devotional .image:hover {
+  opacity: 0.7;
 }
 
 .devotional .image img {
@@ -2033,6 +2063,10 @@ body.sidebar-opened .copyright {
   z-index: -1;
 }
 
+.devotional .btn-spaced:hover {
+  grid-gap: 20px;
+}
+
 .devotional .details {
   display: -ms-grid;
   display: grid;
@@ -2048,7 +2082,46 @@ body.sidebar-opened .copyright {
   text-transform: capitalize;
 }
 
-.devotional .details p {
+.devotional .details .devotional-author {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.devotional .details .devotional-author img {
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+}
+
+.devotional .details .devotional-author p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.devotional .details .devotional-author p span {
+  opacity: 0.5;
+}
+
+.devotional .details .devotional-date p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.devotional .details .devotional-date p span {
+  opacity: 0.5;
+}
+
+.devotional .details .description p {
   font-size: 16px;
   line-height: 30px;
   overflow: hidden;
@@ -2058,7 +2131,7 @@ body.sidebar-opened .copyright {
   position: relative;
 }
 
-.devotional .details p:before {
+.devotional .details .description p:before {
   content: "";
   position: absolute;
   top: 0%;
@@ -2099,6 +2172,64 @@ body.sidebar-opened .copyright {
   z-index: -1;
 }
 
+#devotional-details {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+}
+
+#devotional-details .devotional-author {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#devotional-details .devotional-author img {
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+}
+
+#devotional-details p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#devotional-details p span {
+  opacity: 0.5;
+}
+
+@media (max-width: 576px) {
+  #devotional-details {
+    text-align: left;
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  #devotional-details .devotional-author {
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
 #devotional-post {
   display: -ms-grid;
   display: grid;
@@ -2113,6 +2244,16 @@ body.sidebar-opened .copyright {
 #devotional-post p {
   font-family: "PalatinoLinotype";
   text-align: justify;
+}
+
+#devotional-post h3 {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  #devotional-post h3 {
+    text-align: left;
+  }
 }
 
 #other-devotionals {
@@ -2191,7 +2332,15 @@ body.sidebar-opened .copyright {
   }
 }
 
-#other-devotionals .prev-devotional .prev-devotional-details h3 {
+#other-devotionals .prev-devotional .prev-devotional-details .name {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 5px;
+  text-align: left;
+}
+
+#other-devotionals .prev-devotional .prev-devotional-details .name h3 {
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 30px;
@@ -2200,7 +2349,22 @@ body.sidebar-opened .copyright {
 }
 
 @media (max-width: 1000px) {
-  #other-devotionals .prev-devotional .prev-devotional-details h3 {
+  #other-devotionals .prev-devotional .prev-devotional-details .name h3 {
+    display: none;
+  }
+}
+
+#other-devotionals .prev-devotional .prev-devotional-details .name p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#other-devotionals .prev-devotional .prev-devotional-details .name p span {
+  opacity: 0.5;
+}
+
+@media (max-width: 1000px) {
+  #other-devotionals .prev-devotional .prev-devotional-details .name {
     display: none;
   }
 }
@@ -2208,6 +2372,7 @@ body.sidebar-opened .copyright {
 #other-devotionals .prev-devotional .prev-devotional-details img {
   width: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
+  border-radius: 5px;
 }
 
 #other-devotionals .next-devotional {
@@ -2277,16 +2442,39 @@ body.sidebar-opened .copyright {
   }
 }
 
-#other-devotionals .next-devotional .next-devotional-details h3 {
+#other-devotionals .next-devotional .next-devotional-details .name {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 5px;
+  text-align: right;
+}
+
+#other-devotionals .next-devotional .next-devotional-details .name h3 {
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 300px;
   line-height: 30px;
+  max-width: 300px;
   white-space: nowrap;
 }
 
 @media (max-width: 1000px) {
-  #other-devotionals .next-devotional .next-devotional-details h3 {
+  #other-devotionals .next-devotional .next-devotional-details .name h3 {
+    display: none;
+  }
+}
+
+#other-devotionals .next-devotional .next-devotional-details .name p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#other-devotionals .next-devotional .next-devotional-details .name p span {
+  opacity: 0.5;
+}
+
+@media (max-width: 1000px) {
+  #other-devotionals .next-devotional .next-devotional-details .name {
     display: none;
   }
 }
@@ -2294,6 +2482,7 @@ body.sidebar-opened .copyright {
 #other-devotionals .next-devotional .next-devotional-details img {
   width: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
+  border-radius: 5px;
 }
 
 #devotional-subscription {

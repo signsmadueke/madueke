@@ -29,7 +29,14 @@
                 <a href="devotional">
                     <h3>Speaking things into Existence</h3>
                 </a>
-                <a href="devotional">
+                <div class="devotional-author">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <p><span>by </span>Prayer M. Madueke</p>
+                </div>
+                <div class="devotional-date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+                <a href="devotional" class="description">
                     <p>With this divine provided phone number, your situation can change. You can be prosperous, and great restoration can take place in your life because all things are possible to him that believes. Those who have this key have a unique language because they know that all things are possible. If you can only believe and say out what you believe, you will get to your Promised Land. No matter how sinful you are, you can still believe Christ, repent, and forsake your sins. Faith has a voice. So, when you believe, do not stop at that level. Say what you believe and stand on that even unto death. Faith brings man and God in unity in the realm of the spirit and makes impossibilities possible in a moment. Some of the powers to fight against to have this phone numbers of God are unbelief to God's word, fear, doubt, and discouragement. One good thing about this particular phone number is that it does not discriminate. Even sinners at times use this number to get to God. Many sinners out of coverage area have used this number and it worked for them. Here you can find 25 prayer points to guide you through your exercise of faith.</p>
                 </a>
                 <a href="devotional" class="btn btn-spaced">
@@ -50,7 +57,14 @@
                 <a href="devotional">
                     <h3>Speaking things into Existence</h3>
                 </a>
-                <a href="devotional">
+                <div class="devotional-author">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <p><span>by </span>Prayer M. Madueke</p>
+                </div>
+                <div class="devotional-date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+                <a href="devotional" class="description">
                     <p>With this divine provided phone number, your situation can change. You can be prosperous, and great restoration can take place in your life because all things are possible to him that believes. Those who have this key have a unique language because they know that all things are possible. If you can only believe and say out what you believe, you will get to your Promised Land. No matter how sinful you are, you can still believe Christ, repent, and forsake your sins. Faith has a voice. So, when you believe, do not stop at that level. Say what you believe and stand on that even unto death. Faith brings man and God in unity in the realm of the spirit and makes impossibilities possible in a moment. Some of the powers to fight against to have this phone numbers of God are unbelief to God's word, fear, doubt, and discouragement. One good thing about this particular phone number is that it does not discriminate. Even sinners at times use this number to get to God. Many sinners out of coverage area have used this number and it worked for them. Here you can find 25 prayer points to guide you through your exercise of faith.</p>
                 </a>
                 <a href="devotional" class="btn btn-spaced">
@@ -70,7 +84,14 @@
                 <a href="devotional">
                     <h3>Speaking things into Existence</h3>
                 </a>
-                <a href="devotional">
+                <div class="devotional-author">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <p><span>by </span>Prayer M. Madueke</p>
+                </div>
+                <div class="devotional-date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+                <a href="devotional" class="description">
                     <p>With this divine provided phone number, your situation can change. You can be prosperous, and great restoration can take place in your life because all things are possible to him that believes. Those who have this key have a unique language because they know that all things are possible. If you can only believe and say out what you believe, you will get to your Promised Land. No matter how sinful you are, you can still believe Christ, repent, and forsake your sins. Faith has a voice. So, when you believe, do not stop at that level. Say what you believe and stand on that even unto death. Faith brings man and God in unity in the realm of the spirit and makes impossibilities possible in a moment. Some of the powers to fight against to have this phone numbers of God are unbelief to God's word, fear, doubt, and discouragement. One good thing about this particular phone number is that it does not discriminate. Even sinners at times use this number to get to God. Many sinners out of coverage area have used this number and it worked for them. Here you can find 25 prayer points to guide you through your exercise of faith.</p>
                 </a>
                 <a href="devotional" class="btn btn-spaced">
@@ -90,7 +111,14 @@
                 <a href="devotional">
                     <h3>Speaking things into Existence</h3>
                 </a>
-                <a href="devotional">
+                <div class="devotional-author">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <p><span>by </span>Prayer M. Madueke</p>
+                </div>
+                <div class="devotional-date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+                <a href="devotional" class="description">
                     <p>With this divine provided phone number, your situation can change. You can be prosperous, and great restoration can take place in your life because all things are possible to him that believes. Those who have this key have a unique language because they know that all things are possible. If you can only believe and say out what you believe, you will get to your Promised Land. No matter how sinful you are, you can still believe Christ, repent, and forsake your sins. Faith has a voice. So, when you believe, do not stop at that level. Say what you believe and stand on that even unto death. Faith brings man and God in unity in the realm of the spirit and makes impossibilities possible in a moment. Some of the powers to fight against to have this phone numbers of God are unbelief to God's word, fear, doubt, and discouragement. One good thing about this particular phone number is that it does not discriminate. Even sinners at times use this number to get to God. Many sinners out of coverage area have used this number and it worked for them. Here you can find 25 prayer points to guide you through your exercise of faith.</p>
                 </a>
                 <a href="devotional" class="btn btn-spaced">
@@ -110,7 +138,14 @@
                 <a href="devotional">
                     <h3>Speaking things into Existence</h3>
                 </a>
-                <a href="devotional">
+                <div class="devotional-author">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <p><span>by </span>Prayer M. Madueke</p>
+                </div>
+                <div class="devotional-date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+                <a href="devotional" class="description">
                     <p>With this divine provided phone number, your situation can change. You can be prosperous, and great restoration can take place in your life because all things are possible to him that believes. Those who have this key have a unique language because they know that all things are possible. If you can only believe and say out what you believe, you will get to your Promised Land. No matter how sinful you are, you can still believe Christ, repent, and forsake your sins. Faith has a voice. So, when you believe, do not stop at that level. Say what you believe and stand on that even unto death. Faith brings man and God in unity in the realm of the spirit and makes impossibilities possible in a moment. Some of the powers to fight against to have this phone numbers of God are unbelief to God's word, fear, doubt, and discouragement. One good thing about this particular phone number is that it does not discriminate. Even sinners at times use this number to get to God. Many sinners out of coverage area have used this number and it worked for them. Here you can find 25 prayer points to guide you through your exercise of faith.</p>
                 </a>
                 <a href="devotional" class="btn btn-spaced">
@@ -130,7 +165,14 @@
                 <a href="devotional">
                     <h3>Speaking things into Existence</h3>
                 </a>
-                <a href="devotional">
+                <div class="devotional-author">
+                    <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
+                    <p><span>by </span>Prayer M. Madueke</p>
+                </div>
+                <div class="devotional-date">
+                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                </div>
+                <a href="devotional" class="description">
                     <p>With this divine provided phone number, your situation can change. You can be prosperous, and great restoration can take place in your life because all things are possible to him that believes. Those who have this key have a unique language because they know that all things are possible. If you can only believe and say out what you believe, you will get to your Promised Land. No matter how sinful you are, you can still believe Christ, repent, and forsake your sins. Faith has a voice. So, when you believe, do not stop at that level. Say what you believe and stand on that even unto death. Faith brings man and God in unity in the realm of the spirit and makes impossibilities possible in a moment. Some of the powers to fight against to have this phone numbers of God are unbelief to God's word, fear, doubt, and discouragement. One good thing about this particular phone number is that it does not discriminate. Even sinners at times use this number to get to God. Many sinners out of coverage area have used this number and it worked for them. Here you can find 25 prayer points to guide you through your exercise of faith.</p>
                 </a>
                 <a href="devotional" class="btn btn-spaced">
