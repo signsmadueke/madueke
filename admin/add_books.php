@@ -44,7 +44,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="author">Book Author</label>
-                                                <input type="text" id="author" class="form-control" value="Prayer Madueke" name="bookAuthor">
+                                                <input type="text" id="author" class="form-control" value="Prayer M. Madueke" name="bookAuthor">
                                             </div>
                                         </div>
                                     </div>

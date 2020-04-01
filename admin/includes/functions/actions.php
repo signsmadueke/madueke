@@ -195,3 +195,108 @@ function editBook($post, $id) {
     }
     return $errors;
 }
+
+function AddDevotion($post) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($devTitle)) {
+        $title = sanitize($devTitle);
+    } else {
+        $errors[] = "Devotion Title is empty" . "<br>";
+    }
+
+    if (!empty($devSubtitle)) {
+        $subtitle = sanitize($devSubtitle);
+    } else {
+        $errors[] = "Devotion Subtitle is empty" . "<br>";
+    }
+
+    if (!empty($devAuthor)) {
+        $author = sanitize($devAuthor);
+    } else {
+        $errors[] = "Devotion Author is empty" . "<br>";
+    }
+
+    if (!empty($devBody)) {
+        $body = sanitize($devBody);
+    } else {
+        $errors[] = "Devotion Message is empty" . "<br>";
+    }
+
+
+    if (isset($_FILES['devImage'])) {
+        $image = sanitize($_FILES['devImage']['name']);
+        $tmp_image = $_FILES['devImage']['tmp_name'];
+        move_uploaded_file($tmp_image, "../../devotion_images/$image");
+    } else {
+        $errors[] = "Devotion Image is empty" . "<br>";
+    }
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "INSERT INTO devotions (devotion_title, devotion_subtitle, devotion_author, devotion_body, devotion_image, datePosted) VALUES ('$title', '$subtitle', '$author', '$body', '$image', '$datePosted')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function editDevotion($post, $id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($devTitle)) {
+        $title = sanitize($devTitle);
+    } else {
+        $errors[] = "Devotion Title is empty" . "<br>";
+    }
+
+    if (!empty($devSubtitle)) {
+        $subtitle = sanitize($devSubtitle);
+    } else {
+        $errors[] = "Devotion Subtitle is empty" . "<br>";
+    }
+
+    if (!empty($devAuthor)) {
+        $author = sanitize($devAuthor);
+    } else {
+        $errors[] = "Devotion Author is empty" . "<br>";
+    }
+
+    if (!empty($devBody)) {
+        $body = sanitize($devBody);
+    } else {
+        $errors[] = "Devotion Message is empty" . "<br>";
+    }
+
+
+    if (isset($_FILES['devImage'])) {
+        $image = sanitize($_FILES['devImage']['name']);
+        $tmp_image = $_FILES['devImage']['tmp_name'];
+        move_uploaded_file($tmp_image, "../../devotion_images/$image");
+    } else {
+        $errors[] = "Devotion Image is empty" . "<br>";
+    }
+
+    $datePosted = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "UPDATE devotions SET devotion_title = '$title', devotion_subtitle = '$subtitle', devotion_author = '$author', devotion_image = '$image', devotion_body = '$body', datePosted = '$datePosted' WHERE devotion_id = $id";
+        $result = validateQuery($sql);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return $errors;
+}

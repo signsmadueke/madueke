@@ -7,30 +7,31 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 (function () {
-    document.getElementById("edit_book").addEventListener("submit", function (e) {
+    document.getElementById("devotion_form").addEventListener("submit", function (e) {
         e.preventDefault();
         document.getElementById("submit_btn").innerHTML = "<i class='icon-refresh'></i> Please Wait";
         document.getElementById("submit_btn").className = "btn btn-warning";
-        let book_id = document.getElementById("bookId").dataset.id;
+
         let form_inputs = new FormData(e.currentTarget);
 
-        fetch(`polling/php/edit?book_id=${book_id}`, {
+        fetch(`polling/php/add_devotion`, {
             method : "post",
             body : form_inputs
-        }).then(r => r).then(r => r.text()).then(r => {
-            if (r === "true") {
-                toastr.success("Book edited successfully!","Book Edited");
-                document.getElementById("submit_btn").innerHTML = "<i class='icon-note'></i> Edit Book";
+        }).then(d => d).then(d => d.text()).then(d => {
+            if (d === "true") {
+                toastr.success("New Devotion Added!","Devotion Added");
+                document.getElementById("devotion_form").reset();
+                document.getElementById("submit_btn").innerHTML = "<i class='icon-notebook'></i> Add Book";
                 document.getElementById("submit_btn").className = "btn btn-success";
             } else {
-                let errors = JSON.parse(r);
+                let errors = JSON.parse(d);
                 toastr.error(errors,"Operation Failed");
                 document.getElementById("submit_btn").innerHTML = "<i class='ft-alert-circle'></i> Try Again";
                 document.getElementById("submit_btn").className = "btn btn-danger";
             }
         }).catch((e) => {
             toastr.error("Please Check your connection and try again!","Network Error");
-            document.getElementById("submit_btn").innerHTML = "<i class='icon-note'></i> Edit Book";
+            document.getElementById("submit_btn").innerHTML = "<i class='icon-notebook'></i> Add Book";
             document.getElementById("submit_btn").className = "btn btn-success";
         });
     });

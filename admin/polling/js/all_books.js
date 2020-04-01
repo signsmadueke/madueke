@@ -33,7 +33,7 @@ const delete_book = element => {
     if (confirm_delete) {
         toastr.info("Please Wait!", "Processing");
         let bookId = element.dataset.id;
-        fetch(`polling/php/delete_book?book_id=${bookId}`).then(d => d).then(d => d.text()).then(d => {
+        fetch(`polling/php/delete?book_id=${bookId}`).then(d => d).then(d => d.text()).then(d => {
             if (d === "true") {
                 toastr.success("Book have been deleted successfully!", "Book Deleted");
             } else if (d === "false") {

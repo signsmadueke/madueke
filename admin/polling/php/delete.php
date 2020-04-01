@@ -12,3 +12,14 @@ if (isset($_GET['book_id'])) {
         echo "false";
     }
 }
+
+if (isset($_GET['devotion_id'])) {
+    $delete_id = $_GET['devotion_id'];
+
+    $result = delete("devotions", "devotion_id", $delete_id);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+}

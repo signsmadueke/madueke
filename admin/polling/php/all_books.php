@@ -10,11 +10,6 @@ if ($result) {
 
 ?>
 
-<?php
-    if (!empty($books)) {
-        foreach ($books as $book) {
-            extract($book); ?>
-
             <section id="hover-effects" class="card">
                 <div class="card-body">
                     <div class="card-block my-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
@@ -38,6 +33,7 @@ if ($result) {
                                                     </p>
                                                 </figcaption>
                                             </figure>
+                                            <h5 class="text-center text-light rounded p-1" style="width: 95%; background: linear-gradient(to right, darkred, #0e0d11);"><b><?= $book_title; ?></b></h5>
                                         </div>
 
                                     <?php } } ?>
@@ -47,7 +43,5 @@ if ($result) {
                     </div>
                 </div>
             </section>
-
-<?php } } ?>
 
 <script src="polling/js/all_books.js"></script>

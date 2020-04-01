@@ -6,13 +6,22 @@
         <div class="sidebar-content">
           <div class="nav-container">
             <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
-              <li class="nav-item"><a href="index"><i class="icon-home"></i><span data-i18n="" class="menu-title">Dashboard</span></a>
-              </li>
+              <li class="nav-item"><a href="index"><i class="icon-home"></i><span data-i18n="" class="menu-title">Dashboard</span></a></li>
+
                 <li class="has-sub nav-item"><a href="#"><i class="icon-book-open"></i><span data-i18n="" class="menu-title">Books</span></a>
                     <ul class="menu-content" style="">
                         <li class=""><a href="books" class="menu-item">All Books</a>
                         </li>
                         <li class=""><a href="add_books" class="menu-item">Add Book</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-sub nav-item"><a href="#"><i class="icon-notebook"></i><span data-i18n="" class="menu-title">Devotionals</span></a>
+                    <ul class="menu-content" style="">
+                        <li class=""><a href="devotionals" class="menu-item">All Devotionals</a>
+                        </li>
+                        <li class=""><a href="add_devotions" class="menu-item">Add Devotion</a>
                         </li>
                     </ul>
                 </li>
