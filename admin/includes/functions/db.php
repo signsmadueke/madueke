@@ -73,16 +73,10 @@ function decrypt($dbpass, $password) {
     }
 }
 
-function cookieDecryption($dbpass) {
-    $initialEncryption = md5($dbpass);
-    $finalEncryption = sha1($initialEncryption);
+function fetchAll($table, $preferredOrder = null, $limit1 = null, $limit2 = null) {
 
-}
-
-function fetchAll($table, $preferredOrder, $limit1 = null, $limit2 = null) {
-
-    if (!is_null($limit1) && !is_null($limit2)) {
-        $sql = "SELECT * FROM $table ORDER BY $preferredOrder DESC LIMIT $limit1, $limit2";
+    if (!is_null($limit1) && !is_null($limit2) && !is_null($preferredOrder)) {
+        $sql = "SELECT * FROM $table ORDER BY $preferredOrder ASC LIMIT $limit1, $limit2";
     } else {
         $sql = "SELECT * FROM $table";
     }
