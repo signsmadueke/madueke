@@ -107,11 +107,11 @@
                                 </div>
 
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-danger mr-1" id="reset">
+                                    <button type="reset" class="btn btn-primary mr-1">
                                         <i class="icon-reload"></i> Reset
                                     </button>
                                     <button type="submit" class="btn btn-success" name="submit" id="submit_btn">
-                                        <i class="icon-note" id="sub_btn"></i> Save
+                                        <i class="icon-notebook"></i> Add Book
                                     </button>
                                 </div>
                             </form>
