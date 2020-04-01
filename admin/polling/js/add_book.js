@@ -18,7 +18,7 @@
            body : form_inputs
        }).then(r => r).then(r => r.text()).then(r => {
           if (r === "true") {
-              toastr.success("New Book Added!","Operation Successful");
+              toastr.success("New Book Added!","Book Added");
               document.getElementById("book_form").reset();
               document.getElementById("submit_btn").innerHTML = "<i class='icon-notebook'></i> Add Book";
               document.getElementById("submit_btn").className = "btn btn-success";
@@ -29,7 +29,7 @@
               document.getElementById("submit_btn").className = "btn btn-danger";
           }
        }).catch((e) => {
-           toastr.error("Please Check your connection and try again!","Operation Failed");
+           toastr.error("Please Check your connection and try again!","Network Error");
            document.getElementById("submit_btn").innerHTML = "<i class='icon-notebook'></i> Add Book";
            document.getElementById("submit_btn").className = "btn btn-success";
        });

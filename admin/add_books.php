@@ -97,7 +97,7 @@
 
                                     <div class="form-group">
                                         <label>Select Book Image</label>
-                                        <input type="file" class="form-control-file" id="" name="bookImage">
+                                        <input type="file" class="form-control-file" id="" name="bookImage" required>
                                     </div>
 
                                     <div class="form-group">

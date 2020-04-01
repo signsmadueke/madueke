@@ -22,16 +22,6 @@ function redirect_to($url)
     exit();
 }
 
-function check_duplicate($table, $field, $sanitized_value)
-{
-    $sql = "SELECT * FROM $table WHERE $field = '$sanitized_value'";
-    $result = executeQuery($sql);
-
-    if ($result) {
-        return true;
-    }return false;
-}
-
 function get_image_path(Array $file = null,  &$err)
 {
     $err_flag = false;

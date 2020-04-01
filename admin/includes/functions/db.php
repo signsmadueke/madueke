@@ -135,7 +135,7 @@ function getTotal($table, $optional = null, $optionValue = null) {
 
 function blockUrlHackers() {
     if (!isset($_SESSION['adminId'])) {
-        redirect_to("auth_login");
+        redirect_to("login");
     }
 }
 
@@ -181,4 +181,27 @@ function selectInterestedProps() {
         return $result;
     }
     return false;
+}
+
+function check_duplicate($table, $field, $sanitized_value)
+{
+    $sql = "SELECT * FROM $table WHERE $field = '$sanitized_value'";
+    $result = executeQuery($sql);
+
+    if ($result) {
+        return true;
+    }return false;
+}
+
+// For Deleting Actions..
+function delete($table, $field, $id) {
+
+    $sql = $sql = "DELETE FROM `$table` WHERE $field = $id";
+    $result = validateQuery($sql);
+
+    if ($result) {
+        return true;
+    } else {
+        return false;
+    }
 }
