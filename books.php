@@ -1,4 +1,11 @@
 <?php
+    require_once "admin/includes/functions/config.php";
+
+    $result = fetchAllDesc("books", "book_id", 0, 6);
+    if ($result) {
+        $books = $result;
+    }
+
     $title = 'Books';
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
@@ -11,98 +18,11 @@
     <h1 class="section-title">Books</h1>
     
     <div id="books">
-        <div class="book" style="background-image: url(assets/images/books/book1.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
 
-        <div class="book" style="background-image: url(assets/images/books/book2.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book3.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book4.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book1.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book1.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book2.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book3.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book4.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
-
-        <div class="book" style="background-image: url(assets/images/books/book1.jpg)">
-            <a href="book"><h3 class="book-name">35 Special Dangerous Decrees</h3></a>
-            <a href="book"><p class="book-description">This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p></a>
-            <a href="book" class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <img class="svg" src="assets/images/icons/arrow-right.svg">
-            </a>
-        </div>
     </div>
 </section>
 
+<script src="inc/polling/js/all_books.js"></script>
 <?php
     require_once 'inc/footer.php';
 ?>

@@ -34,7 +34,7 @@ if ($result) {
                                                     </p>
                                                 </figcaption>
                                             </figure>
-                                            <h5 class="text-center text-light rounded p-1" style="width: 95%; background: linear-gradient(to right, darkred, #0e0d11);"><b><?= $book_title; ?></b></h5>
+                                            <h5 class="text-center text-light rounded p-1" style="width: 95%; background: linear-gradient(to right, saddlebrown, firebrick);"><b><?= $book_title; ?></b></h5>
                                         </div>
 
                                     <?php } } ?>

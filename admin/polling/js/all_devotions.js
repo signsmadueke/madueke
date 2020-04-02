@@ -15,7 +15,7 @@ let devotions = {};
             if (devotions.devotionsAvailable !== all_devotions) {
                 document.getElementById("all_devotions").innerHTML = all_devotions;
                 devotions.devotionsAvailable = all_devotions;
-                window.scrollTo(0, document.body.scrollHeight);
+                // window.scrollTo(0, document.body.scrollHeight);
             }
             setTimeout(devotions.getAllDevotions, 2000);
         }).catch((e) => {

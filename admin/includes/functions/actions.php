@@ -59,6 +59,8 @@ function AddBook($post) {
         $errors[] = "Book Title is empty" . "<br>";
     }
 
+    $title = str_replace("'", "</b>", $title);
+
     if (!empty($bookAuthor)) {
         $author = sanitize($bookAuthor);
     } else {
@@ -108,6 +110,8 @@ function AddBook($post) {
     } else {
         $errors[] = "Book Description is empty" . "<br>";
     }
+
+    $description = str_replace("'", "</b>", $description);
 
     $dateAdded = date("Y-m-d");
 
@@ -135,6 +139,8 @@ function editBook($post, $id) {
         $errors[] = "Book Title is empty" . "<br>";
     }
 
+    $title = str_replace("'", "</b>", $title);
+
     if (!empty($bookAuthor)) {
         $author = sanitize($bookAuthor);
     } else {
@@ -185,6 +191,8 @@ function editBook($post, $id) {
         $errors[] = "Book Description is empty" . "<br>";
     }
 
+    $description = str_replace("'", "</b>", $description);
+
     $date = date("Y-m-d");
 
     if (!$errors) {
@@ -210,11 +218,15 @@ function AddDevotion($post) {
         $errors[] = "Devotion Title is empty" . "<br>";
     }
 
+    $title = str_replace("'", "</b>", $title);
+
     if (!empty($devSubtitle)) {
         $subtitle = sanitize($devSubtitle);
     } else {
         $errors[] = "Devotion Subtitle is empty" . "<br>";
     }
+
+    $subtitle = str_replace("'", "</b>", $subtitle);
 
     if (!empty($devAuthor)) {
         $author = sanitize($devAuthor);
@@ -227,6 +239,8 @@ function AddDevotion($post) {
     } else {
         $errors[] = "Devotion Message is empty" . "<br>";
     }
+
+    $body = str_replace("'", "</b>", $body);
 
 
     if (isset($_FILES['devImage'])) {
@@ -263,11 +277,15 @@ function editDevotion($post, $id) {
         $errors[] = "Devotion Title is empty" . "<br>";
     }
 
+    $title = str_replace("'", "</b>", $title);
+
     if (!empty($devSubtitle)) {
         $subtitle = sanitize($devSubtitle);
     } else {
         $errors[] = "Devotion Subtitle is empty" . "<br>";
     }
+
+    $subtitle = str_replace("'", "</b>", $subtitle);
 
     if (!empty($devAuthor)) {
         $author = sanitize($devAuthor);
@@ -280,6 +298,8 @@ function editDevotion($post, $id) {
     } else {
         $errors[] = "Devotion Message is empty" . "<br>";
     }
+
+    $body = str_replace("'", "</b>", $subtitle);
 
 
     if (isset($_FILES['devImage'])) {
@@ -303,4 +323,52 @@ function editDevotion($post, $id) {
         }
     }
     return $errors;
+}
+
+function AddAdmin($post) {
+    extract($post);
+    $errors = [];
+
+
+    if (!empty($name)) {
+        $name = sanitize($name);
+    }else {
+        $errors[] = "Admin name is empty!"  . "<br>";
+    }
+
+
+    //Checking for email...
+    if (!empty($email)) {
+        $tmpEmail = sanitize($email);
+
+        if ($tmpEmail) {
+            $mail = $tmpEmail;
+        } else {
+            $errors[] = "Invalid email address!"  . "<br>";
+        }
+    } else {
+        $errors[] = "Admin email address is empty!"  . "<br>";
+    }
+
+
+    //Checking for password...
+    if (!empty($password)) {
+        $tmp_password = sanitize($password);
+        $password = encrypt($tmp_password);
+    }else {
+        $errors[] = "Enter preferred password!"  . "<br>";
+    }
+
+    if (!$errors) {
+        $sql = "INSERT INTO admins (name, email, password) VALUES ('$name', '$mail', '$password')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
 }

@@ -51047,7 +51047,7 @@ ul.no-list-style {
 .lineArea1Shadow {
   -webkit-filter : drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
           filter : drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */
 }
 
@@ -51194,7 +51194,7 @@ ul.no-list-style {
 .lineChart.lineChartShadow {
   -webkit-filter : drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
           filter : drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                          for the spread property */
 }
 
@@ -51234,7 +51234,7 @@ ul.no-list-style {
 .donutShadow {
   -webkit-filter : drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
           filter : drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                              for the spread property */
 }
 
@@ -51266,7 +51266,7 @@ ul.no-list-style {
 .BarChartShadow {
   -webkit-filter : drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
           filter : drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */
 }
 
@@ -51359,7 +51359,7 @@ ul.no-list-style {
 .WidgetAreaChartshadow {
   -webkit-filter : drop-shadow(0px -5px 2px rgba(0, 0, 0, 0.2));
           filter : drop-shadow(0px -5px 2px rgba(0, 0, 0, 0.2));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */
 }
 
@@ -51412,7 +51412,7 @@ ul.no-list-style {
 .lineChart2Shadow {
   -webkit-filter : drop-shadow(0px 14px 4px rgba(0, 0, 0, 0.2));
           filter : drop-shadow(0px 14px 4px rgba(0, 0, 0, 0.2));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */
 }
 
@@ -51478,7 +51478,7 @@ ul.no-list-style {
 .lineArea6Shadow {
   -webkit-filter : drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.2));
           filter : drop-shadow(0px -8px 4px rgba(0, 0, 0, 0.2));
-  /* Same syntax as box-shadow, except 
+  /* Same syntax as box-shadow, except
                                                        for the spread property */
 }
 
