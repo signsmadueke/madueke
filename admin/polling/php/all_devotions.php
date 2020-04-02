@@ -1,6 +1,7 @@
 <?php
 
 require_once "../../includes/functions/config.php";
+blockUrlHackers();
 
 $result = fetchAll("devotions", "devotion_id", 0, 9);
 

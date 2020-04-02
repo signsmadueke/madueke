@@ -1,6 +1,6 @@
 <?php
     require_once "includes/functions/config.php";
-    //blockUrlHackers();
+    blockUrlHackers();
 
     $result = fetchAll("books", "book_id", 0, 9);
 

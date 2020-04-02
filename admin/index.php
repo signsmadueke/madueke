@@ -1,3 +1,12 @@
+<?php
+    require_once "includes/functions/config.php";
+    blockUrlHackers();
+
+    $totalBooks = getTotal("books");
+    $totalDevotions = getTotal("devotions");
+
+
+?>
 
 <?php require_once "includes/templates/header.php"; ?>
 
@@ -22,11 +31,11 @@
 				<div class="card-block pt-2 pb-0">
 					<div class="media">
 						<div class="media-body white text-left">
-							<h4 class="font-medium-5 card-title mb-0">$5789</h4>
-							<span class="grey darken-1">Total Visits</span>
+							<h4 class="font-medium-5 card-title mb-0"><?php if (isset($totalBooks)) : echo $totalBooks; endif; ?></h4>
+							<span class="grey darken-1">Total Books</span>
 						</div>
 						<div class="media-right text-right">
-							<i class="icon-cup font-large-1 primary"></i>
+							<i class="icon-book-open font-large-1 primary"></i>
 						</div>
 					</div>
 				</div>
@@ -41,11 +50,11 @@
 				<div class="card-block pt-2 pb-0">
 					<div class="media">
 						<div class="media-body white text-left">
-							<h4 class="font-medium-5 card-title mb-0">$4567</h4>
-							<span class="grey darken-1">Total Sales</span>
+							<h4 class="font-medium-5 card-title mb-0"><?php if (isset($totalDevotions)) : echo $totalDevotions; endif; ?></h4>
+							<span class="grey darken-1">Total Devotions</span>
 						</div>
 						<div class="media-right text-right">
-							<i class="icon-wallet font-large-1 warning"></i>
+							<i class="icon-notebook font-large-1 warning"></i>
 						</div>
 					</div>
 				</div>
@@ -61,11 +70,11 @@
 				<div class="card-block pt-2 pb-0">
 					<div class="media">
 						<div class="media-body white text-left">
-							<h4 class="font-medium-5 card-title mb-0">$9822</h4>
-							<span class="grey darken-1">Total Value</span>
+							<h4 class="font-medium-5 card-title mb-0">?</h4>
+							<span class="grey darken-1">Total Subscribers</span>
 						</div>
 						<div class="media-right text-right">
-							<i class="icon-basket-loaded font-large-1 success"></i>
+							<i class="icon-users font-large-1 success"></i>
 						</div>
 					</div>
 				</div>
@@ -79,21 +88,112 @@
 
 <!--Line with Area Chart 1 Starts-->
 <div class="row match-height">
-	<div class="col-xl-8 col-lg-12 col-12">
-		<div class="card">
-			<div class="card-header">
-        		<div class="card-title-wrap bar-success">
-					<h4 class="card-title">Product Valuation</h4>
-				</div>
-			</div>
-			<div class="card-body">
-				<div class="card-block">
-					<div id="line-chart" class="height-300 lineChart lineChartShadow">						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
+    <div class="col-12 col-md-8" id="recent-sales">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title-wrap bar-primary">
+                    <h4 class="card-title">Recent Uploads</h4>
+                </div>
+                <a class="heading-elements-toggle">
+                    <i class="la la-ellipsis-v font-medium-3"></i>
+                </a>
+            </div>
+            <div class="card-content mt-1">
+                <div class="table-responsive">
+                    <table class="table table-hover table-xl mb-0 text-center" id="recent-orders">
+                        <thead>
+                        <tr>
+                            <th class="border-top-0">Title</th>
+                            <th class="border-top-0">Author</th>
+                            <th class="border-top-0">Image</th>
+                            <th class="border-top-0">Date Posted</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-truncate">iPad</td>
+                            <td class="text-truncate">Jack</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                            </td>
+                            <td>
+                                <div class="box-shadow-2 mt-1">
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="20" aria-valuemax="100" style="width:75%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-truncate">$ 1190.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-truncate">OnePlus</td>
+                            <td class="text-truncate">Dolly</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                            </td>
+                            <td>
+                                <div class="box-shadow-2 mt-1">
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="20" aria-valuemax="100" style="width:70%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-truncate">$ 999.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-truncate">ZenPad</td>
+                            <td class="text-truncate">Sam</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
+                            </td>
+                            <td>
+                                <div class="box-shadow-2 mt-1">
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100" style="width:60%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-truncate">$ 1150.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-truncate">Pixel 2</td>
+                            <td class="text-truncate">John</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                            </td>
+                            <td>
+                                <div class="box-shadow-2 mt-1">
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="20" aria-valuemax="100" style="width:45%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-truncate">$ 1180.00</td>
+                        </tr>
+                        <tr>
+                            <td class="text-truncate">Pixel 2</td>
+                            <td class="text-truncate">John</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
+                            </td>
+                            <td>
+                                <div class="box-shadow-2 mt-1">
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="20" aria-valuemax="100" style="width:45%"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="text-truncate">$ 1180.00</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <div class="col-xl-4 col-lg-12 col-12">
     <div class="card">
       <div class="card-header">
@@ -163,154 +263,8 @@
 <!--Line with Area Chart 1 Ends-->
 
 <div class="row match-height">
-	<div class="col-xl-4 col-lg-12 col-12">
-		<div class="card">
-			<div class="card-header">
-        		<div class="card-title-wrap bar-warning">
-					<h4 class="card-title">Sales</h4>
-				</div>
-			</div>
-			<div class="card-body">
-				<p class="font-medium-2 text-muted text-center pb-2">Last 12 Months Sales</p>
-				<div id="Stack-bar-chart" class="height-300 Stackbarchart mb-2">				
-				</div>
-			</div>
-		</div>
-	</div>
-  <div class="col-12 col-md-8" id="recent-sales">
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title-wrap bar-primary">
-          <h4 class="card-title">Recent Buyers</h4>
-        </div>
-        <a class="heading-elements-toggle">
-					<i class="la la-ellipsis-v font-medium-3"></i>
-				</a>
-      </div>
-      <div class="card-content mt-1">
-        <div class="table-responsive">
-          <table class="table table-hover table-xl mb-0" id="recent-orders">
-            <thead>
-              <tr>
-                <th class="border-top-0">Product</th>
-                <th class="border-top-0">Customers</th>
-                <th class="border-top-0">Categories</th>
-                <th class="border-top-0">Popularity</th>
-                <th class="border-top-0">Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-truncate">iPone X</td>
-                <td class="text-truncate">Jim</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                  	<div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="20" aria-valuemax="100" style="width:85%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 1200.00</td>
-              </tr>
-              <tr>
-                <td class="text-truncate">iPad</td>
-                <td class="text-truncate">Jack</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                    <div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="20" aria-valuemax="100" style="width:75%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 1190.00</td>
-              </tr>
-              <tr>
-                <td class="text-truncate">OnePlus</td>
-                <td class="text-truncate">Dolly</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                    <div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="70" aria-valuemin="20" aria-valuemax="100" style="width:70%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 999.00</td>
-              </tr>
-              <tr>
-                <td class="text-truncate">ZenPad</td>
-                <td class="text-truncate">Sam</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-success round mb-0" type="button">Tablet</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                    <div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100" style="width:60%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 1150.00</td>
-              </tr>
-              <tr>
-                <td class="text-truncate">Pixel 2</td>
-                <td class="text-truncate">John</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                    <div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="20" aria-valuemax="100" style="width:45%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 1180.00</td>
-              </tr>
-              <tr>
-                <td class="text-truncate">Pixel 2</td>
-                <td class="text-truncate">John</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                    <div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="20" aria-valuemax="100" style="width:45%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 1180.00</td>
-              </tr>
-              <tr>
-                <td class="text-truncate">Pixel 1</td>
-                <td class="text-truncate">Tony</td>
-                <td>
-                  <button class="btn btn-sm btn-outline-danger round mb-0" type="button">Mobile</button>
-                </td>
-                <td>
-                  <div class="box-shadow-2 mt-1">
-                    <div class="progress" style="height: 8px;">
-                    	<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="45" aria-valuemin="20" aria-valuemax="100" style="width:45%"></div>
-                    </div>
-                  </div>
-                </td>
-                <td class="text-truncate">$ 1080.00</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 </div>
 <div class="row match-height">
 	<div class="col-xl-6 col-lg-12">
@@ -322,7 +276,7 @@
 			</div>
 			<div class="card-body">
 
-				<p class="font-medium-2 text-muted text-center">Hobbies</p>
+				<p class="font-medium-2 text-muted text-center">Books & Devotions</p>
 				<div id="bar-chart" class="height-250 BarChartShadow BarChart">					
 				</div>
 
@@ -330,8 +284,8 @@
 					<div class="row">
 						<div class="col text-center">
 							<span class="gradient-pomegranate d-block rounded-circle mx-auto mb-2" style="width:10px; height:10px;"></span>
-							<span class="font-large-1 d-block mb-2">48</span>
-							<span>Sport</span>
+							<span class="font-large-1 d-block mb-2"><?php if (isset($totalBooks)) : echo $totalBooks; endif; ?></span>
+							<span>Books</span>
 						</div>
 						<div class="col text-center">
 							<span class="gradient-green-tea d-block rounded-circle mx-auto mb-2" style="width:10px; height:10px;"></span>

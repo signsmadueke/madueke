@@ -7,8 +7,8 @@ function adminLogin($post)
     $errors = [];
 
     //Checking for email...
-    if (!empty($mailAddress)) {
-        $tmpEmail = sanitize($mailAddress);
+    if (!empty($email)) {
+        $tmpEmail = sanitize($email);
 
         if ($tmpEmail) {
             $mail = $tmpEmail;
@@ -36,6 +36,10 @@ function adminLogin($post)
             $encryptedpassword = $result['password'];
             if (decrypt($encryptedpassword, $password)) {
                 $_SESSION['adminId'] = $result['admin_id'];
+                    if (isset($rememberMe)) {
+                        setcookie("admin_password", $password, time() + (86400 * 30), "/");
+                        setcookie("admin_email", $mail, time() + (86400 * 30), "/");
+                    }
                 return true;
             }
         }

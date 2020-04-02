@@ -1,15 +1,15 @@
 <?php
-require_once "includes/functions/config.php";
-//blockUrlHackers();
+    require_once "includes/functions/config.php";
+    blockUrlHackers();
 
-if (isset($_GET['devotion_id'])) {
-    $devotionId = $_GET['devotion_id'];
+    if (isset($_GET['devotion_id'])) {
+        $devotionId = $_GET['devotion_id'];
 
-    $result = where("devotions", "devotion_id", "$devotionId");
-    if ($result) {
-        $devotion_details = $result;
+        $result = where("devotions", "devotion_id", "$devotionId");
+        if ($result) {
+            $devotion_details = $result;
+        }
     }
-}
 
 ?>
 

@@ -1,6 +1,7 @@
 <?php
 
 require_once "../../includes/functions/config.php";
+blockUrlHackers();
 
 if (isset($_GET['book_id'])) {
     $delete_id = $_GET['book_id'];

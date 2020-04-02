@@ -1,6 +1,6 @@
 <?php
     require_once "includes/functions/config.php";
-    //blockUrlHackers();
+    blockUrlHackers();
 
 ?>
 

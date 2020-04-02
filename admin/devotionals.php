@@ -1,12 +1,12 @@
 <?php
-require_once "includes/functions/config.php";
-//blockUrlHackers();
+    require_once "includes/functions/config.php";
+    blockUrlHackers();
 
-$result = fetchAll("devotions", "devotion_id", 0, 9);
+    $result = fetchAll("devotions", "devotion_id", 0, 9);
 
-if ($result) {
-    $devotions = $result;
-}
+    if ($result) {
+        $devotions = $result;
+    }
 ?>
 <?php require_once "includes/templates/header.php"; ?>
 

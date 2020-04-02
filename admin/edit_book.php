@@ -1,15 +1,15 @@
 <?php
-require_once "includes/functions/config.php";
-//blockUrlHackers();
+    require_once "includes/functions/config.php";
+    blockUrlHackers();
 
-if (isset($_GET['book_id'])) {
-    $bookId = $_GET['book_id'];
+    if (isset($_GET['book_id'])) {
+        $bookId = $_GET['book_id'];
 
-    $result = where("books", "book_id", "$bookId");
-    if ($result) {
-        $book_details = $result;
+        $result = where("books", "book_id", "$bookId");
+        if ($result) {
+            $book_details = $result;
+        }
     }
-}
 
 ?>
 
