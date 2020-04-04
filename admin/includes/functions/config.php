@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-define("HOST", "localhost:3306");
-define("USER", "charisgo_madueke");
-define("PASSWORD", "Signtop@1");
-define("DBNAME", "charisgo_madueke");
+define("HOST", "localhost");
+define("USER", "root");
+define("PASSWORD", "");
+define("DBNAME", "madueke");
 
 $link = mysqli_connect(HOST, USER, PASSWORD, DBNAME);
 
