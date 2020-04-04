@@ -60,7 +60,7 @@ blockUrlHackers();
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="date">Date Added</label>
-                                                <input type="text" disabled id="date" value="<?= date("Y-m-d")?>" class="form-control" name="datePosted">
+                                                <input type="text" id="date" value="<?= date("Y-m-d")?>" class="form-control" name="datePosted">
                                             </div>
                                         </div>
                                     </div>
