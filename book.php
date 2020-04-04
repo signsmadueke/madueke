@@ -1,25 +1,28 @@
 <?php
     require_once "admin/includes/functions/config.php";
-    if (isset($_GET['bqi'])) {
-        $bookId = $_GET['bqi'];
+    if (isset($_GET['book'])) {
+        $bookName = $_GET['book'];
+        $book_link = ucwords(str_replace("-", " ", $bookName));
 
-        $result = where("books", "book_id", $bookId);
+        $result = whereBook("books", "book_title", "$book_link");
         if ($result) {
             $books = $result;
         }
 
-        $response = getOtherBooksAsc("books", "book_id", $bookId, "book_id", 1);
+        $response = getOtherBooksAsc("books", "book_title", $book_link, "book_id", 1);
         if ($response) {
             $otherbooks = $response;
         }
 
-        $response2 = getOtherBooksDesc("books", "book_id", $bookId, "book_id", 1);
+        $response2 = getOtherBooksDesc("books", "book_title", $book_link, "book_id", 1);
         if ($response2) {
             $otherbooksDesc = $response2;
         }
+    } else {
+        redirect_to("books");
     }
 
-    $title = '21/40 Nights of Decrees and Your Enemies Will Surrender';
+    $title = $book_link;
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
@@ -35,7 +38,7 @@
                 foreach ($books as $book) {
                     extract($book);
                     $book_title = str_replace("</b>", "'", $book_title);
-                    $book_description = str_replace("</b>", "'", $book_description) ?>
+                    $book_description = str_replace("</b>", "'", $book_description); ?>
 
                         <img class="book-image" src="admin/book_images/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
 
@@ -90,8 +93,10 @@
     <?php
         if (isset($otherbooks)) {
             foreach ($otherbooks as $otherbook) {
-                extract($otherbook); ?>
-                    <a href="book?bqi=<?= $book_id; ?>" class="prev-book">
+                extract($otherbook);
+                $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
+
+                    <a href="book?book=<?= $book_link; ?>" class="prev-book">
                         <div class="btn btn-spaced">
                             <img class="svg" src="assets/images/icons/arrow-left.svg">
                             <span>Previous Book</span>
@@ -107,8 +112,10 @@
     <?php
         if (isset($otherbooksDesc)) {
             foreach ($otherbooksDesc as $otherbookDesc) {
-                extract($otherbookDesc); ?>
-                    <a href="book?bqi=<?= $book_id; ?>" class="next-book">
+                extract($otherbookDesc);
+                $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
+
+                    <a href="book?book=<?= $book_link; ?>" class="next-book">
                         <div class="btn btn-spaced">
                             <span>Next Book</span>
                             <img class="svg" src="assets/images/icons/arrow-right.svg">

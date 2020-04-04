@@ -100,7 +100,7 @@ function AddBook($post) {
     if (isset($_FILES['bookImage'])) {
         $image = sanitize($_FILES['bookImage']['name']);
         $tmp_image = $_FILES['bookImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../book_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/books/book_images/$image");
     } else {
         $errors[] = "Book Image is empty" . "<br>";
     }
@@ -180,7 +180,7 @@ function editBook($post, $id) {
     if (isset($_FILES['bookImage'])) {
         $image = sanitize($_FILES['bookImage']['name']);
         $tmp_image = $_FILES['bookImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../book_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/books/book_images/$image");
     } else {
         $errors[] = "Book Image is empty" . "<br>";
     }
@@ -246,7 +246,7 @@ function AddDevotion($post) {
     if (isset($_FILES['devImage'])) {
         $image = sanitize($_FILES['devImage']['name']);
         $tmp_image = $_FILES['devImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../devotion_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/devotionals/book_images/$image");
     } else {
         $errors[] = "Devotion Image is empty" . "<br>";
     }
@@ -305,7 +305,7 @@ function editDevotion($post, $id) {
     if (isset($_FILES['devImage'])) {
         $image = sanitize($_FILES['devImage']['name']);
         $tmp_image = $_FILES['devImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../devotion_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/devotionals/book_images/$image");
     } else {
         $errors[] = "Devotion Image is empty" . "<br>";
     }

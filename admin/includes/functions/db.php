@@ -132,6 +132,21 @@ function where($table, $where, $whereValue, $limit = null) {
     }
 }
 
+function whereBook($table, $where, $whereValue, $limit = null) {
+    if (!is_null($limit)) {
+        $sql = "SELECT * FROM $table WHERE $where = $whereValue LIMIT $limit";
+    } else {
+        $sql = "SELECT * FROM $table WHERE $where = '$whereValue'";
+    }
+    $result = returnQuery($sql);
+
+    if ($result) {
+        return $result;
+    } else {
+        return false;
+    }
+}
+
 function getTotal($table, $optional = null, $optionValue = null) {
     if (!is_null($optional) && !is_null($optionValue)) {
         $sql = "SELECT * FROM $table WHERE $optional = $optionValue";
@@ -224,7 +239,7 @@ function delete($table, $field, $id) {
 
 function getOtherBooksAsc($table, $where, $value, $order, $limit) {
 
-    $sql = "SELECT * FROM $table WHERE $where <> $value ORDER BY $order ASC LIMIT $limit";
+    $sql = "SELECT * FROM $table WHERE $where <> '$value' ORDER BY $order ASC LIMIT $limit";
     $result = returnQuery($sql);
 
     if (mysqli_num_rows($result) > 0) {
@@ -236,7 +251,7 @@ function getOtherBooksAsc($table, $where, $value, $order, $limit) {
 
 function getOtherBooksDesc($table, $where, $value, $order, $limit) {
 
-    $sql = "SELECT * FROM $table WHERE $where <> $value ORDER BY $order DESC LIMIT $limit";
+    $sql = "SELECT * FROM $table WHERE $where <> '$value' ORDER BY $order DESC LIMIT $limit";
     $result = returnQuery($sql);
 
     if (mysqli_num_rows($result) > 0) {
