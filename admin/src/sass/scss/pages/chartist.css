@@ -1,0 +1,151 @@
+.ct-area {
+  stroke: none;
+  fill-opacity: 0.1;
+}
+
+.ct-grid {
+  stroke-dasharray: 0px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.ct-label {
+  font-size: 0.9rem;
+}
+
+.lineArea1 .ct-series.ct-series-a .ct-area {
+  fill: #09d8d5;
+}
+
+.lineArea1 .ct-series.ct-series-a .ct-line {
+  stroke-width: 5px;
+  stroke: #09d8d5;
+}
+
+.lineArea1 .ct-series.ct-series-a .ct-circle {
+  stroke-width: 5;
+  stroke: #fff;
+  fill: #09d8d5;
+}
+
+.lineArea1 .ct-series.ct-series-a .ct-circle-transperent {
+  fill: transparent;
+  stroke-width: 0;
+}
+
+.lineArea1Shadow {
+  -webkit-filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
+  /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+.lineArea2 .ct-point-circle {
+  stroke-width: 2px;
+  fill: white;
+}
+
+.lineArea2 .ct-line {
+  fill: none;
+  stroke-width: 1px;
+}
+
+.lineArea2 .ct-series.ct-series-a .ct-area {
+  fill: #FF9149 !important;
+  fill-opacity: 0.2;
+}
+
+.lineArea2 .ct-series.ct-series-a .ct-line {
+  stroke: #FF9149 !important;
+  stroke-width: 3px;
+}
+
+.lineArea2 .ct-series.ct-series-a .ct-circle {
+  fill: #FF9149 !important;
+  stroke-width: 5;
+  stroke: #fff !important;
+}
+
+.lineArea2 .ct-series.ct-series-a .ct-point-circle {
+  stroke: #31afb2;
+}
+
+.lineArea2 .ct-series.ct-series-b .ct-area {
+  fill: #1E9FF2 !important;
+  fill-opacity: 0.1;
+}
+
+.lineArea2 .ct-series.ct-series-b .ct-line {
+  stroke: #1E9FF2 !important;
+  stroke-width: 3px;
+}
+
+.lineArea2 .ct-series.ct-series-b .ct-circle {
+  fill: #1E9FF2 !important;
+  stroke-width: 5;
+  stroke: #fff;
+}
+
+.lineArea2 .ct-series.ct-series-b .ct-point-circle {
+  stroke: #ff8d60;
+}
+
+.lineArea3 .ct-series-a .ct-area {
+  fill: #FF4961;
+}
+
+.lineArea3 .ct-line {
+  stroke: #FF4961;
+  stroke-width: 3px;
+}
+
+.lineArea3 .ct-point {
+  stroke-width: 0px;
+}
+
+.lineArea3 .ct-circle {
+  fill: #FF4961;
+  stroke-width: 5;
+  stroke: #fff;
+}
+
+.lineChart1 .ct-line {
+  fill: none;
+  stroke-width: 3px;
+  stroke: none;
+}
+
+.lineChart1 .ct-point {
+  stroke-width: 0px;
+}
+
+.lineChart1Shadow {
+  -webkit-filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
+  /* Same syntax as box-shadow, except for the spread property */
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 25px 8px rgba(0, 0, 0, 0.3));
+  /* Same syntax as box-shadow, except for the spread property */
+}
+
+.lineChart1 .ct-series-a .ct-area {
+  fill-opacity: 1;
+  fill: url(#gradientChart) !important;
+}
+
+.lineChart1 .ct-line {
+  stroke-width: 0px;
+}
+
+.lineChart1 .ct-series-a .ct-point-circle {
+  fill: #a389d1;
+  stroke-width: 3;
+  stroke: rgba(186, 191, 199, 0.3);
+}
+
+.lineChart1 .ct-series-a .ct-point-circle-transperent {
+  fill: transparent;
+}
+/*# sourceMappingURL=chartist.css.map */

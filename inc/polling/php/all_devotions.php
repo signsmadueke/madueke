@@ -17,7 +17,7 @@ if (!empty($devotionals)) {
         $devotion_title = str_replace("</b>", "'", $devotion_title);
         $devotion_body = str_replace("</b>", "'", $devotion_body) ?>
 
-        <div class="devotional">
+        <div class="devotional animate reveal">
             <a href="devotional?dqi=<?= $devotion_id; ?>" class="image">
                 <img src="admin/devotion_images/<?= $devotion_image; ?>" alt="">
                 <img class="shadow" src="assets/images/devotionals/devotional1.jpg" alt="">

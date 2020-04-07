@@ -1,0 +1,168 @@
+.ct-grid {
+  stroke-dasharray: 0px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.ct-labels .ct-label {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.lineChart .ct-series.ct-series-a .ct-line {
+  stroke: url(#linear1) !important;
+  stroke-width: 5px;
+}
+
+.lineChart .ct-series.ct-series-a .ct-circle {
+  fill: url(#linear1) !important;
+  stroke-width: 5;
+  stroke: #fff;
+}
+
+.lineChart .ct-series.ct-series-a .ct-circle-transperent {
+  fill: transparent;
+  stroke-width: 0;
+}
+
+.lineChart .ct-labels .ct-label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.lineChart.lineChartShadow {
+  -webkit-filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 20px 6px rgba(0, 0, 0, 0.3));
+  /* Same syntax as box-shadow, except 
+                                                         for the spread property */
+}
+
+.Stackbarchart .ct-series-a .ct-bar {
+  stroke: url(#StackbarGradient);
+}
+
+.Stackbarchart .ct-series-a .ct-slice-bar {
+  fill: url(#StackbarGradient);
+  stroke: transparent;
+}
+
+.donut .ct-done .ct-slice-donut-solid {
+  fill: url(#donutGradient1);
+}
+
+.donut .ct-progress .ct-slice-donut-solid {
+  fill: url(#donutGradient2);
+}
+
+.donut .ct-outstanding .ct-slice-donut-solid {
+  fill: url(#donutGradient3);
+}
+
+.donut .ct-label {
+  text-anchor: middle;
+  alignment-baseline: middle;
+  font-size: 20px;
+  fill: #868e96;
+}
+
+.donut .ct-chart-donut .ct-series {
+  stroke: #fff;
+  stroke-width: 3px;
+}
+
+.donutShadow {
+  -webkit-filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
+  /* Same syntax as box-shadow, except 
+                                             for the spread property */
+}
+
+.BarChart .ct-series-a .ct-bar:nth-of-type(5n+1),
+.BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+1) {
+  stroke: url(#gradient7);
+  fill: url(#gradient7);
+}
+
+.BarChart .ct-series-a .ct-bar:nth-of-type(5n+2),
+.BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+2) {
+  stroke: url(#gradient5);
+  fill: url(#gradient5);
+}
+
+.BarChart .ct-series-a .ct-bar:nth-of-type(5n+3),
+.BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+3) {
+  stroke: url(#gradient6);
+  fill: url(#gradient6);
+}
+
+.BarChart .ct-series-a .ct-bar:nth-of-type(5n+4),
+.BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+4) {
+  stroke: url(#gradient4);
+  fill: url(#gradient4);
+}
+
+.BarChart .ct-series-a .ct-bar:nth-of-type(5n+5),
+.BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+5) {
+  stroke: url(#gradient8);
+  fill: url(#gradient8);
+}
+
+.BarChartShadow {
+  -webkit-filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.3));
+  /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+.lineChartWidget .ct-series-a .ct-area {
+  fill-opacity: 1;
+}
+
+.lineChartWidget .ct-series-a .ct-line {
+  stroke-width: 0px;
+}
+
+.lineChartWidget .ct-series-a .ct-point-circle {
+  fill: #fff;
+  stroke-width: 10;
+  stroke: #8249e8;
+}
+
+.lineChartWidget .ct-series-a .ct-point-circle-transperent {
+  fill: transparent;
+}
+
+.lineChartWidget .ct-series-a .ct-target-line {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 4px;
+}
+
+.WidgetlineChart .ct-series-a .ct-area {
+  fill: url(#wGradient) !important;
+}
+
+.WidgetlineChart .ct-series-a .ct-point-circle {
+  stroke: #8249e8;
+}
+
+.WidgetlineChart1 .ct-series-a .ct-area {
+  fill: url(#wGradient1) !important;
+}
+
+.WidgetlineChart1 .ct-series-a .ct-point-circle {
+  stroke: #fa5b4c;
+}
+
+.ct-target-line {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 4px;
+}
+
+.WidgetlineChart2 .ct-series-a .ct-area {
+  fill: url(#wGradient2) !important;
+}
+
+.WidgetlineChart2 .ct-series-a .ct-point-circle {
+  stroke: #19667d;
+}
+/*# sourceMappingURL=dashboard-ecommerce.css.map */

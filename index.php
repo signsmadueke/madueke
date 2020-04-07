@@ -32,7 +32,7 @@
                     extract($book);
                     $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
 
-                        <div class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                        <div class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                             <a href="book?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
                             <a href="book?book=<?= $book_link; ?>"><p class="book-description"><?= $book_description; ?></p></a>
                             <a href="book?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">

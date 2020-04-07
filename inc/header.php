@@ -33,7 +33,7 @@
 <body class="container <?php echo $extraBodyClasses; ?>">
 <section id="navigation">
     <div id="logo">
-        <a href="index">
+        <a href="/">
             <div class="logo-icon">
                 <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
             </div>
@@ -49,7 +49,7 @@
     <nav>
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a href="index">Home</a>
+                <a href="/">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
                 <a href="books">Books</a>
@@ -76,7 +76,7 @@
 <section id="sidebar">
     <section id="navigation">
         <div id="logo">
-            <a href="index">
+            <a href="/">
                 <div class="logo-icon">
                     <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
                 </div>
@@ -101,7 +101,7 @@
     <nav>
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a href="index">Home</a>
+                <a href="/">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
                 <a href="books">Books</a>
