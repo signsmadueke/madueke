@@ -2349,6 +2349,11 @@ body.sidebar-opened .copyright {
     -ms-grid-columns: none;
         grid-template-columns: none;
   }
+  #devotional-title form .form-inputs {
+    grid-auto-flow: row;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
 }
 
 #all-devotionals {

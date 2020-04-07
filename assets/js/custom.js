@@ -44,6 +44,13 @@ $(".modal .close").click(function () {
     $body.toggleClass("modal-opened");
 });
 
+$(".modal-overlay").click(function () {
+    var $body = $('body');
+    var $modal = $('.modal');
+    $modal.toggleClass("hide");
+    $body.toggleClass("modal-opened");
+});
+
 var animate = new WOW({
     boxClass: 'animate',
     animateClass: 'animated',

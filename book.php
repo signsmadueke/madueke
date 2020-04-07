@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="form-bottom">
-                    <input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <input type="submit" value="Download Now" data-loading-text="Working..." name="subscribe" id="mc-embedded-subscribe" class="button">
                     
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
