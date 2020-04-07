@@ -18,7 +18,8 @@ if (!empty($devotionals)) {
         $devotion_body = str_replace("</b>", "'", $devotion_body);
         $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
 
-        <div class="devotional">
+
+        <div class="devotional animate reveal">
             <a href="devotional?devotion=<?= $devotion_link; ?>" class="image">
                 <img src="assets/images/devotionals/<?= $devotion_image; ?>" alt="">
                 <img class="shadow" src="assets/images/devotionals/devotional1.jpg" alt="">

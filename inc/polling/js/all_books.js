@@ -7,7 +7,6 @@ let books = {};
             if (books.booksAvailable !== all_books) {
                 document.getElementById("books").innerHTML = all_books;
                 books.booksAvailable = all_books;
-                window.scrollTo(0, document.body.scrollHeight);
             }
             setTimeout(books.getAllBooks, 2000);
         }).catch((e) => {

@@ -1,0 +1,67 @@
+.form-group.issue .help-block, .form-group.issue .help-inline {
+  color: theme-color("warning");
+}
+
+.form-group.issue input, .form-group.issue select, .form-group.issue textarea {
+  color: theme-color("warning");
+  border-color: theme-color("warning");
+}
+
+.form-group.issue input:focus, .form-group.issue select:focus, .form-group.issue textarea:focus {
+  border-color: #CE2605;
+  -webkit-box-shadow: 0 0 6px #FCA08E;
+  box-shadow: 0 0 6px #FCA08E;
+}
+
+.form-group.issue .input-prepend .add-on, .form-group.issue .input-append .add-on {
+  color: theme-color("warning");
+  background-color: #FED2C9;
+  border-color: theme-color("warning");
+}
+
+.form-group.error .help-block, .form-group.error .help-inline {
+  color: theme-color("danger");
+}
+
+.form-group.error input, .form-group.error select, .form-group.error textarea {
+  color: theme-color("danger");
+  border-color: theme-color("danger");
+}
+
+.form-group.error input:focus, .form-group.error select:focus, .form-group.error textarea:focus {
+  border-color: #B41323;
+  -webkit-box-shadow: 0 0 6px #F38C96;
+  box-shadow: 0 0 6px #F38C96;
+}
+
+.form-group.error .input-prepend .add-on, .form-group.error .input-append .add-on {
+  color: theme-color("danger");
+  background-color: #FACACF;
+  border-color: theme-color("danger");
+}
+
+.form-group.validate .help-block, .form-group.validate .help-inline {
+  color: theme-color("success");
+}
+
+.form-group.validate input, .form-group.validate select, .form-group.validate textarea {
+  color: theme-color("success");
+  border-color: theme-color("success");
+}
+
+.form-group.validate input:focus, .form-group.validate select:focus, .form-group.validate textarea:focus {
+  border-color: #34C5A1;
+  -webkit-box-shadow: 0 0 6px #78DCC3;
+  box-shadow: 0 0 6px #78DCC3;
+}
+
+.form-group.validate .input-prepend .add-on, .form-group.validate .input-append .add-on {
+  color: theme-color("success");
+  background-color: #DDF6F0;
+  border-color: theme-color("success");
+}
+
+.form-group .help-block ul {
+  padding-left: 1.5rem;
+}
+/*# sourceMappingURL=form-validation.css.map */

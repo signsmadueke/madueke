@@ -1,0 +1,18 @@
+.faq .accordion .card {
+  border-bottom: 1px solid theme-color("secondary");
+  border-radius: 0;
+}
+
+.faq .accordion .card a {
+  color: theme-color("info");
+  cursor: pointer;
+}
+
+.faq .accordion .card i {
+  color: theme-color("danger");
+}
+
+.faq .accordion .card:last-child {
+  border-bottom: none;
+}
+/*# sourceMappingURL=faq.css.map */

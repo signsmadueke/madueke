@@ -1,0 +1,68 @@
+.main-content .color-palette .color-group li {
+  list-style-type: none;
+}
+
+.main-content .color-palette .color-group li.main-color {
+  border-bottom: 4px solid #fafafa;
+}
+
+.main-content .color-palette .color-group li.color {
+  padding: 10px 15px 11px;
+  margin: 0;
+}
+
+.main-content .color-palette .color-group li.color.main-color .name {
+  display: block;
+  margin-bottom: 53px;
+  font-size: 2rem;
+}
+
+.main-content .color-palette .color-group li.color .hex {
+  float: right;
+  text-transform: uppercase;
+  display: block;
+}
+
+.main-content .color-palette .color-group:last-child li.main-color {
+  border-bottom: 4px solid #fafafa;
+}
+
+.main-content .color-palette .color-group:last-child li.color {
+  padding: 10px 15px 11px;
+  margin: 0;
+}
+
+.main-content .color-palette .color-group:last-child li.color.main-color .name {
+  display: block;
+  margin-bottom: 53px;
+  font-size: 2rem;
+}
+
+.main-content .color-palette .color-group:last-child li.color .hex {
+  float: right;
+  text-transform: uppercase;
+  display: block;
+}
+
+.main-content .color-palette .light-strong span {
+  color: #fff;
+}
+
+.main-content .color-palette .dark span {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.main-content .color-palette span {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-content .color-palette span.light-strong {
+  color: #fff;
+}
+
+.main-content .color-palette span.dark {
+  color: rgba(0, 0, 0, 0.87);
+}
+/*# sourceMappingURL=demo.css.map */

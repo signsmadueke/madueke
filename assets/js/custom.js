@@ -30,6 +30,31 @@ $(document).keypress(function(e) {
     } 
 });
 
+$("#download-btn").click(function () {
+    var $body = $('body');
+    var $modal = $('.modal');
+    $modal.toggleClass("hide");
+    $body.toggleClass("modal-opened");
+});
+
+$(".modal .close").click(function () {
+    var $body = $('body');
+    var $modal = $('.modal');
+    $modal.toggleClass("hide");
+    $body.toggleClass("modal-opened");
+});
+
+var animate = new WOW({
+    boxClass: 'animate',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    scrollContainer: null,
+    resetAnimation: true,
+});
+
+animate.init();
+
     // $('#books').owlCarousel({
     //     loop: true,
     //     nav: true,
@@ -224,3 +249,4 @@ jQuery('img.svg').each(function () {
     }, 'xml');
 
 });
+
