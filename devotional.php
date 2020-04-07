@@ -72,7 +72,7 @@
                             <span>Previous Devotionals</span>
                         </div>
                         <div class="prev-devotional-details">
-                            <img src="assets/images/devotionals/devotional1.jpg" alt="">
+                            <img src="assets/images/devotionals/<?= $devotion_image?>" alt="">
                             <div class="name">
                                 <h3><?= $devotion_title; ?></h3>
                                 <div class="date">
@@ -101,7 +101,7 @@
                                 <h3><?= $devotion_title; ?></h3>
                                 <p><span>Posted on </span><?= $datePosted; ?></p>
                             </div>
-                            <img src="assets/images/devotionals/devotional1.jpg" alt="">
+                            <img src="assets/images/devotionals/<?= $devotion_image?>" alt="">
                         </div>
                     </a>
     <?php } } ?>
