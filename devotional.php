@@ -1,20 +1,24 @@
 <?php
     require_once "admin/includes/functions/config.php";
 
-    if (isset($_GET['dqi'])) {
-        $devotionId = $_GET['dqi'];
+    if (isset($_GET['devotion'])) {
+        $devotionTitle = $_GET['devotion'];
+        $devotion_link = ucwords(str_replace("-", " ", $devotionTitle));
 
-        $result = where("devotions", "devotion_id", $devotionId);
+        $result = whereQuote("devotions", "devotion_title", "$devotion_link");
         if ($result) {
             $devotions = $result;
+        } else {
+            echo "false";
+            var_dump($result);
         }
 
-        $response = getOtherBooksAsc("devotions", "devotion_id", $devotionId, "devotion_id", 1);
+        $response = getOtherBooksAsc("devotions", "devotion_title", $devotion_link, "devotion_id", 1);
         if ($response) {
             $otherdevotions = $response;
         }
 
-        $response2 = getOtherBooksDesc("devotions", "devotion_id", $devotionId, "devotion_id", 1);
+        $response2 = getOtherBooksDesc("devotions", "devotion_title", $devotion_link, "devotion_id", 1);
         if ($response2) {
             $otherdevotionsDesc = $response2;
         }
@@ -36,7 +40,7 @@
             $devotion_body = str_replace("</b>", "'", $devotion_body); ?>
 
                 <section id="devotional-header">
-                    <img src="admin/devotion_images/<?= $devotion_image; ?>" alt="Devotion Image">
+                    <img src="admin/devotion_images/<?= $devotion_subimage; ?>" alt="Devotion Image">
                     <img class="shadow" src="assets/images/devotionals/devotional1-lg.jpg" alt="">
                 </section>
 
@@ -59,8 +63,10 @@
     <?php
         if (!empty($otherdevotionsDesc)) {
             foreach ($otherdevotionsDesc as $otherdevotion) {
-                extract($otherdevotion); ?>
-                    <a href="devotional?dqi=<?= $devotion_id; ?>" class="prev-devotional">
+                extract($otherdevotion);
+                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
+
+                    <a href="devotional?devotion=<?= $devotion_link; ?>" class="prev-devotional">
                         <div class="btn btn-spaced">
                             <img class="svg" src="assets/images/icons/arrow-left.svg">
                             <span>Previous Devotionals</span>
@@ -68,9 +74,9 @@
                         <div class="prev-devotional-details">
                             <img src="assets/images/devotionals/devotional1.jpg" alt="">
                             <div class="name">
-                                <h3>Speaking things into Existence</h3>
+                                <h3><?= $devotion_title; ?></h3>
                                 <div class="date">
-                                    <p><span>Posted on </span>Monday, March 31, 2020</p>
+                                    <p><span>Posted on </span><?= $datePosted; ?></p>
                                 </div>
                             </div>
                         </div>
@@ -82,16 +88,18 @@
     <?php
         if (!empty($otherdevotions)) {
             foreach ($otherdevotions as $otherdevotionA) {
-                extract($otherdevotionA); ?>
-                    <a href="devotional?dqi=<?= $devotion_id; ?>" class="next-devotional">
+                extract($otherdevotionA);
+                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
+
+                    <a href="devotional?devotion=<?= $devotion_link; ?>" class="next-devotional">
                         <div class="btn btn-spaced">
                             <span>Next Devotionals</span>
                             <img class="svg" src="assets/images/icons/arrow-right.svg">
                         </div>
                         <div class="next-devotional-details">
                             <div class="name">
-                                <h3>Speaking things into Existence</h3>
-                                <p><span>Posted on </span>Monday, March 31, 2020</p>
+                                <h3><?= $devotion_title; ?></h3>
+                                <p><span>Posted on </span><?= $datePosted; ?></p>
                             </div>
                             <img src="assets/images/devotionals/devotional1.jpg" alt="">
                         </div>

@@ -54,12 +54,16 @@ function AddBook($post) {
     $errors = [];
 
     if (!empty($bookTitle)) {
-        $title = sanitize($bookTitle);
+        $tmp_title = sanitize($bookTitle);
+        if (!check_duplicate("books", "book_title", $tmp_title)) {
+            $tmp_title2 = $tmp_title;
+            $title = str_replace("'", "</b>", $tmp_title2);
+        } else {
+            $errors[] = "This book already exists" . "<br>";
+        }
     } else {
         $errors[] = "Book Title is empty" . "<br>";
     }
-
-    $title = str_replace("'", "</b>", $title);
 
     if (!empty($bookAuthor)) {
         $author = sanitize($bookAuthor);
@@ -100,18 +104,18 @@ function AddBook($post) {
     if (isset($_FILES['bookImage'])) {
         $image = sanitize($_FILES['bookImage']['name']);
         $tmp_image = $_FILES['bookImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../../assets/images/books/book_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/books/$image");
     } else {
         $errors[] = "Book Image is empty" . "<br>";
     }
 
     if (!empty($bookDescription)) {
-        $description = sanitize_body($bookDescription);
+        $tmp_description = sanitize_body($bookDescription);
+        $description = str_replace("'", "</b>", $tmp_description);
     } else {
         $errors[] = "Book Description is empty" . "<br>";
     }
 
-    $description = str_replace("'", "</b>", $description);
 
     $dateAdded = date("Y-m-d");
 
@@ -135,11 +139,10 @@ function editBook($post, $id) {
 
     if (!empty($bookTitle)) {
         $title = sanitize($bookTitle);
+        $title = str_replace("'", "</b>", $title);
     } else {
         $errors[] = "Book Title is empty" . "<br>";
     }
-
-    $title = str_replace("'", "</b>", $title);
 
     if (!empty($bookAuthor)) {
         $author = sanitize($bookAuthor);
@@ -180,18 +183,17 @@ function editBook($post, $id) {
     if (isset($_FILES['bookImage'])) {
         $image = sanitize($_FILES['bookImage']['name']);
         $tmp_image = $_FILES['bookImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../../assets/images/books/book_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/books/$image");
     } else {
         $errors[] = "Book Image is empty" . "<br>";
     }
 
     if (!empty($bookDescription)) {
         $description = sanitize_body($bookDescription);
+        $description = str_replace("'", "</b>", $description);
     } else {
         $errors[] = "Book Description is empty" . "<br>";
     }
-
-    $description = str_replace("'", "</b>", $description);
 
     $date = date("Y-m-d");
 
@@ -213,20 +215,24 @@ function AddDevotion($post) {
     $errors = [];
 
     if (!empty($devTitle)) {
-        $title = sanitize($devTitle);
+        $tmp_title = sanitize($devTitle);
+        if (!check_duplicate("devotions", "devotion_title", $tmp_title)) {
+            $title = $tmp_title;
+            $title = str_replace("'", "</b>", $title);
+        } else {
+            $errors[] = "This devotion already exists" . "<br>";
+        }
     } else {
         $errors[] = "Devotion Title is empty" . "<br>";
     }
 
-    $title = str_replace("'", "</b>", $title);
-
     if (!empty($devSubtitle)) {
         $subtitle = sanitize($devSubtitle);
+        $subtitle = str_replace("'", "</b>", $subtitle);
+
     } else {
         $errors[] = "Devotion Subtitle is empty" . "<br>";
     }
-
-    $subtitle = str_replace("'", "</b>", $subtitle);
 
     if (!empty($devAuthor)) {
         $author = sanitize($devAuthor);
@@ -236,25 +242,32 @@ function AddDevotion($post) {
 
     if (!empty($devBody)) {
         $body = sanitize($devBody);
+        $body = str_replace("'", "</b>", $body);
+
     } else {
         $errors[] = "Devotion Message is empty" . "<br>";
     }
 
-    $body = str_replace("'", "</b>", $body);
-
-
     if (isset($_FILES['devImage'])) {
         $image = sanitize($_FILES['devImage']['name']);
         $tmp_image = $_FILES['devImage']['tmp_name'];
-        move_uploaded_file($tmp_image, "../../../assets/images/devotionals/book_images/$image");
+        move_uploaded_file($tmp_image, "../../../assets/images/devotionals/$image");
     } else {
         $errors[] = "Devotion Image is empty" . "<br>";
+    }
+
+    if (isset($_FILES['devImageTwo'])) {
+        $imageTwo = sanitize($_FILES['devImageTwo']['name']);
+        $tmp_imageTwo = $_FILES['devImageTwo']['tmp_name'];
+        move_uploaded_file($tmp_imageTwo, "../../../assets/images/devotionals/$imageTwo");
+    } else {
+        $errors[] = "Devotion Sub-Image is empty" . "<br>";
     }
 
     $datePosted = date("Y-m-d");
 
     if (!$errors) {
-        $sql = "INSERT INTO devotions (devotion_title, devotion_subtitle, devotion_author, devotion_body, devotion_image, datePosted) VALUES ('$title', '$subtitle', '$author', '$body', '$image', '$datePosted')";
+        $sql = "INSERT INTO devotions (devotion_title, devotion_subtitle, devotion_author, devotion_body, devotion_image, devotion_subimage, datePosted) VALUES ('$title', '$subtitle', '$author', '$body', '$image', '$imageTwo', '$datePosted')";
 
         $result = validateQuery($sql);
         if ($result) {
