@@ -4,7 +4,7 @@
         $bookName = $_GET['book'];
         $book_link = ucwords(str_replace("-", " ", $bookName));
 
-        $result = whereBook("books", "book_title", "$book_link");
+        $result = whereQuote("books", "book_title", "$book_link");
         if ($result) {
             $books = $result;
         }

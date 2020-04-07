@@ -132,7 +132,7 @@ function where($table, $where, $whereValue, $limit = null) {
     }
 }
 
-function whereBook($table, $where, $whereValue, $limit = null) {
+function whereQuote($table, $where, $whereValue, $limit = null) {
     if (!is_null($limit)) {
         $sql = "SELECT * FROM $table WHERE $where = $whereValue LIMIT $limit";
     } else {
