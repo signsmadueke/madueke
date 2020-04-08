@@ -68,12 +68,12 @@ require_once 'inc/header.php';
                             <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
                         </a>
 
-                        <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
+                        <!-- <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
                             <div class="name">
                                 <span>Ebook</span>
                             </div>
                             <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 

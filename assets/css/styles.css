@@ -2137,6 +2137,32 @@ body.sidebar-opened .copyright {
   color: #7f0000 !important;
 }
 
+@media (max-width: 768px) {
+  #mc-embedded-subscribe-form label {
+    font-size: 14px !important;
+    line-height: 14px;
+  }
+  #mc-embedded-subscribe-form input {
+    padding: 15px !important;
+  }
+  #mc-embedded-subscribe-form input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form input::placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form h1 {
+    font-size: 25px !important;
+    line-height: 30px;
+  }
+}
+
 #download-book-modal .form {
   display: -ms-grid;
   display: grid;

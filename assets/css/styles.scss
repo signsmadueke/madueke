@@ -1892,6 +1892,26 @@ body.sidebar-opened {
 			}
 		}
 	}
+
+	@media (max-width: 768px) {
+		label {
+			font-size: 14px !important;
+			line-height: 14px;
+		}
+
+		input {
+			padding: 15px !important;
+
+			&::placeholder {
+				font-size: 14px !important;
+			}
+		}
+
+		h1 {
+			font-size: 25px !important;
+			line-height: 30px;
+		}
+	}
 }
 
 #download-book-modal {
