@@ -379,3 +379,154 @@ function AddAdmin($post) {
         return $errors;
     }
 }
+
+
+function AddFreeBook($post) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($bookTitle)) {
+        $tmp_title = sanitize($bookTitle);
+        if (!check_duplicate("books", "book_title", $tmp_title)) {
+            $tmp_title2 = $tmp_title;
+            $title = str_replace("'", "</b>", $tmp_title2);
+        } else {
+            $errors[] = "This book already exists" . "<br>";
+        }
+    } else {
+        $errors[] = "Book Title is empty" . "<br>";
+    }
+
+    if (!empty($bookAuthor)) {
+        $author = sanitize($bookAuthor);
+    } else {
+        $errors[] = "Book Author is empty" . "<br>";
+    }
+
+    if (!empty($bookPages)) {
+        $pages = sanitize($bookPages);
+    } else {
+        $errors[] = "Book Total Page is empty" . "<br>";
+    }
+
+    if (!empty($bookIsbn)) {
+        $isbn = sanitize($bookIsbn);
+    } else {
+        $errors[] = "Book Isbn is empty" . "<br>";
+    }
+
+    if (!empty($bookKindlePrice)) {
+        $kindle = sanitize($bookKindlePrice);
+    } else {
+        $errors[] = "Book kindle Price is empty" . "<br>";
+    }
+
+    if (!empty($bookPaperbackPrice)) {
+        $paperback = sanitize($bookPaperbackPrice);
+    } else {
+        $errors[] = "Book Paperback Price is empty" . "<br>";
+    }
+
+    if (isset($_FILES['bookImage'])) {
+        $image = sanitize($_FILES['bookImage']['name']);
+        $tmp_image = $_FILES['bookImage']['tmp_name'];
+        move_uploaded_file($tmp_image, "../../../assets/images/books/$image");
+    } else {
+        $errors[] = "Book Image is empty" . "<br>";
+    }
+
+    if (!empty($bookDescription)) {
+        $tmp_description = sanitize_body($bookDescription);
+        $description = str_replace("'", "</b>", $tmp_description);
+    } else {
+        $errors[] = "Book Description is empty" . "<br>";
+    }
+
+
+    $dateAdded = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "INSERT INTO freebooks (book_title, book_author, book_image, book_description, total_book_page, book_isbn, book_kindle_price, book_paperback_price, date_added) VALUES ('$title', '$author', '$image', '$description', '$pages', '$isbn', '$kindle', '$paperback', '$dateAdded')";
+
+        $result = validateQuery($sql);
+        if ($result) {
+            return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
+        }
+    } else {
+        return $errors;
+    }
+}
+
+function editFreeBook($post, $id) {
+    extract($post);
+    $errors = [];
+
+    if (!empty($bookTitle)) {
+        $title = sanitize($bookTitle);
+        $title = str_replace("'", "</b>", $title);
+    } else {
+        $errors[] = "Book Title is empty" . "<br>";
+    }
+
+    if (!empty($bookAuthor)) {
+        $author = sanitize($bookAuthor);
+    } else {
+        $errors[] = "Book Author is empty" . "<br>";
+    }
+
+    if (!empty($bookPages)) {
+        $pages = sanitize($bookPages);
+    } else {
+        $errors[] = "Book Total Page is empty" . "<br>";
+    }
+
+    if (!empty($bookIsbn)) {
+        $isbn = sanitize($bookIsbn);
+    } else {
+        $errors[] = "Book Isbn is empty" . "<br>";
+    }
+
+    if (!empty($bookKindlePrice)) {
+        $kindle = sanitize($bookKindlePrice);
+    } else {
+        $errors[] = "Book kindle Price is empty" . "<br>";
+    }
+
+    if (!empty($bookPaperbackPrice)) {
+        $paperback = sanitize($bookPaperbackPrice);
+    } else {
+        $errors[] = "Book Paperback Price is empty" . "<br>";
+    }
+
+
+    if (isset($_FILES['bookImage'])) {
+        $image = sanitize($_FILES['bookImage']['name']);
+        $tmp_image = $_FILES['bookImage']['tmp_name'];
+        move_uploaded_file($tmp_image, "../../../assets/images/books/$image");
+    } else {
+        $errors[] = "Book Image is empty" . "<br>";
+    }
+
+    if (!empty($bookDescription)) {
+        $description = sanitize_body($bookDescription);
+        $description = str_replace("'", "</b>", $description);
+    } else {
+        $errors[] = "Book Description is empty" . "<br>";
+    }
+
+    $date = date("Y-m-d");
+
+    if (!$errors) {
+        $sql = "UPDATE freebooks SET book_title = '$title', book_author = '$author', book_image = '$image', book_description = '$description', total_book_page = '$pages', book_isbn = '$isbn', book_kindle_price = '$kindle', book_paperback_price = '$paperback', date_added = '$date' WHERE book_id = $id";
+        $result = validateQuery($sql);
+
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    return $errors;
+}

@@ -12,7 +12,7 @@
                     <ul class="menu-content" style="">
                         <li class=""><a href="books" class="menu-item">All Books</a></li>
                         <li class=""><a href="add_books" class="menu-item">Add Book</a></li>
-                        <li class=""><a href="add_free_book" class="menu-item">All Free Book</a></li>
+                        <li class=""><a href="all_free_book" class="menu-item">All Free Book</a></li>
                         <li class=""><a href="add_free_book" class="menu-item">Add Free Book</a></li>
                     </ul>
                 </li>
