@@ -54,7 +54,8 @@
             if (!empty($books)) {
                 foreach ($books as $book) {
                     extract($book);
-                    $book_link = strtolower(str_replace(" ", "-", $book_title)); 
+                    $book_link = strtolower(str_replace(" ", "-", $book_title));
+                    $book_link = str_replace("'", "", $book_link);
                     $htmltoplaintext = strip_tags($book_description);
         ?>
 
