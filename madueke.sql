@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2020 at 05:25 PM
+-- Generation Time: Apr 08, 2020 at 11:54 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -68,10 +68,9 @@ CREATE TABLE `books` (
 --
 
 INSERT INTO `books` (`book_id`, `book_title`, `book_author`, `book_image`, `book_description`, `total_book_page`, `book_isbn`, `book_kindle_price`, `book_paperback_price`, `book_measurement`, `date_added`) VALUES
-(16, 'Dangerous Decress', 'Prayer Madueke', 'book2.jpg', 'This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 ', 23, '978-9780720940', '232', '232', '323', '2001-04-20'),
+(16, 'Dangerous Decress', 'Prayer Madueke', 'book2.jpg', 'This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 ', 232, '978-9780720940', '232', '232', '323', '2020-04-04'),
 (17, 'Breaking Evil Yokes', 'Prayer Madueke', 'book4.jpg', 'This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 ', 23, '978-9780720940', '456', '456', '345', '2001-04-20'),
 (53, 'Prayer Retreat', 'Prayer M. Madueke', 'book3.jpg', 'Faith is one of Godâ€™s phone number and the key that unlocks the door of heavenâ€™s resources. Faith that believes the word of God without doubting c', 332, '323', '343', '433', '434', '2020-04-02'),
-(54, 'Breaking Evil Yokes', 'Prayer M. Madueke', 'book4.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi delectus, doloremque ex facere impedit ipsa iste laborum laudantium libero odio p', 456, '978-9780720940', '345', '234', '234', '2020-04-02'),
 (55, '21/40 Nights of Decrees and Your Enemies Will Surrender', 'Prayer M. Madueke', 'book1.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi delectus, doloremque ex facere impedit ipsa iste laborum laudantium libero odio p', 345, '978-9780720940', '234', '234', '234', '2020-04-02'),
 (56, 'The Joy of The Lord', 'Prayer M. Madueke', 'book3.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi delectus, doloremque ex facere impedit ipsa iste laborum laudantium libero odio p', 345, '234', '345', '234', '345', '2020-04-02');
 
@@ -88,6 +87,7 @@ CREATE TABLE `devotions` (
   `devotion_author` varchar(150) NOT NULL,
   `devotion_body` varchar(150) NOT NULL,
   `devotion_image` varchar(150) NOT NULL,
+  `devotion_subimage` varchar(150) NOT NULL,
   `datePosted` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -95,12 +95,10 @@ CREATE TABLE `devotions` (
 -- Dumping data for table `devotions`
 --
 
-INSERT INTO `devotions` (`devotion_id`, `devotion_title`, `devotion_subtitle`, `devotion_author`, `devotion_body`, `devotion_image`, `datePosted`) VALUES
-(1, 'Speaking things into Existence', 'The Word of Faith', 'Prayer M. Madueke', 'Faith is one of God&rsquo;s phone number and the key that unlocks the door of heaven&rsquo;s resources. Faith that believes the word of God without do', 'devotional1.jpg', '2020-04-02'),
-(3, 'Speaking things into Existence', 'The Word of Faith', 'Prayer M. Madueke', 'Faith is one of God&rsquo;s phone number and the key that unlocks the door of heaven&rsquo;s resources. Faith that believes the word of God without do', 'devotional1.jpg', '2020-04-02'),
-(5, 'Speaking things into Existence', 'The Word of Faith', 'Prayer M. Madueke', 'God</b>s energy is the best', 'devotional1.jpg', '2020-04-02'),
-(6, 'Speaking things into Existence', 'The Word of Faith', 'Prayer M. Madueke', 'God is, isnnndk', 'devotional1.jpg', '2020-04-02'),
-(7, 'Speaking things into Existence', 'God</b>s Kingdom Principle', 'Prayer M. Madueke', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi delectus, doloremque ex facere impedit ipsa iste laborum laudantium libero odio p', 'devotional1.jpg', '2020-04-02');
+INSERT INTO `devotions` (`devotion_id`, `devotion_title`, `devotion_subtitle`, `devotion_author`, `devotion_body`, `devotion_image`, `devotion_subimage`, `datePosted`) VALUES
+(8, 'Speaking things into Existence', 'The Word of Faith', 'Prayer M. Madueke', 'gh', 'devotional1.jpg', 'devotional1-lg.jpg', '2020-04-07'),
+(9, 'The Secrets Of The Kingdom', 'God</b>s Kingdom Principle', 'Prayer M. Madueke', 'cvbn', 'devotional1.jpg', 'devotional1-lg.jpg', '2020-04-07'),
+(10, 'aaa', 'vghn', 'Prayer M. Madueke', 'nm', 'devotional1.jpg', 'devotional1-lg.jpg', '2020-04-07');
 
 --
 -- Indexes for dumped tables
@@ -144,7 +142,7 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT for table `devotions`
 --
 ALTER TABLE `devotions`
-  MODIFY `devotion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `devotion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

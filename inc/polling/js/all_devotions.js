@@ -1,6 +1,7 @@
 let devotions = {};
 (function () {
     devotions.devotionsAvailable = "";
+    //document.getElementById("devotionals").innerHTML = "Put the logo";
 
     devotions.getAllDevotions = function () {
         fetch(`inc/polling/php/all_devotions`).then(all_devotions => all_devotions).then(all_devotions => all_devotions.text()).then(all_devotions => {

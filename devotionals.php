@@ -35,7 +35,7 @@
 <section id="all-devotionals">
 
     <div class="devotionals" id="devotionals">
-
+        Loading
     </div>
 
 </section>
