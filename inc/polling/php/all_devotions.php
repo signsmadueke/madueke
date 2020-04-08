@@ -37,7 +37,7 @@ if (!empty($devotionals)) {
                     <p><span>Posted on </span><?= $datePosted; ?></p>
                 </div>
                 <a href="devotional?devotion=<?= $devotion_link; ?>" class="description">
-                    <p><?= $devotion_body; ?></p>
+                    <div><?= $devotion_body; ?></div>
                 </a>
                 <a href="devotional?devotion=<?= $devotion_link; ?>" class="btn btn-spaced">
                     <span>Read Devotional</span>

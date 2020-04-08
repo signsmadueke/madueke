@@ -40,7 +40,7 @@ require_once 'inc/header.php';
             $book_title = str_replace("</b>", "'", $book_title);
             $book_description = str_replace("</b>", "'", $book_description); ?>
 
-            <img class="book-image animate reveal" src="admin/book_images/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+            <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
 
             <div class="details animate reveal">
                 <div class="description">
@@ -100,7 +100,7 @@ require_once 'inc/header.php';
                     <span>Previous Book</span>
                 </div>
                 <div class="prev-book-details">
-                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of Prayer Retreat">
+                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                     <h3><?= $book_title; ?></h3>
                 </div>
             </a>
@@ -121,7 +121,7 @@ require_once 'inc/header.php';
 
                 <div class="next-book-details">
                     <h3><?= $book_title; ?></h3>
-                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of Breaking Evil Yokes">
+                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                 </div>
             </a>
         <?php } } ?>
