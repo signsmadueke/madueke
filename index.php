@@ -60,9 +60,9 @@
         ?>
 
                         <div class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-                            <a href="book?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
-                            <a href="book?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
-                            <a href="book?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
+                            <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
+                            <a href="freebook?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
+                            <a href="freebook?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
                                 <span>View Details</span>
                                 <img class="svg" src="assets/images/icons/arrow-right.svg">
                             </a>
