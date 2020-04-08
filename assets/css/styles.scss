@@ -2089,6 +2089,11 @@ body.sidebar-opened {
 		form {
 			grid-auto-flow: row;
 			grid-template-columns: none;
+
+			.form-inputs {
+				grid-auto-flow: row;
+				grid-template-columns: none;
+			}
 		}
 	}
 }

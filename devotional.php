@@ -40,8 +40,8 @@
             $devotion_body = str_replace("</b>", "'", $devotion_body); ?>
 
                 <section id="devotional-header">
-                    <img src="admin/devotion_images/<?= $devotion_subimage; ?>" alt="Devotion Image">
-                    <img class="shadow" src="assets/images/devotionals/devotional1-lg.jpg" alt="">
+                    <img src="assets/images/devotionals/<?= $devotion_subimage; ?>" alt="<?= $devotion_title; ?>">
+                    <img class="shadow" src="assets/images/devotionals/<?= $devotion_subimage; ?>">
                 </section>
 
                 <section id="devotional-details">

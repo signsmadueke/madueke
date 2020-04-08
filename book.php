@@ -51,14 +51,14 @@ require_once 'inc/header.php';
                 <div class="channels animate reveal">
                     <p>Formats</p>
                     <div class="formats">
-                        <a href="https://www.amazon.com/dp/9780720944" class="format">
+                        <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="format">
                             <div class="name">
                                 <span>Paperback</span>
                             </div>
                             <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
                         </a>
 
-                        <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
+                        <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="format">
                             <div class="name">
                                 <span>Ebook</span>
                             </div>
@@ -73,10 +73,10 @@ require_once 'inc/header.php';
                         <p><?= $total_book_page; ?><span> pages</span></p>
                     </div>
 
-                    <div class="dimensions">
+                    <!-- <div class="dimensions">
                         <img src="assets/images/icons/dimension.svg">
                         <p title="Width, Spine & Height"><?= $book_measurement; ?><span> inches</span></p>
-                    </div>
+                    </div> -->
 
                     <div class="pages">
                         <p><span>ISBN: </span><?= $book_isbn; ?></p>
@@ -118,6 +118,7 @@ require_once 'inc/header.php';
                     <span>Next Book</span>
                     <img class="svg" src="assets/images/icons/arrow-right.svg">
                 </div>
+
                 <div class="next-book-details">
                     <h3><?= $book_title; ?></h3>
                     <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of Breaking Evil Yokes">
