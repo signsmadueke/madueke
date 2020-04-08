@@ -40,7 +40,7 @@ require_once 'inc/header.php';
             $book_title = str_replace("</b>", "'", $book_title);
             $book_description = str_replace("</b>", "'", $book_description); ?>
 
-            <img class="book-image animate reveal" src="admin/book_images/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+            <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
 
             <div class="details animate reveal">
                 <div class="description">

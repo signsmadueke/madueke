@@ -45,7 +45,7 @@ require_once 'inc/header.php';
             <div class="details animate reveal">
                 <div class="description">
                     <h1><?= $book_title; ?></h1>
-                    <p><?= $book_description; ?></p>
+                    <div><?= $book_description; ?></div>
                 </div>
 
                 <div class="channels animate reveal">

@@ -104,7 +104,7 @@ function AddBook($post) {
     }
 
     if (!empty($bookDescription)) {
-        $tmp_description = sanitize_body($bookDescription);
+        $tmp_description = $bookDescription;
         $description = str_replace("'", "</b>", $tmp_description);
     } else {
         $errors[] = "Book Description is empty" . "<br>";
@@ -235,7 +235,7 @@ function AddDevotion($post) {
     }
 
     if (!empty($devBody)) {
-        $body = sanitize($devBody);
+        $body = $devBody;
         $body = str_replace("'", "</b>", $body);
 
     } else {
