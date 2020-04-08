@@ -4,7 +4,7 @@ if (isset($_GET['book'])) {
     $bookName = $_GET['book'];
     $book_link = ucwords(str_replace("-", " ", $bookName));
 
-    $result = whereQuote("books", "book_title", "$book_link");
+    $result = whereQuote("freebooks", "book_title", "$book_link");
     if ($result) {
         $books = $result;
     }
@@ -83,10 +83,10 @@ require_once 'inc/header.php';
                         <p><?= $total_book_page; ?><span> pages</span></p>
                     </div>
 
-                    <div class="dimensions">
-                        <img src="assets/images/icons/dimension.svg">
-                        <p title="Width, Spine & Height"><?= $book_measurement; ?><span> inches</span></p>
-                    </div>
+<!--                    <div class="dimensions">-->
+<!--                        <img src="assets/images/icons/dimension.svg">-->
+<!--                        <p title="Width, Spine & Height">--><?//= $book_measurement; ?><!--<span> inches</span></p>-->
+<!--                    </div>-->
 
                     <div class="pages">
                         <p><span>ISBN: </span><?= $book_isbn; ?></p>

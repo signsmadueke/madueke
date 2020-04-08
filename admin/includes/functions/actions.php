@@ -119,8 +119,9 @@ function AddBook($post) {
         $result = validateQuery($sql);
         if ($result) {
             return true;
+        } else {
+            $errors[] = "Operation Failed! Try Again" . "<br>";
         }
-        $errors[] = "Operation Failed! Try Again" . "<br>";
     } else {
         return $errors;
     }

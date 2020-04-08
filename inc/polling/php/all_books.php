@@ -19,13 +19,14 @@ if ($result2) {
 if (!empty($freebooks)) {
     foreach ($freebooks as $freebook) {
         extract($freebook);
-        $book_title = str_replace("</b>", "'", $book_title);
+        $book_titledisplay = str_replace("</b>", "'", $book_title);
         $book_description = str_replace("</b>", "'", $book_description);
+        $book_link = strtolower(str_replace("'", "</b>", $book_title));
         $book_link = strtolower(str_replace(" ", "-", $book_title));
         $htmltoplaintext = strip_tags($book_description);
         ?>
         <div class="book animate reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-            <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
+            <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_titledisplay; ?></h3></a>
             <a href="freebook?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
             <a href="freebook?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
                 <span>View Details</span>
@@ -37,6 +38,7 @@ if (!empty($freebooks)) {
     <?php } } ?>
 
 
+<!--Normal bOOK-->
 <?php
 if (!empty($books)) {
     foreach ($books as $book) {
@@ -44,6 +46,7 @@ if (!empty($books)) {
         $book_title = str_replace("</b>", "'", $book_title);
         $book_description = str_replace("</b>", "'", $book_description);
         $book_link = strtolower(str_replace(" ", "-", $book_title));
+        $book_link = str_replace("'", "</b>", $book_link);
         $htmltoplaintext = strip_tags($book_description);
         ?>
         <div class="book animate reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
