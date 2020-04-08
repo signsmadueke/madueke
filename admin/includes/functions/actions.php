@@ -95,12 +95,6 @@ function AddBook($post) {
         $errors[] = "Book Paperback Price is empty" . "<br>";
     }
 
-    if (!empty($bookMeasurement)) {
-        $measurement = sanitize($bookMeasurement);
-    } else {
-        $errors[] = "Book Measurement is empty" . "<br>";
-    }
-
     if (isset($_FILES['bookImage'])) {
         $image = sanitize($_FILES['bookImage']['name']);
         $tmp_image = $_FILES['bookImage']['tmp_name'];
@@ -120,7 +114,7 @@ function AddBook($post) {
     $dateAdded = date("Y-m-d");
 
     if (!$errors) {
-        $sql = "INSERT INTO books (book_title, book_author, book_image, book_description, total_book_page, book_isbn, book_kindle_price, book_paperback_price, book_measurement, date_added) VALUES ('$title', '$author', '$image', '$description', '$pages', '$isbn', '$kindle', '$paperback', '$measurement', '$dateAdded')";
+        $sql = "INSERT INTO books (book_title, book_author, book_image, book_description, total_book_page, book_isbn, book_kindle_price, book_paperback_price, date_added) VALUES ('$title', '$author', '$image', '$description', '$pages', '$isbn', '$kindle', '$paperback', '$dateAdded')";
 
         $result = validateQuery($sql);
         if ($result) {

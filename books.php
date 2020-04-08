@@ -6,6 +6,7 @@
         $books = $result;
     }
 
+
     $title = 'Books';
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';

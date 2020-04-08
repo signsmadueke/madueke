@@ -80,14 +80,7 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="measurement">Book Measurement</label>
-                                                <input type="number" id="measurement" class="form-control" name="bookMeasurement">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="date">Date Added</label>
                                                 <input type="text" disabled id="date" value="<?= date("Y-m-d")?>" class="form-control" name="dateAdded">
