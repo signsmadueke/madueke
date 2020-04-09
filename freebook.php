@@ -3,6 +3,7 @@ require_once "admin/includes/functions/config.php";
 if (isset($_GET['book'])) {
     $bookName = $_GET['book'];
     $book_link = ucwords(str_replace("-", " ", $bookName));
+    // $book_link = str_replace("</b>", "'", $book_link);
 
     $result = whereQuote("freebooks", "book_title", "$book_link");
     if ($result) {

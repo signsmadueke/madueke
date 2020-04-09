@@ -2038,6 +2038,12 @@ body.sidebar-opened .copyright {
 }
 
 @media (max-width: 768px) {
+  .modal .modal-body .close {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
   .modal {
     padding: 30px;
   }
@@ -2157,10 +2163,6 @@ body.sidebar-opened .copyright {
   #mc-embedded-subscribe-form input::placeholder {
     font-size: 14px !important;
   }
-  #mc-embedded-subscribe-form h1 {
-    font-size: 25px !important;
-    line-height: 30px;
-  }
 }
 
 #download-book-modal .form {
@@ -2222,6 +2224,13 @@ body.sidebar-opened .copyright {
   font-size: 12px;
   line-height: 20px;
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  #download-book-modal h1 {
+    font-size: 25px !important;
+    line-height: 30px;
+  }
 }
 
 #contacts {
@@ -2983,7 +2992,7 @@ body.sidebar-opened .copyright {
   #all-books #books {
     -ms-grid-columns: (minmax(100%, 100%))[auto-fit] !important;
         grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
-    grid-gap: 15px !important;
+    grid-gap: 30px !important;
   }
   body.dark {
     background-image: url("../images/madueke/Prayer-M.-Madueke-sm.jpg") !important;
