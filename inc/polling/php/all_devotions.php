@@ -22,7 +22,7 @@ if (!empty($devotionals)) {
         ?>
 
 
-        <div class="devotional animate reveal">
+        <div class="devotional">
             <a href="devotional?devotion=<?= $devotion_link; ?>" class="image">
                 <img src="assets/images/devotionals/<?= $devotion_image; ?>" alt="">
                 <img class="shadow" src="assets/images/devotionals/<?= $devotion_image; ?>" alt="">

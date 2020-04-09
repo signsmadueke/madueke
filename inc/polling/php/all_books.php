@@ -25,7 +25,7 @@ if (!empty($freebooks)) {
         $book_link = strtolower(str_replace(" ", "-", $book_title));
         $htmltoplaintext = strip_tags($book_description);
         ?>
-        <div class="book animate reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+        <div class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
             <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_titledisplay; ?></h3></a>
             <a href="freebook?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
             <a href="freebook?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
@@ -49,7 +49,7 @@ if (!empty($books)) {
         $book_link = str_replace("'", "</b>", $book_link);
         $htmltoplaintext = strip_tags($book_description);
         ?>
-        <div class="book animate reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+        <div class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
             <a href="book?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
             <a href="book?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
             <a href="book?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
