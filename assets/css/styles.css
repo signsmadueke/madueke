@@ -180,6 +180,10 @@ body {
   margin: 0;
   font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 18px;
+  text-rendering: geometricPrecision;
+  margin: 0;
+  line-height: 35px;
+  font-weight: 400;
 }
 
 ul {
@@ -1418,8 +1422,8 @@ body.sidebar-opened .copyright {
 #bestsellers #books {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  -ms-grid-columns: (minmax(230px, 30.6%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 30.6%));
   grid-gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2034,6 +2038,12 @@ body.sidebar-opened .copyright {
 }
 
 @media (max-width: 768px) {
+  .modal .modal-body .close {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
   .modal {
     padding: 30px;
   }
@@ -2133,6 +2143,28 @@ body.sidebar-opened .copyright {
   color: #7f0000 !important;
 }
 
+@media (max-width: 768px) {
+  #mc-embedded-subscribe-form label {
+    font-size: 14px !important;
+    line-height: 14px;
+  }
+  #mc-embedded-subscribe-form input {
+    padding: 15px !important;
+  }
+  #mc-embedded-subscribe-form input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #mc-embedded-subscribe-form input::placeholder {
+    font-size: 14px !important;
+  }
+}
+
 #download-book-modal .form {
   display: -ms-grid;
   display: grid;
@@ -2192,6 +2224,13 @@ body.sidebar-opened .copyright {
   font-size: 12px;
   line-height: 20px;
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  #download-book-modal h1 {
+    font-size: 25px !important;
+    line-height: 30px;
+  }
 }
 
 #contacts {
@@ -2371,8 +2410,8 @@ body.sidebar-opened .copyright {
   grid-gap: 100px;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: (minmax(350px, 28.2%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 28.2%));
 }
 
 @media (max-width: 576px) {
@@ -2476,7 +2515,7 @@ body.sidebar-opened .copyright {
   opacity: 0.5;
 }
 
-.devotional .details .description p {
+.devotional .details .description div {
   font-size: 16px;
   line-height: 30px;
   overflow: hidden;
@@ -2486,7 +2525,7 @@ body.sidebar-opened .copyright {
   position: relative;
 }
 
-.devotional .details .description p:before {
+.devotional .details .description div:before {
   content: "";
   position: absolute;
   top: 0%;
@@ -2596,7 +2635,7 @@ body.sidebar-opened .copyright {
   padding: 0px 0 100px 0;
 }
 
-#devotional-post p {
+#devotional-post div p {
   font-family: "PalatinoLinotype";
   text-align: justify;
 }
@@ -2953,7 +2992,7 @@ body.sidebar-opened .copyright {
   #all-books #books {
     -ms-grid-columns: (minmax(100%, 100%))[auto-fit] !important;
         grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
-    grid-gap: 15px !important;
+    grid-gap: 30px !important;
   }
   body.dark {
     background-image: url("../images/madueke/Prayer-M.-Madueke-sm.jpg") !important;

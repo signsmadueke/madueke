@@ -16,7 +16,10 @@ if (!empty($devotionals)) {
         extract($devotional);
         $devotion_title = str_replace("</b>", "'", $devotion_title);
         $devotion_body = str_replace("</b>", "'", $devotion_body);
-        $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
+        $devotion_link = strtolower(str_replace(" ", "-", $devotion_title));
+        $devotion_link = str_replace("'", "</b>", $devotion_link);
+        $htmltoplaintext = strip_tags($devotion_body);
+        ?>
 
 
         <div class="devotional animate reveal">
@@ -37,7 +40,7 @@ if (!empty($devotionals)) {
                     <p><span>Posted on </span><?= $datePosted; ?></p>
                 </div>
                 <a href="devotional?devotion=<?= $devotion_link; ?>" class="description">
-                    <div><?= $devotion_body; ?></div>
+                    <div><?= $htmltoplaintext; ?></div>
                 </a>
                 <a href="devotional?devotion=<?= $devotion_link; ?>" class="btn btn-spaced">
                     <span>Read Devotional</span>

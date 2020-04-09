@@ -3,6 +3,7 @@ require_once "admin/includes/functions/config.php";
 if (isset($_GET['book'])) {
     $bookName = $_GET['book'];
     $book_link = ucwords(str_replace("-", " ", $bookName));
+    // $book_link = str_replace("</b>", "'", $book_link);
 
     $result = whereQuote("freebooks", "book_title", "$book_link");
     if ($result) {
@@ -40,7 +41,7 @@ require_once 'inc/header.php';
             $book_title = str_replace("</b>", "'", $book_title);
             $book_description = str_replace("</b>", "'", $book_description); ?>
 
-            <img class="book-image animate reveal" src="admin/book_images/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+            <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
 
             <div class="details animate reveal">
                 <div class="description">
@@ -68,12 +69,12 @@ require_once 'inc/header.php';
                             <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
                         </a>
 
-                        <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
+                        <!-- <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
                             <div class="name">
                                 <span>Ebook</span>
                             </div>
                             <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 

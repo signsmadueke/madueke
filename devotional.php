@@ -55,7 +55,7 @@
 
                 <section id="devotional-post">
                     <h3><?= $devotion_subtitle; ?></h3>
-                    <p><?= $devotion_body; ?></p>
+                    <div><?= $devotion_body; ?></div>
                 </section>
 <?php } } ?>
 <section id="other-devotionals">

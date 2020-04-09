@@ -126,6 +126,10 @@ body {
 	margin: 0;
 	font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 18px;
+	text-rendering: geometricPrecision;
+	margin: 0;
+	line-height: 35px;
+	font-weight: 400;
 }
 
 ul {
@@ -1281,7 +1285,7 @@ body.sidebar-opened {
 
 	#books {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(230px, 30.6%));
 		grid-gap: 30px;
 		align-items: center;
 	}
@@ -1813,6 +1817,10 @@ body.sidebar-opened {
 			}
 
 			svg {path {fill: #FFFFFF}}
+
+			@media (max-width: 768px) {
+				padding: 10px 15px;
+			}
 		}
 	}
 
@@ -1888,6 +1896,21 @@ body.sidebar-opened {
 			}
 		}
 	}
+
+	@media (max-width: 768px) {
+		label {
+			font-size: 14px !important;
+			line-height: 14px;
+		}
+
+		input {
+			padding: 15px !important;
+
+			&::placeholder {
+				font-size: 14px !important;
+			}
+		}
+	}
 }
 
 #download-book-modal {
@@ -1940,6 +1963,13 @@ body.sidebar-opened {
 		    font-size: 12px;
 		    line-height: 20px;
 		    opacity: 0.5;
+		}
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 25px !important;
+			line-height: 30px;
 		}
 	}
 }
@@ -2109,7 +2139,7 @@ body.sidebar-opened {
 		grid-auto-flow: row;
 		grid-gap: 100px;
 		grid-auto-rows: max-content;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 28.2%));
 
 		@media (max-width: 576px) {
 			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
@@ -2205,7 +2235,7 @@ body.sidebar-opened {
 		}
 
 		.description {
-			p {
+			div {
 				font-size: 16px;
 				line-height: 30px;
 				overflow: hidden;
@@ -2316,9 +2346,11 @@ body.sidebar-opened {
 	justify-self: center;
 	padding: 0px 0 100px 0;
 
-	p {
-		font-family: "PalatinoLinotype";
-		text-align: justify;
+	div {
+		p {
+			font-family: "PalatinoLinotype";
+			text-align: justify;
+		}
 	}
 
 	h3 {
@@ -2639,7 +2671,7 @@ body.sidebar-opened {
 	#all-books {
 		#books {
 			grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
-			grid-gap: 15px !important;
+			grid-gap: 30px !important;
 		}
 	}
 

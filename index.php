@@ -36,11 +36,17 @@
             if (!empty($freebooks)) {
                 foreach ($freebooks as $freebook) {
                     extract($freebook);
-                    $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
+                    // $book_link = strtolower(str_replace(" ", "-", $book_title));
+                    $book_title = str_replace("</b>", "'", $book_title);
+                    $book_description = str_replace("</b>", "'", $book_description);
+                    $book_link = strtolower(str_replace(" ", "-", $book_title));
+                    $book_link = str_replace("'", "</b>", $book_link);
+                    $htmltoplaintext = strip_tags($book_description);
+                    ?>
 
                         <div class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                             <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
-                            <a href="freebook?book=<?= $book_link; ?>"><p class="book-description"><?= $book_description; ?></p></a>
+                            <a href="freebook?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
                             <a href="freebook?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
                                 <span>View Details</span>
                                 <img class="svg" src="assets/images/icons/arrow-right.svg">
@@ -54,8 +60,13 @@
             if (!empty($books)) {
                 foreach ($books as $book) {
                     extract($book);
+                    // $book_link = strtolower(str_replace(" ", "-", $book_title));
+                    // $book_link = str_replace("'", "", $book_link);
+                    // $htmltoplaintext = strip_tags($book_description);
+                    $book_title = str_replace("</b>", "'", $book_title);
+                    $book_description = str_replace("</b>", "'", $book_description);
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
-                    $book_link = str_replace("'", "", $book_link);
+                    $book_link = str_replace("'", "</b>", $book_link);
                     $htmltoplaintext = strip_tags($book_description);
         ?>
 
