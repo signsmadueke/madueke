@@ -28,3 +28,16 @@ if (isset($_GET['devotion_id'])) {
         echo json_encode($errors);
     }
 }
+
+if (isset($_GET['freebook_id'])) {
+    $freebook_id = $_GET['freebook_id'];
+
+    $result = editFreeBook($_POST, $freebook_id);
+
+    if ($result === true) {
+        echo "true";
+    } else {
+        $errors = $result;
+        echo json_encode($errors);
+    }
+}

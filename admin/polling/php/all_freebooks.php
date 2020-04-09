@@ -29,7 +29,7 @@ if ($result) {
                                     <figcaption>
                                         <p>
 
-                                            <a href="edit_book?book_id=<?= $book_id; ?>"><i class="fa fa-fw fa-edit"></i></a>
+                                            <a href="edit_freebook?freebook_id=<?= $book_id; ?>"><i class="fa fa-fw fa-edit"></i></a>
                                             <a class="text-danger" data-id="<?= $book_id; ?>" onclick="delete_book(this)"><i class="fa fa-fw fa-trash-o"></i></a>
                                         </p>
                                     </figcaption>

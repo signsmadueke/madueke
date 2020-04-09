@@ -459,6 +459,7 @@ function AddFreeBook($post) {
     }
 }
 
+
 function editFreeBook($post, $id) {
     extract($post);
     $errors = [];
