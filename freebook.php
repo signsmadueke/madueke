@@ -24,6 +24,7 @@ if (isset($_GET['book'])) {
 }
 
 $title = $book_link;
+$page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>

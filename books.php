@@ -13,6 +13,7 @@
 
 
     $title = 'Books';
+    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
 ?>
@@ -30,9 +31,9 @@
                 extract($freebook);
                 $book_titledisplay = str_replace("</b>", "'", $book_title);
                 $book_description = str_replace("</b>", "'", $book_description);
+                $htmltoplaintext = strip_tags($book_description);
                 $book_link = strtolower(str_replace("'", "</b>", $book_title));
                 $book_link = strtolower(str_replace(" ", "-", $book_title));
-                $htmltoplaintext = strip_tags($book_description);
                 ?>
                 <div class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                     <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_titledisplay; ?></h3></a>

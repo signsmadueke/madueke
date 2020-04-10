@@ -12,6 +12,7 @@
 
 
     $title = 'Home';
+    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
 ?>

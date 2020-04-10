@@ -1,5 +1,6 @@
 <?php
     $title = 'Contact';
+    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
     $extraBodyClasses = 'dark contact';
     require_once 'inc/header.php';
 ?>
