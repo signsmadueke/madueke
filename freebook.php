@@ -63,7 +63,7 @@ require_once 'inc/header.php';
                 <div class="channels accordion animate reveal ">
                     <p>Other formats</p>
                     <div class="formats">
-                        <a href="https://www.amazon.com/dp/9780720944" class="format">
+                        <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="format">
                             <div class="name">
                                 <span>Paperback</span>
                             </div>

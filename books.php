@@ -31,20 +31,21 @@
                 extract($freebook);
                 $book_titledisplay = str_replace("</b>", "'", $book_title);
                 $book_description = str_replace("</b>", "'", $book_description);
-                $htmltoplaintext = strip_tags($book_description);
                 $book_link = strtolower(str_replace("'", "</b>", $book_title));
                 $book_link = strtolower(str_replace(" ", "-", $book_title));
+                $htmltoplaintext = strip_tags($book_description);
+                $htmltoplaintext = substr($htmltoplaintext,0,250)."...";
                 ?>
-                <div class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-                    <a href="freebook?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_titledisplay; ?></h3></a>
-                    <a href="freebook?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
-                    <a href="freebook?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
+                <a href="freebook?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                    <h3 class="book-name"><?= $book_titledisplay; ?></h3>
+                    <div class="book-description"><?= $htmltoplaintext; ?></div>
+                    <div class="btn btn-spaced btn-view">
                         <span>View Details</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
                             <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
                         </svg>
-                    </a>
-                </div>
+                    </div>
+                </a>
             <?php } } ?>
 
 
@@ -58,17 +59,18 @@
                 $book_link = strtolower(str_replace(" ", "-", $book_title));
                 $book_link = str_replace("'", "</b>", $book_link);
                 $htmltoplaintext = strip_tags($book_description);
+                $htmltoplaintext = substr($htmltoplaintext,0,250)."...";
                 ?>
-                <div class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-                    <a href="book?book=<?= $book_link; ?>"><h3 class="book-name"><?= $book_title; ?></h3></a>
-                    <a href="book?book=<?= $book_link; ?>"><div class="book-description"><?= $htmltoplaintext; ?></div></a>
-                    <a href="book?book=<?= $book_link; ?>" class="btn btn-spaced btn-view">
+                <a href="book?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                    <h3 class="book-name"><?= $book_title; ?></h3>
+                    <div class="book-description"><?= $htmltoplaintext; "..." ?></div>
+                    <div class="btn btn-spaced btn-view">
                         <span>View Details</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
                             <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
                         </svg>
-                    </a>
-                </div>
+                    </div>
+                </a>
             <?php } } ?>
     </div>
 </section>

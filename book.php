@@ -53,14 +53,14 @@ require_once 'inc/header.php';
                 <div class="channels animate reveal">
                     <p>Formats</p>
                     <div class="formats">
-                        <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="format">
+                        <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="format">
                             <div class="name">
                                 <span>Paperback</span>
                             </div>
                             <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
                         </a>
 
-                        <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="format">
+                        <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="format">
                             <div class="name">
                                 <span>Ebook</span>
                             </div>
