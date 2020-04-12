@@ -1667,7 +1667,7 @@ body.sidebar-opened .copyright {
 #book-details .details {
   display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
 }
@@ -1685,18 +1685,16 @@ body.sidebar-opened .copyright {
 #book-details .details .channels {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   grid-auto-flow: row;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
-  padding-bottom: 30px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
 #book-details .details .channels .formats {
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 50px;
   grid-auto-flow: column;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
@@ -1708,35 +1706,32 @@ body.sidebar-opened .copyright {
 #book-details .details .channels .formats .format {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-auto-flow: row;
-  border: 1px solid rgba(68, 68, 68, 0.1);
-  padding: 15px;
 }
 
-#book-details .details .channels .formats .format:hover {
+#book-details .details .channels .formats .format .buy-btn {
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  max-width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#book-details .details .channels .formats .format .buy-btn:hover {
   background-color: rgba(68, 68, 68, 0.05);
   -webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
+#book-details .details .channels .formats .format .buy-btn svg {
+  height: 40px;
+}
+
 #book-details .details .channels .formats .format .name {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
-  grid-auto-columns: -webkit-max-content;
-  grid-auto-columns: max-content;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#book-details .details .channels .formats .format .name img {
-  height: 25px;
-}
-
-#book-details .details .channels .formats .format .name span {
   font-weight: 500;
   font-size: 14px;
   line-height: 25px;
@@ -1751,6 +1746,15 @@ body.sidebar-opened .copyright {
   line-height: 30px;
 }
 
+@media (max-width: 800px) {
+  #book-details .details .channels .formats {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    grid-gap: 30px;
+    grid-auto-flow: row;
+  }
+}
+
 #book-details .details .attributes {
   display: -ms-grid;
   display: grid;
@@ -1758,6 +1762,8 @@ body.sidebar-opened .copyright {
   grid-auto-flow: column;
   grid-auto-columns: -webkit-max-content;
   grid-auto-columns: max-content;
+  padding-top: 30px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
@@ -1895,7 +1901,17 @@ body.sidebar-opened .copyright {
   }
 }
 
-#other-books .prev-book .prev-book-details h3 {
+#other-books .prev-book .prev-book-details .name {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#other-books .prev-book .prev-book-details .name h3 {
   text-overflow: ellipsis;
   overflow: hidden;
   line-height: 30px;
@@ -1903,8 +1919,17 @@ body.sidebar-opened .copyright {
   white-space: nowrap;
 }
 
+#other-books .prev-book .prev-book-details .name div {
+  font-size: 18px;
+  line-height: 30px;
+  overflow: hidden;
+  height: 60px;
+  position: relative;
+  max-width: 300px;
+}
+
 @media (max-width: 800px) {
-  #other-books .prev-book .prev-book-details h3 {
+  #other-books .prev-book .prev-book-details .name {
     display: none;
   }
 }
@@ -1981,16 +2006,35 @@ body.sidebar-opened .copyright {
   }
 }
 
-#other-books .next-book .next-book-details h3 {
+#other-books .next-book .next-book-details .name {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#other-books .next-book .next-book-details .name h3 {
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 300px;
   line-height: 30px;
+  max-width: 300px;
   white-space: nowrap;
 }
 
+#other-books .next-book .next-book-details .name div {
+  font-size: 18px;
+  line-height: 30px;
+  overflow: hidden;
+  height: 60px;
+  position: relative;
+  max-width: 300px;
+}
+
 @media (max-width: 800px) {
-  #other-books .next-book .next-book-details h3 {
+  #other-books .next-book .next-book-details .name {
     display: none;
   }
 }

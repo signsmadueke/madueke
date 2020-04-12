@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="author" content="Prayer M. Madueke">
     <meta name="description" content="<?= $page_description; ?>">
+    <!-- <meta name="description" content="<?= $meta_description; ?>"> -->
     <meta name="keywords" content="Prayer, Madueke, Prayer M. Madueke,  Christian Author, Christian, Author, Amazon, Religion, Spirituality.">
     <meta name=”robots” content="index, follow">
 
@@ -32,7 +33,7 @@
 
     <link rel="icon" href="favicon.png">
     <meta name="theme-color" content="#222222">
-    <title><?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon</title>
+    <title><?php echo $title; ?> — <?= $page_description; ?></title>
 </head>
 
 <body class="container <?php echo $extraBodyClasses; ?>">

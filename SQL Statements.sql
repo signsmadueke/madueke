@@ -1,7 +1,17 @@
-INSERT INTO `freebooks` (`book_id`, `book_title`, `book_author`, `book_image`, `book_description`, `total_book_page`, `book_isbn`, `book_kindle_price`, `book_paperback_price`, `book_paperback_asin`, `book_kindle_asin`, `date_added`) VALUES ('0', 'Quarantined for Gods Deliverance', 'Prayer M. Madueke', 'book5.jpg', "Plagues do not just happen without reason. When the Egyptians became steeped in evil and iniquity against the people of God, plagues were sent to humble them. Plagues are more horrifying and humiliating than shooting wars. They are a sign that something is terribly wrong. Man has deployed the revealed knowledge of God (science and technology) to wrong uses, destroying and polluting the earth, playing god with genomics and even attempting to slap its creator in the face. There is no depth of decadence that man has not plumbed in a vain attempt to normalize evil and abnormality. Plagues are a time of cleansing, cleansing the earth of pollutants and iniquity. For a child of God, it is a time to put things right in your relationship with God. This is what this book, Quarantined for Deliverance, is about. With over 75 deliverance prayer points, you will be purged to be in order to be saved. When the 10 plagues were unleashed on the Egyptians, the children of God were unaffected. God does not change. He will deliver his people. His promises never fail. Quarantined for Deliverance will help those who have gone astray retrace their steps while there's yet time. This book is for families, communities and nations to pray for deliverance from this terrible scourge.", '145', '978-8633820270', 'FREE', '6.99', 'B086PSL9BF', '8633820270', '2020-04-02')
-
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -29,14 +39,26 @@ VALUES
         5.99, 
         -- Paperback Price
         13.99, 
-        -- Ebook ASIN
-        'B083QNCZHL',
         -- Paperback ASIN 
-        '1658537505'
+        '1658537505',
+        -- Ebook ASIN
+        'B083QNCZHL'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -57,15 +79,29 @@ VALUES
         5.99,
         -- Paperback Price
         15.50,
+        -- Paperback ASIN
+        '1545525714',
         -- Ebook ASIN
         'B071L5JHD3',
-        -- Paperback ASIN
-        '1545525714'
+        -- Date Added
+        '2020-04-09'
     );
 
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -86,14 +122,28 @@ VALUES
         6.00,
         -- Paperback Price
         15.00,
+        -- Paperback ASIN
+        '146624416X',
         -- Ebook ASIN
         'B0719GTFTD',
-        -- Paperback ASIN
-        '146624416X'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -114,14 +164,28 @@ VALUES
         5.99,
         -- Paperback Price
         13.99,
+        -- Paperback ASIN
+        'B086BJZPL9',
         -- Ebook ASIN
         'B0867GPTXM',
-        -- Paperback ASIN
-        'B086BJZPL9'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -142,14 +206,28 @@ VALUES
         5.99,
         -- Paperback Price
         13.99,
+        -- Paperback ASIN
+        'B086C9YJS1',
         -- Ebook ASIN
         'B0866CT5XF',
-        -- Paperback ASIN
-        'B086C9YJS1'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -170,14 +248,28 @@ VALUES
         7.99,
         -- Paperback Price
         18.99,
+        -- Paperback ASIN
+        '9780720944',
         -- Ebook ASIN
         'B0716DJZRN',
-        -- Paperback ASIN
-        '9780720944'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -198,14 +290,28 @@ VALUES
         4.99,
         -- Paperback Price
         9.99,
+        -- Paperback ASIN
+        '1657287564',
         -- Ebook ASIN
         'B083LM75RD',
-        -- Paperback ASIN
-        '1657287564'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -226,14 +332,28 @@ VALUES
         4.60,
         -- Paperback Price
         14.99,
+        -- Paperback ASIN
+        '1650596138',
         -- Ebook ASIN
         'B0834HH58H',
-        -- Paperback ASIN
-        '1650596138'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -254,14 +374,28 @@ VALUES
         5.50,
         -- Paperback Price
         12.99,
+        -- Paperback ASIN
+        '1543156878',
         -- Ebook ASIN
         'B0728186BC',
-        -- Paperback ASIN
-        '1543156878'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -282,14 +416,28 @@ VALUES
         3.99,
         -- Paperback Price
         9.99,
+        -- Paperback ASIN
+        'B085RP5M2D',
         -- Ebook ASIN
         'B085W661SF',
-        -- Paperback ASIN
-        'B085RP5M2D'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -310,14 +458,28 @@ VALUES
         3.99,
         -- Paperback Price
         9.99,
+        -- Paperback ASIN
+        'B085RNLQLK',
         -- Ebook ASIN
         'B085XNCJC3',
-        -- Paperback ASIN
-        'B085RNLQLK'
+        -- Date Added
+        '2020-04-09'
     );
 
 INSERT INTO books
-    (book_title,book_author,book_image,book_description,total_book_page,book_isbn,book_kindle_price,book_paperback_price,book_paperback_asin,book_kindle_asin)
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
 VALUES
     (
         -- Book Name
@@ -338,8 +500,10 @@ VALUES
         4.99,
         -- Paperback Price
         16.99,
+        -- Paperback ASIN
+        '1466200847',
         -- Ebook ASIN
         'B074P7CCDK',
-        -- Paperback ASIN
-        '1466200847'
+        -- Date Added
+        '2020-04-09'
     );

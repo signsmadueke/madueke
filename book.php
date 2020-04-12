@@ -24,6 +24,7 @@ if (isset($_GET['book'])) {
 }
 
 $title = $book_link;
+// $meta_description = $book_description;
 $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
 $extraBodyClasses = '';
 require_once 'inc/header.php';
@@ -53,19 +54,25 @@ require_once 'inc/header.php';
                 <div class="channels animate reveal">
                     <p>Formats</p>
                     <div class="formats">
-                        <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="format">
-                            <div class="name">
-                                <span>Paperback</span>
-                            </div>
-                            <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
-                        </a>
-
-                        <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="format">
-                            <div class="name">
-                                <span>Ebook</span>
-                            </div>
+                        <div class="format">
+                            <p class="name">Ebook</p>
+                            
                             <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
-                        </a>
+
+                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="buy-btn" >
+                                <img class="svg" src="assets/images/formats/kindle.svg">
+                            </a>
+                        </div>
+                    
+                        <div class="format">
+                            <p class="name">Paperback</p>
+                            
+                            <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
+
+                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="buy-btn" >
+                                <img class="svg" src="assets/images/formats/amazon.svg">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -96,6 +103,7 @@ require_once 'inc/header.php';
             extract($otherbook);
             $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
 
+
             <a href="book?book=<?= $book_link; ?>" class="prev-book">
                 <div class="btn btn-spaced">
                     <img class="svg" src="assets/images/icons/arrow-left.svg">
@@ -103,7 +111,10 @@ require_once 'inc/header.php';
                 </div>
                 <div class="prev-book-details">
                     <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
-                    <h3><?= $book_title; ?></h3>
+                    <div class="name">
+                        <h3><?= $book_title; ?></h3>
+                        <div><?= $book_description; ?></div>
+                    </div>
                 </div>
             </a>
         <?php } } ?>
@@ -113,7 +124,8 @@ require_once 'inc/header.php';
     if (isset($otherbooksDesc)) {
         foreach ($otherbooksDesc as $otherbookDesc) {
             extract($otherbookDesc);
-            $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
+            $book_link = strtolower(str_replace(" ", "-", $book_title));
+             ?>
 
             <a href="book?book=<?= $book_link; ?>" class="next-book">
                 <div class="btn btn-spaced">
@@ -122,7 +134,10 @@ require_once 'inc/header.php';
                 </div>
 
                 <div class="next-book-details">
-                    <h3><?= $book_title; ?></h3>
+                    <div class="name">
+                        <h3><?= $book_title; ?></h3>
+                        <div><?= $book_description; ?></div>
+                    </div>
                     <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                 </div>
             </a>

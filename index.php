@@ -11,8 +11,8 @@
     }
 
 
-    $title = 'Home';
-    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
+    $title = 'Prayer M. Madueke';
+    $page_description = 'Christian Author of over 100 books on Amazon.';
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
 ?>
@@ -38,6 +38,7 @@
                 foreach ($freebooks as $freebook) {
                     extract($freebook);
                     $book_titledisplay = str_replace("</b>", "'", $book_title);
+                    // $book_titledisplay = substr($book_titledisplay,0,100)."...";
                     $book_description = str_replace("</b>", "'", $book_description);
                     $book_link = strtolower(str_replace("'", "</b>", $book_title));
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
@@ -62,7 +63,8 @@
             if (!empty($books)) {
                 foreach ($books as $book) {
                     extract($book);
-                    $book_title = str_replace("</b>", "'", $book_title);
+                    $book_titledisplay = str_replace("</b>", "'", $book_title);
+                    // $book_titledisplay = substr($book_titledisplay,0,100)."...";
                     $book_description = str_replace("</b>", "'", $book_description);
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     $book_link = str_replace("'", "</b>", $book_link);
@@ -70,7 +72,7 @@
                     $htmltoplaintext = substr($htmltoplaintext,0,130)."...";
                     ?>
                     <a href="book?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-                        <h3 class="book-name"><?= $book_title; ?></h3>
+                        <h3 class="book-name"><?= $book_titledisplay; ?></h3>
                         <div class="book-description"><?= $htmltoplaintext; "..." ?></div>
                         <div class="btn btn-spaced btn-view">
                             <span>View Details</span>
