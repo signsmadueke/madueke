@@ -51,7 +51,7 @@ require_once 'inc/header.php';
                 </div>
 
                 <div class="channels animate reveal">
-                    <p>Formats</p>
+                    <p>Free Download</p>
                     <div class="formats">
                         <a href="#" id="download-btn" class="w-icon button">
                             <img class="svg" src="assets/images/icons/download.svg">
@@ -60,22 +60,28 @@ require_once 'inc/header.php';
                     </div>
                 </div>
 
-                <div class="channels accordion animate reveal ">
-                    <p>Other formats</p>
+                <div class="channels animate reveal">
+                    <p>Other Formats</p>
                     <div class="formats">
-                        <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="format">
-                            <div class="name">
-                                <span>Paperback</span>
-                            </div>
-                            <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
-                        </a>
+                        <!-- <div class="format">
+                            <p class="name">Ebook</p>
+                            
+                            <h1 class="price"><?= $book_kindle_price; ?></h1>
 
-                        <!-- <a href="https://www.amazon.com/dp/B0716DJZRN" class="format">
-                            <div class="name">
-                                <span>Ebook</span>
-                            </div>
-                            <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
-                        </a> -->
+                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="buy-btn" >
+                                <img class="svg" src="assets/images/formats/kindle.svg">
+                            </a>
+                        </div> -->
+                    
+                        <div class="format">
+                            <p class="name">Paperback</p>
+                            
+                            <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
+
+                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="buy-btn" >
+                                <img class="svg" src="assets/images/formats/amazon.svg">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -106,14 +112,18 @@ require_once 'inc/header.php';
             extract($otherbook);
             $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
 
+
             <a href="book?book=<?= $book_link; ?>" class="prev-book">
                 <div class="btn btn-spaced">
                     <img class="svg" src="assets/images/icons/arrow-left.svg">
                     <span>Previous Book</span>
                 </div>
                 <div class="prev-book-details">
-                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of Prayer Retreat">
-                    <h3><?= $book_title; ?></h3>
+                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
+                    <div class="name">
+                        <h3><?= $book_title; ?></h3>
+                        <div><?= $book_description; ?></div>
+                    </div>
                 </div>
             </a>
         <?php } } ?>
@@ -123,16 +133,21 @@ require_once 'inc/header.php';
     if (isset($otherbooksDesc)) {
         foreach ($otherbooksDesc as $otherbookDesc) {
             extract($otherbookDesc);
-            $book_link = strtolower(str_replace(" ", "-", $book_title)); ?>
+            $book_link = strtolower(str_replace(" ", "-", $book_title));
+             ?>
 
             <a href="book?book=<?= $book_link; ?>" class="next-book">
                 <div class="btn btn-spaced">
                     <span>Next Book</span>
                     <img class="svg" src="assets/images/icons/arrow-right.svg">
                 </div>
+
                 <div class="next-book-details">
-                    <h3><?= $book_title; ?></h3>
-                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of Breaking Evil Yokes">
+                    <div class="name">
+                        <h3><?= $book_title; ?></h3>
+                        <div><?= $book_description; ?></div>
+                    </div>
+                    <img src="assets/images/books/<?= $book_image; ?>" alt="Book Cover of <?= $book_title; ?>">
                 </div>
             </a>
         <?php } } ?>
