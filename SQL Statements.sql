@@ -231,7 +231,7 @@ INSERT INTO books
 VALUES
     (
         -- Book Name
-        '21-40 Nights of Decrees and Your Enemies Will Surrender',
+        '21/40 Nights of Decrees and Your Enemies Will Surrender',
         -- Author Name
         'Prayer M Madueke',
         -- Image Name
