@@ -1838,10 +1838,15 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 15px;
+  grid-gap: 30px;
   justify-items: start;
   padding: 30px;
   border: 1px solid rgba(68, 68, 68, 0.1);
+  text-align: left;
+}
+
+#other-books .prev-book .btn-spaced {
+  padding: 0;
 }
 
 #other-books .prev-book:hover {
@@ -1920,12 +1925,13 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .prev-book .prev-book-details .name div {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   overflow: hidden;
-  height: 60px;
+  height: 72px;
   position: relative;
   max-width: 300px;
+  opacity: 0.8;
 }
 
 @media (max-width: 800px) {
@@ -1935,7 +1941,7 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .prev-book .prev-book-details img {
-  width: 100px;
+  width: 75px;
   border: 1px solid rgba(68, 68, 68, 0.2);
 }
 
@@ -1943,10 +1949,15 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 15px;
+  grid-gap: 30px;
   justify-items: end;
   padding: 30px;
   border: 1px solid rgba(68, 68, 68, 0.1);
+  text-align: right;
+}
+
+#other-books .next-book .btn-spaced {
+  padding: 0;
 }
 
 #other-books .next-book:hover {
@@ -2025,12 +2036,13 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .next-book .next-book-details .name div {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   overflow: hidden;
-  height: 60px;
+  height: 72px;
   position: relative;
   max-width: 300px;
+  opacity: 0.8;
 }
 
 @media (max-width: 800px) {
@@ -2040,7 +2052,7 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .next-book .next-book-details img {
-  width: 100px;
+  width: 75px;
   border: 1px solid rgba(68, 68, 68, 0.2);
 }
 
