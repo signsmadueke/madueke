@@ -115,9 +115,13 @@
     </div>
     <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class="form-inputs">
-            <input type="email" required name="EMAIL" value="" class="required email" id="mce-EMAIL" placeholder="Email Address">
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address</label>
+                <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
+            </div>
             <input type="submit" value="Sign me up" name="subscribe" id="mc-embedded-subscribe" class="button">
         </div>
+        <div for="mce-EMAIL" class="mce_inline_error" style="display: block;"></div>
         <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>

@@ -82,6 +82,9 @@
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
             </li>
+            <li class="<?php if ($title == "Donate"){echo "active";} ?>">
+                <a href="donate">Donate</a>
+            </li>
         </ul>
     </nav>
 
@@ -133,6 +136,9 @@
             </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
                 <a href="contact">Contact</a>
+            </li>
+            <li class="<?php if ($title == "Donate"){echo "active";} ?>">
+                <a href="donate">Donate</a>
             </li>
         </ul>
     </nav>
