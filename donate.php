@@ -43,10 +43,15 @@
     <h2>Donate Online</h2>
     
     <div class="methods">
-        <!-- <a href="javascript:;" class="method">
+		<a href="https://dashboard.flutterwave.com/donate/wggsovnpufgm" class="method">
+            <p>Donate Internationally via</p>
+            <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
+        </a>
+
+        <a href="paypal.me/prayermadueke" class="method">
             <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
-        </a> -->
+        </a>
 
         <a href="https://paystack.com/pay/prayermadueke" class="method">
             <p>Donate in NGN via</p>
@@ -57,11 +62,6 @@
             <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/cashapp.svg" alt="">
         </a>
-        
-		<!-- <a href="javascript:;" class="method">
-            <p>Donate in NGN via</p>
-            <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
-        </a> -->
     </div>
 </section>
 
