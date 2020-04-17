@@ -48,7 +48,7 @@
             <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
         </a>
 
-        <a href="paypal.me/prayermadueke" class="method">
+        <a href="https://www.paypal.me/prayermadueke" class="method">
             <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
         </a>
