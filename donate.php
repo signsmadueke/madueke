@@ -48,7 +48,7 @@
             <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
         </a>
 
-        <a href="https://www.paypal.me/prayermadueke" class="method">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40madueke.com&item_name=Donate+to+Prayer+Madueke+Ministries&currency_code=USD&source=url" class="method">
             <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
         </a>

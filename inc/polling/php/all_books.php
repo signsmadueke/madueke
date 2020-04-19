@@ -24,16 +24,17 @@ if (!empty($freebooks)) {
         $book_link = strtolower(str_replace("'", "</b>", $book_title));
         $book_link = strtolower(str_replace(" ", "-", $book_title));
         $htmltoplaintext = strip_tags($book_description);
-        $htmltoplaintext = substr($htmltoplaintext,0,250)."...";
         ?>
-        <a href="freebook?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-            <h3 class="book-name"><?= $book_titledisplay; ?></h3>
-            <div class="book-description"><?= $htmltoplaintext; ?></div>
-            <div class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
-                    <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
-                </svg>
+        <a alt="<?= $book_titledisplay; ?>" href="freebook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+            <div class="book-details">
+                <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
+                <div class="book-description"><?= $htmltoplaintext; ?></div>
+                <div class="btn btn-spaced btn-view">
+                    <span>View Details</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
+                        <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
+                    </svg>
+                </div>
             </div>
         </a>
     <?php } } ?>
@@ -49,16 +50,17 @@ if (!empty($books)) {
         $book_link = strtolower(str_replace(" ", "-", $book_title));
         $book_link = str_replace("'", "</b>", $book_link);
         $htmltoplaintext = strip_tags($book_description);
-        $htmltoplaintext = substr($htmltoplaintext,0,250)."...";
         ?>
-        <a href="book?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
-            <h3 class="book-name"><?= $book_title; ?></h3>
-            <div class="book-description"><?= $htmltoplaintext; "..." ?></div>
-            <div class="btn btn-spaced btn-view">
-                <span>View Details</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
-                    <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
-                </svg>
+        <a alt="<?= $book_title; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+            <div class="book-details">
+                <h3 class="book-name" title="<?= $book_title; ?>"><?= $book_title; ?></h3>
+                <div class="book-description"><?= $htmltoplaintext; "..." ?></div>
+                <div class="btn btn-spaced btn-view">
+                    <span>View Details</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
+                        <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
+                    </svg>
+                </div>
             </div>
         </a>
     <?php } } ?>

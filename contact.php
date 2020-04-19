@@ -7,14 +7,14 @@
 
 <div id="space"></div>
 
-<section id="contacts">
+<section id="contacts" class="animated reveal">
     <a href="mailto:hello@madueke.com">
-        <h1>General</h1>
-        <p>hello@madueke.com</p>
+        <h1 class="animated reveal">General</h1>
+        <p class="animated reveal">hello@madueke.com</p>
     </a>
     <a href="mailto:requests@madueke.com">
-        <h1>Prayer Requests</h1>
-        <p>requests@madueke.com</p>
+        <h1 class="animated reveal">Prayer Requests</h1>
+        <p class="animated reveal">requests@madueke.com</p>
     </a>
 </section>
 

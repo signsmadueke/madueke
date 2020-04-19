@@ -1,4 +1,40 @@
 @font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
   font-family: 'CircularStd';
   src: url("../fonts/Circular_Std/CircularStd-Book.ttf") format("truetype");
   font-weight: 400;
@@ -91,8 +127,8 @@
 }
 
 .reveal {
-  -webkit-animation: reveal ease 0.7s forwards;
-          animation: reveal ease 0.7s forwards;
+  -webkit-animation: reveal ease 1s forwards;
+          animation: reveal ease 1s forwards;
 }
 
 @-webkit-keyframes fade {
@@ -178,12 +214,13 @@ html [type="button"] {
 
 body {
   margin: 0;
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 18px;
   text-rendering: geometricPrecision;
   margin: 0;
   line-height: 35px;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 ul {
@@ -355,7 +392,7 @@ svg:not(:root) {
 }
 
 button {
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -379,7 +416,7 @@ button:-moz-focusring {
 }
 
 input {
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -388,14 +425,14 @@ input {
 }
 
 optgroup {
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
 select {
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -404,7 +441,7 @@ select {
 }
 
 textarea {
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -614,8 +651,8 @@ p {
   margin: 0;
   font-size: 18px;
   line-height: 35px;
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 400;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
 }
 
 li {
@@ -624,8 +661,8 @@ li {
   margin: 0;
   font-size: 18px;
   line-height: 35px;
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: normal;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 600;
 }
 
 span {
@@ -642,7 +679,7 @@ span {
 
 .spaced-text {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.3em;
@@ -784,6 +821,15 @@ input:hover {
 input:focus {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
+}
+
+input:focus ~ label {
+  padding: 0 .3em;
+  font-size: 12px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  opacity: 0.7;
 }
 
 input[type="submit"],
@@ -1348,7 +1394,7 @@ body.sidebar-opened .copyright {
   -ms-grid-column-align: start;
       justify-self: start;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   opacity: 0.6;
@@ -1494,7 +1540,11 @@ body.sidebar-opened .copyright {
   opacity: 0;
 }
 
-.book .book-name {
+.book .book-details {
+  z-index: 1;
+}
+
+.book .book-details .book-name {
   display: block;
   z-index: 1;
   margin-top: 10px;
@@ -1504,9 +1554,9 @@ body.sidebar-opened .copyright {
   font-size: 17px;
   line-height: 23px;
   text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   opacity: 0;
   -webkit-transform: translate(0px, 10px);
           transform: translate(0px, 10px);
@@ -1514,18 +1564,18 @@ body.sidebar-opened .copyright {
   transition: all .3s ease-in 0s !important;
 }
 
-.book .book-description {
+.book .book-details .book-description {
   display: block;
   z-index: 1;
   margin-top: 10px;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   opacity: 0;
   -webkit-transform: translate(0px, 10px);
           transform: translate(0px, 10px);
@@ -1533,38 +1583,38 @@ body.sidebar-opened .copyright {
   transition: all .3s ease-in 0s !important;
 }
 
-.book .btn-view {
+.book .book-details .btn-view {
   display: block;
   z-index: 1;
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
-  margin-top: 30px;
+  margin-top: 15px;
   padding-bottom: 0;
   grid-gap: 10px;
   -webkit-transition: all .3s ease-in 0s !important;
   transition: all .3s ease-in 0s !important;
 }
 
-.book .btn-view:hover {
+.book .book-details .btn-view:hover {
   grid-gap: 15px;
 }
 
-.book .btn-view span {
+.book .book-details .btn-view span {
   color: white;
   font-size: 12px;
   line-height: 12px;
 }
 
-.book .btn-view svg {
+.book .book-details .btn-view svg {
   width: 16px;
 }
 
-.book .btn-view svg path {
+.book .book-details .btn-view svg path {
   fill: white;
 }
 
-.book .btn-view img {
+.book .book-details .btn-view img {
   width: 16px;
 }
 
@@ -1622,13 +1672,16 @@ body.sidebar-opened .copyright {
   font-weight: bold;
   font-size: 25px;
   line-height: 35px;
-  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #all-books #books .book .book-description {
   font-size: 16px;
   line-height: 24px;
-  -webkit-line-clamp: 7;
+  height: 144px;
+  overflow: hidden;
 }
 
 #all-books #books .book .btn-view span {
@@ -1737,7 +1790,7 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .channels .formats .format .name {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 4px;
@@ -1745,7 +1798,7 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .channels .formats .format .price {
-  font-family: 'CircularStd';
+  font-family: 'Gilroy';
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -1803,7 +1856,7 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .attributes .pages p span {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #book-details .details .attributes .dimensions {
@@ -1827,7 +1880,7 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .attributes .dimensions p span {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #other-books {
@@ -1936,6 +1989,7 @@ body.sidebar-opened .copyright {
   height: 72px;
   position: relative;
   max-width: 300px;
+  font-weight: 600;
   opacity: 0.8;
 }
 
@@ -2047,6 +2101,7 @@ body.sidebar-opened .copyright {
   height: 72px;
   position: relative;
   max-width: 300px;
+  font-weight: 600;
   opacity: 0.8;
 }
 
@@ -2145,8 +2200,8 @@ body.sidebar-opened .copyright {
   opacity: 0.5;
   letter-spacing: 1px;
   text-transform: none;
-  font-size: 12px;
   position: absolute;
+  font-size: 12px;
   left: 20px;
   top: 0px;
   line-height: 40px;
@@ -2767,7 +2822,7 @@ body.sidebar-opened .copyright {
 
 #other-devotionals .prev-devotional .prev-devotional-details .name p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #other-devotionals .prev-devotional .prev-devotional-details .name p span {
@@ -2877,7 +2932,7 @@ body.sidebar-opened .copyright {
 
 #other-devotionals .next-devotional .next-devotional-details .name p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #other-devotionals .next-devotional .next-devotional-details .name p span {
