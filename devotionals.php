@@ -26,7 +26,10 @@
                 extract($devotional);
                 $devotion_title = str_replace("</b>", "'", $devotion_title);
                 $devotion_body = str_replace("</b>", "'", $devotion_body);
-                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
+                $devotion_link = strtolower(str_replace(" ", "-", $devotion_title));
+                $devotion_link = str_replace("'", "</b>", $devotion_link);
+                $htmltoplaintext = strip_tags($devotion_body);
+                ?>
 
 
                 <div class="devotional" style="opacity: 0;">
@@ -47,7 +50,7 @@
                             <p><span>Posted on </span><?= $datePosted; ?></p>
                         </div>
                         <a href="devotional?devotion=<?= $devotion_link; ?>" class="description">
-                            <div><?= $devotion_body; ?></div>
+                            <div><?= $htmltoplaintext; ?></div>
                         </a>
                         <a href="devotional?devotion=<?= $devotion_link; ?>" class="btn btn-spaced">
                             <span>Read Devotional</span>
@@ -75,7 +78,7 @@
             </div>
             <input type="submit" value="Sign me up" name="subscribe" id="mc-embedded-subscribe" class="button">
         </div>
-        <div for="mce-EMAIL" class="mce_inline_error" style="display: block;"></div>
+        <div for="mce-EMAIL" class="mce_inline_error" style="display:none;"></div>
         <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>

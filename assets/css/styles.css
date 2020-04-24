@@ -197,7 +197,7 @@
 }
 
 html {
-  font-family: "CircularStd", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   line-height: 1.15;
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
@@ -2214,23 +2214,46 @@ body.sidebar-opened .copyright {
 }
 
 #mc-embedded-subscribe-form input.mce_inline_error {
-  border: 1px solid rgba(127, 0, 0, 0.7);
+  border: 1px solid #7f0000;
 }
 
 #mc-embedded-subscribe-form div.mce_inline_error {
-  font-size: 14px;
-  opacity: 0.5;
   text-align: left;
   line-height: 20px;
+  font-size: 12px;
+  padding-left: 30px;
+  position: relative;
+  color: #ff9000 !important;
+}
+
+#mc-embedded-subscribe-form div.mce_inline_error a {
+  color: #ff9000 !important;
+}
+
+#mc-embedded-subscribe-form div.mce_inline_error:before {
+  content: url(../images/icons/warning-bubble.svg);
+  padding-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response {
-  font-size: 14px;
-  text-align: center;
+  text-align: left;
   line-height: 20px;
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+#mc-embedded-subscribe-form #mce-responses .response:before {
+  padding-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-success-response {
+  position: relative;
   color: #007f00 !important;
 }
 
@@ -2238,12 +2261,21 @@ body.sidebar-opened .copyright {
   color: #007f00 !important;
 }
 
+#mc-embedded-subscribe-form #mce-responses .response#mce-success-response:before {
+  content: url(../images/icons/success-bubble.svg);
+}
+
 #mc-embedded-subscribe-form #mce-responses .response#mce-error-response {
+  position: relative;
   color: #7f0000 !important;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-error-response a {
   color: #7f0000 !important;
+}
+
+#mc-embedded-subscribe-form #mce-responses .response#mce-error-response:before {
+  content: url(../images/icons/error-bubble.svg);
 }
 
 #download-book-modal .form {
@@ -2708,7 +2740,7 @@ body.sidebar-opened .copyright {
 }
 
 #devotional-post div p {
-  font-family: "PalatinoLinotype";
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   text-align: justify;
 }
 
@@ -3164,6 +3196,41 @@ body.sidebar-opened .copyright {
       justify-self: center;
   text-align: center;
   border-top: 1px solid rgba(34, 34, 34, 0.2);
+}
+
+#disqus_thread .nav-tab > a {
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* --- disqus css -- */
+#disqus_thread {
+  color: #ffffff;
+  border-style: 0px solid;
+  border-color: #cccccc;
+  padding: 5px;
+}
+
+#dsq-content #dsq-comments .dsq-comment-body {
+  color: #fff;
+  background-color: #000000;
+}
+
+.dsq-reaction-body {
+  color: #fff;
+}
+
+.dsq-reaction-header cite,
+.dsq-reaction-header span {
+  color: #ccc;
+}
+
+.dsq-reaction-retweets {
+  color: #ccc;
+}
+
+/*--- end disqus css --*/
+#disqus-wrapper .install a {
+  display: none;
 }
 
 @media (max-width: 1000px) {
