@@ -730,12 +730,12 @@ span {
     grid-gap: 15px;
   }
   .btn-spaced span {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 13px;
+    line-height: 13px;
   }
   .btn-spaced svg,
   .btn-spaced img {
-    width: 14px;
+    width: 16px;
   }
 }
 
@@ -763,19 +763,38 @@ span {
   }
 }
 
+label {
+  padding: 30px 25px;
+  color: #444444;
+  opacity: 0.5;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: text;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: 0;
+}
+
 input {
-  padding: 15px 20px;
+  padding: 15px 25px;
   border: 1px solid rgba(68, 68, 68, 0.2);
   color: #444444;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 500;
   outline: 0;
   padding-top: 40px;
 }
 
 input::-webkit-input-placeholder {
   color: #444444;
-  opacity: 0.5;
+  opacity: 0;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
@@ -785,7 +804,7 @@ input::-webkit-input-placeholder {
 
 input:-ms-input-placeholder {
   color: #444444;
-  opacity: 0.5;
+  opacity: 0;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
@@ -795,7 +814,7 @@ input:-ms-input-placeholder {
 
 input::-ms-input-placeholder {
   color: #444444;
-  opacity: 0.5;
+  opacity: 0;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
@@ -805,7 +824,7 @@ input::-ms-input-placeholder {
 
 input::placeholder {
   color: #444444;
-  opacity: 0.5;
+  opacity: 0;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
@@ -823,13 +842,24 @@ input:focus {
   border: 1px solid rgba(68, 68, 68, 0.3);
 }
 
-input:focus ~ label {
-  padding: 0 .3em;
-  font-size: 12px;
-  position: absolute;
-  left: 20px;
-  top: 0px;
-  opacity: 0.7;
+input:focus + label {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+input:active {
+  background-color: rgba(68, 68, 68, 0.05);
+  border: 1px solid rgba(68, 68, 68, 0.3);
+}
+
+input:active + label {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+input:valid + label {
+  padding-top: 15px;
+  font-size: 14px;
 }
 
 input[type="submit"],
@@ -838,7 +868,7 @@ button.button {
   background-color: #222222;
   color: white;
   padding: 20px 40px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.3em;
@@ -1240,6 +1270,7 @@ body.sidebar-opened .copyright {
   padding: 15px 30px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: rgba(68, 68, 68, 0.9);
 }
 
 #navigation nav a:hover {
@@ -1718,8 +1749,25 @@ body.sidebar-opened .copyright {
 #book-details .book-image {
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+#book-details .book-image img {
+  width: 100%;
+  height: auto;
+}
+
+#book-details .book-image .shadow {
+  -webkit-filter: blur(10px) opacity(0.5);
+  filter: blur(20px) opacity(0.5);
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 #book-details .details {
@@ -2125,7 +2173,7 @@ body.sidebar-opened .copyright {
   right: 0;
   top: 0px;
   bottom: 0;
-  background: rgba(68, 68, 68, 0.5);
+  background: rgba(68, 68, 68, 0.8);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   z-index: 3;
@@ -2154,7 +2202,7 @@ body.sidebar-opened .copyright {
 }
 
 .modal .modal-body .close {
-  padding: 20px 20px;
+  padding: 20px 30px;
   -ms-grid-column-align: end;
       justify-self: end;
   background-color: transparent;
@@ -2162,12 +2210,12 @@ body.sidebar-opened .copyright {
 }
 
 .modal .modal-body .close:hover {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
   border-color: transparent;
 }
 
 .modal .modal-body .close svg, .modal .modal-body .close img {
-  height: 10px;
+  height: 15px;
 }
 
 .modal .modal-body .close svg path {
@@ -2196,23 +2244,6 @@ body.sidebar-opened .copyright {
   position: relative;
 }
 
-#mc-embedded-subscribe-form .mc-field-group label {
-  opacity: 0.5;
-  letter-spacing: 1px;
-  text-transform: none;
-  position: absolute;
-  font-size: 12px;
-  left: 20px;
-  top: 0px;
-  line-height: 40px;
-  text-transform: uppercase;
-  cursor: text;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 #mc-embedded-subscribe-form input.mce_inline_error {
   border: 1px solid #7f0000;
 }
@@ -2223,15 +2254,15 @@ body.sidebar-opened .copyright {
   font-size: 12px;
   padding-left: 30px;
   position: relative;
-  color: #ff9000 !important;
+  color: #7f0000 !important;
 }
 
 #mc-embedded-subscribe-form div.mce_inline_error a {
-  color: #ff9000 !important;
+  color: #7f0000 !important;
 }
 
 #mc-embedded-subscribe-form div.mce_inline_error:before {
-  content: url(../images/icons/warning-bubble.svg);
+  content: url(../images/icons/error-bubble.svg);
   padding-left: 0;
   position: absolute;
   top: 0;
@@ -2603,7 +2634,7 @@ body.sidebar-opened .copyright {
 
 .devotional .details .devotional-author p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .devotional .details .devotional-author p span {
@@ -2612,7 +2643,7 @@ body.sidebar-opened .copyright {
 
 .devotional .details .devotional-date p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .devotional .details .devotional-date p span {
@@ -2705,7 +2736,7 @@ body.sidebar-opened .copyright {
 
 #devotional-details p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #devotional-details p span {

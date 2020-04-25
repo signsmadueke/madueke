@@ -73,8 +73,8 @@
     <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=33ca07b1a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class="form-inputs">
             <div class="mc-field-group">
-                <label for="mce-EMAIL">Email Address</label>
                 <input type="email" autocomplete="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
+                <label for="mce-EMAIL">Email Address</label>
             </div>
             <input type="submit" value="Sign me up" name="subscribe" id="mc-embedded-subscribe" class="button">
         </div>

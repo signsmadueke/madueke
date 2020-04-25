@@ -155,7 +155,7 @@ require_once 'inc/header.php';
 
 <section id="download-book-modal" class="modal hide">
     <div class="modal-body">
-        <button class="close button"><img class="svg" src="assets/images/icons/x.svg"></button>
+        <button title="Close" class="close button"><img class="svg" src="assets/images/icons/x.svg"></button>
         <div class="form modal-content">
             <div class="form-use">
                 <h1>Download Quarantined for God’s Deliverance</h1>
@@ -165,18 +165,18 @@ require_once 'inc/header.php';
                 <div class="form-inputs">
                     <div class="name">
                         <div class="mc-field-group">
-                            <label for="mce-FNAME">First Name</label>
                             <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
+                            <label for="mce-FNAME">First Name</label>
                         </div>
                         <div class="mc-field-group">
-                            <label for="mce-LNAME">Last Name</label>
                             <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
+                            <label for="mce-LNAME">Last Name</label>
                         </div>
                     </div>
 
                     <div class="mc-field-group">
-                        <label for="mce-EMAIL">Email Address</label>
                         <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
+                        <label for="mce-EMAIL">Email Address</label>
                     </div>
                 </div>
 

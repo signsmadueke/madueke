@@ -43,7 +43,11 @@ require_once 'inc/header.php';
             $book_title = str_replace("</b>", "'", $book_title);
             $book_description = str_replace("</b>", "'", $book_description); ?>
 
-            <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+            <div class="book-image animate reveal">
+                <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+                <img class="shadow" src="assets/images/books/<?= $book_image; ?>">
+            </div>
+            <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->
 
             <div class="details animate reveal">
                 <div class="description">
@@ -52,7 +56,7 @@ require_once 'inc/header.php';
                 </div>
 
                 <div class="channels animate reveal">
-                    <p>Formats</p>
+                    <p><strong>Formats</strong></p>
                     <div class="formats">
                         <div class="format">
                             <p class="name">Ebook</p>

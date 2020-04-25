@@ -673,13 +673,13 @@ span {
 		}
 
 		span {
-			font-size: 12px;
-			line-height: 12px;
+			font-size: 13px;
+			line-height: 13px;
 		}
 
 		svg,
 		img {
-			width: 14px;
+			width: 16px;
 		}
 	}
 }
@@ -707,18 +707,34 @@ span {
 	}
 }
 
+label {
+	padding: 30px 25px;
+	color: #444444;
+	opacity: 0.5;
+	font-weight: 500;
+	letter-spacing: 0;
+	text-transform: none;
+	font-size: 16px;
+	line-height: 16px;
+	cursor: text;
+	position: absolute;
+	user-select: none;
+	outline: 0;
+}
+
 input {
-	padding: 15px 20px;
+	padding: 15px 25px;
 	border: 1px solid rgba(68, 68, 68, 0.2);
 	color: #444444;
 	font-size: 16px;
 	line-height: 16px;
+	font-weight: 500;
 	outline: 0;
 	padding-top: 40px;
 
 	&::placeholder {
 		color: #444444;
-		opacity: 0.5;
+		opacity: 0;
 		font-weight: 500;
 		letter-spacing: 0;
 		text-transform: none;
@@ -735,15 +751,29 @@ input {
 		background-color: rgba(68, 68, 68, 0.05);
 		border: 1px solid rgba(68, 68, 68, 0.3);
 		
-		&~label {
-			padding: 0 .3em;
-			font-size: 12px;
-			position: absolute;
-			left: 20px;
-			top: 0px;
-			opacity: 0.7;
+		&+label {
+			padding-top: 15px;
+			font-size: 14px;
 		}
 	}
+
+	&:active {
+		background-color: rgba(68, 68, 68, 0.05);
+		border: 1px solid rgba(68, 68, 68, 0.3);
+
+		&+label {
+			padding-top: 15px;
+			font-size: 14px;
+		}
+	}
+
+	&:valid {
+		&+label {
+			padding-top: 15px;
+			font-size: 14px;
+		}
+	}
+
 }
 
 input[type="submit"],
@@ -752,7 +782,7 @@ button.button {
 	background-color: #222222;
 	color: white;
 	padding: 20px 40px;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 14px;
 	line-height: 14px;
 	letter-spacing: 0.3em;
@@ -1127,6 +1157,7 @@ body.sidebar-opened {
 		a {
 			padding: 15px 30px;
 			transition: all 0.2s ease-in-out;
+			color: rgba(68, 68, 68, 0.9);
 
 			&:hover {
 				opacity: 0.6;
@@ -1558,7 +1589,24 @@ body.sidebar-opened {
 	.book-image {
 		width: 100%;
 		height: auto;
-		box-shadow: 0px 20px 36px -20px rgba(0, 0, 0, 0.4);
+		position: relative;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+
+		.shadow {
+			-webkit-filter: blur(10px) opacity(0.5);
+			filter: blur(20px) opacity(0.5);
+			position: absolute;
+			top: 5%;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			transform: scale(0.9);
+		}
 	}
 
 	.details {
@@ -1896,7 +1944,7 @@ body.sidebar-opened {
 	right: 0;
 	top: 0px;
 	bottom: 0;
-	background: rgba(68, 68, 68, 0.5);
+	background: rgba(68, 68, 68, 0.8);
 	backdrop-filter: blur(20px);
 	z-index: 3;
 	padding: 50px;
@@ -1921,18 +1969,18 @@ body.sidebar-opened {
 		}
 
 		.close {
-			padding: 20px 20px;
+			padding: 20px 30px;
 			justify-self: end;
 			background-color: transparent;
 			border-color: transparent;
 
 			&:hover {
-				background-color: transparent;
+				background-color: rgba(0, 0, 0, 0.1);
 				border-color: transparent;
 			}
 
 			svg, img {
-				height: 10px;
+				height: 15px;
 			}
 
 			svg {path {fill: #222222}}
@@ -1969,19 +2017,19 @@ body.sidebar-opened {
 		// 	}
 		// }
 
-		label {
-			opacity: 0.5;
-			letter-spacing: 1px;
-			text-transform: none;
-			position: absolute;
-			font-size: 12px;
-			left: 20px;
-			top: 0px;
-			line-height: 40px;
-			text-transform: uppercase;
-			cursor: text;
-			user-select: none;
-		}
+		// label {
+		// 	opacity: 0.5;
+		// 	letter-spacing: 1px;
+		// 	text-transform: none;
+		// 	position: absolute;
+		// 	font-size: 12px;
+		// 	left: 20px;
+		// 	top: 0px;
+		// 	line-height: 40px;
+		// 	text-transform: uppercase;
+		// 	cursor: text;
+		// 	user-select: none;
+		// }
 	}
 
 	input.mce_inline_error {
@@ -1999,14 +2047,14 @@ body.sidebar-opened {
 		font-size: 12px;
 		padding-left: 30px;
 		position: relative;
-		color: #ff9000 !important;
+		color: rgb(127, 0, 0) !important;
 
 		a {
-			color: #ff9000 !important;
+			color: rgb(127, 0, 0) !important;
 		}
 
 		&:before {
-			content: url(../images/icons/warning-bubble.svg);
+			content: url(../images/icons/error-bubble.svg);
 			padding-left: 0;
 			position: absolute;
 			top: 0;
@@ -2371,7 +2419,7 @@ body.sidebar-opened {
 			
 			p {
 				font-size: 16px;
-				font-weight: 500;
+				font-weight: 600;
 	
 				span {
 					opacity: 0.5;
@@ -2382,7 +2430,7 @@ body.sidebar-opened {
 		.devotional-date {
 			p {
 				font-size: 16px;
-				font-weight: 500;
+				font-weight: 600;
 
 				span {
 					opacity: 0.5;
@@ -2476,7 +2524,7 @@ body.sidebar-opened {
 
 	p {
 		font-size: 16px;
-		font-weight: 500;
+		font-weight: 600;
 
 		span {
 			opacity: 0.5;
