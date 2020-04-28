@@ -51,8 +51,9 @@ require_once 'inc/header.php';
 
             <div class="details animate reveal">
                 <div class="description">
-                    <h1><?= $book_title; ?></h1>
-                    <div><?= $book_description; ?></div>
+                    <h1 class="animate reveal"><?= $book_title; ?></h1>
+                    <div class="text animate reveal"><?= $book_description; ?></div>
+                    <a class="expand-description animate reveal" href="javascript:void(0)"><span class="read-more">Read More</span><span class="read-less">Read Less</span> <img class="svg" src="assets/images/icons/chevron-left.svg"></a>
                 </div>
 
                 <div class="channels animate reveal">
