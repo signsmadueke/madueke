@@ -51,6 +51,19 @@ $(document).keypress(function(e) {
 //     $body.toggleClass("modal-opened");
 // });
 
+// Expand Book Description
+$(".expand-description").click(function () {
+    var $read_more = $('.expand-description span');
+    var $description = $('#book-details .details .description');
+    $description.toggleClass("show");
+    $('.expand-description span').text == 'Read More' ? 'Read Less' : 'Read More';
+
+    
+});
+    
+    
+
+
 // Download Modal Start
 var modal = document.querySelector(".modal");
 var trigger = document.querySelector("#download-btn");

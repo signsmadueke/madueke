@@ -1621,7 +1621,56 @@ body.sidebar-opened {
 			grid-gap: 20px;
 			grid-auto-rows: max-content;
 			padding-bottom: 30px;
-			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+			
+			.text {
+				height: 245px;
+				overflow: hidden;
+			}
+
+			.expand-description {
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				padding: 10px 25px;
+				display: grid;
+				grid-template-columns: 1fr max-content;
+				align-items: center;
+
+				.svg, img {
+					height: 12px;
+					transform: rotate(270deg);
+				}
+
+				.read-more {
+					display: block;
+				}
+				
+				.read-less {
+					display: none;
+				}
+
+				&:hover {
+					border: 1px solid rgba(0, 0, 0, 0.3);
+				}
+			}
+
+			&.show {
+				.text {
+					height: 100%;
+				}
+				.expand-description {
+					.svg,
+					img {
+						transform: rotate(90deg);
+					}
+
+					.read-more {
+						display: none;
+					}
+					
+					.read-less {
+						display: block;
+					}
+				}
+			}
 		}
 		
 		.channels {
@@ -1946,7 +1995,7 @@ body.sidebar-opened {
 	right: 0;
 	top: 0px;
 	bottom: 0;
-	background: rgba(68, 68, 68, 0.8);
+	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(20px);
 	z-index: 3;
 	padding: 50px;
