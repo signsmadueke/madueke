@@ -2178,12 +2178,27 @@ body.sidebar-opened .copyright {
           backdrop-filter: blur(20px);
   z-index: 3;
   padding: 50px;
-}
-
-.modal.hide {
-  display: none;
   opacity: 0;
   visibility: hidden;
+}
+
+.modal .modal-body {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.show .modal-body {
+  -webkit-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 .modal .modal-body {
@@ -2202,7 +2217,7 @@ body.sidebar-opened .copyright {
 }
 
 .modal .modal-body .close {
-  padding: 20px 30px;
+  padding: 20px 22px;
   -ms-grid-column-align: end;
       justify-self: end;
   background-color: transparent;

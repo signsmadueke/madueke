@@ -53,7 +53,7 @@ require_once 'inc/header.php';
                 <div class="channels animate reveal">
                     <p>Free Download</p>
                     <div class="formats">
-                        <a href="#" id="download-btn" class="w-icon button">
+                        <a href="javascript:void(0)" id="download-btn" class="w-icon button">
                             <img class="svg" src="assets/images/icons/download.svg">
                             <span>Download PDF</span>
                         </a>
@@ -153,7 +153,7 @@ require_once 'inc/header.php';
         <?php } } ?>
 </section>
 
-<section id="download-book-modal" class="modal hide">
+<section id="download-book-modal" class="modal">
     <div class="modal-body">
         <button title="Close" class="close button"><img class="svg" src="assets/images/icons/x.svg"></button>
         <div class="form modal-content">

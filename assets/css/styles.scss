@@ -1948,11 +1948,22 @@ body.sidebar-opened {
 	backdrop-filter: blur(20px);
 	z-index: 3;
 	padding: 50px;
+	opacity: 0;
+	visibility: hidden;
 
-	&.hide {
-		display: none;
-		opacity: 0;
-		visibility: hidden;
+	.modal-body {
+		transform: translate(0px, 0px);
+		transition-delay: 1s;
+	}
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+
+		.modal-body {
+			transform: translate(0px, 100px);
+			transition-delay: 1s;
+		}
 	}
 
 	.modal-body {
@@ -1969,7 +1980,7 @@ body.sidebar-opened {
 		}
 
 		.close {
-			padding: 20px 30px;
+			padding: 20px 22px;
 			justify-self: end;
 			background-color: transparent;
 			border-color: transparent;

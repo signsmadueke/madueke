@@ -30,26 +30,48 @@ $(document).keypress(function(e) {
     } 
 });
 
-$("#download-btn").click(function () {
-    var $body = $('body');
-    var $modal = $('.modal');
-    $modal.toggleClass("hide");
-    $body.toggleClass("modal-opened");
-});
+// $("#download-btn").click(function () {
+//     var $body = $('body');
+//     var $modal = $('.modal');
+//     $modal.toggleClass("hide");
+//     $body.toggleClass("modal-opened");
+// });
 
-$(".modal .close").click(function () {
-    var $body = $('body');
-    var $modal = $('.modal');
-    $modal.toggleClass("hide");
-    $body.toggleClass("modal-opened");
-});
+// $(".modal .close").click(function () {
+//     var $body = $('body');
+//     var $modal = $('.modal');
+//     $modal.toggleClass("hide");
+//     $body.toggleClass("modal-opened");
+// });
 
-$(".modal-overlay").click(function () {
-    var $body = $('body');
-    var $modal = $('.modal');
-    $modal.toggleClass("hide");
-    $body.toggleClass("modal-opened");
-});
+// $(".modal-overlay").click(function () {
+//     var $body = $('body');
+//     var $modal = $('.modal');
+//     $modal.toggleClass("hide");
+//     $body.toggleClass("modal-opened");
+// });
+
+// Download Modal Start
+var modal = document.querySelector(".modal");
+var trigger = document.querySelector("#download-btn");
+var close = document.querySelector(".close");
+var body = document.querySelector("body");
+
+function toggleModal() {
+    modal.classList.toggle("show");
+    body.classList.toggle("modal-opened");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+close.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick)
+// Download Modal End
 
 var animate = new WOW({
     boxClass: 'animate',
