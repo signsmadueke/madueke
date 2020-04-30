@@ -815,10 +815,10 @@ button.button {
 		img {
 			height: 25px;
 		}
-
-		span {
-			color: white;
-		}
+	}
+	
+	span {
+		color: white;
 	}
 }
 
@@ -1628,7 +1628,7 @@ body.sidebar-opened {
 			padding-bottom: 30px;
 			
 			.text {
-				height: 245px;
+				max-height: 245px;
 				overflow: hidden;
 			}
 
@@ -1653,13 +1653,15 @@ body.sidebar-opened {
 				}
 
 				&:hover {
-					border: 1px solid rgba(0, 0, 0, 0.3);
+					background-color: rgba(68, 68, 68, 0.05);
+					box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
 				}
+
 			}
 
 			&.show {
 				.text {
-					height: 100%;
+					max-height: none;
 				}
 				.expand-description {
 					.svg,
@@ -2681,6 +2683,86 @@ body.sidebar-opened {
 
 	h3 {
 		text-align: justify;
+	}
+}
+
+#book-promotion {
+	display: grid;
+	grid-gap: 150px;
+
+	.promotion {
+		display: grid;
+		grid-gap: 75px;
+	}
+}
+
+.book-horizontal {
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: max-content 1fr;
+	align-items: center;
+
+	@media (max-width: 576px) {
+		grid-template-columns: none;
+		grid-gap: 30px;
+		grid-auto-flow: row;
+	}
+
+	.image {
+		height: 300px;
+		width: auto;
+
+		img {
+			width: auto;
+			height: 100%;
+		}
+
+		@media (max-width: 576px) {
+			height: auto;
+			width: 100%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.details {
+		display: grid;
+		grid-gap: 20px;
+
+		h3 {
+			line-height: 30px;
+		}
+		
+		p {
+			font-size: 16px;
+			line-height: 30px;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			// -webkit-box-orient: vertical;
+			max-height: 120px;
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0%;
+				bottom: 0;
+				left: 0%;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				background: linear-gradient(180deg, rgba(255, 255, 255, 0) 67.5%, #FFFFFF 100%);
+			}
+		}
+
+		.button {
+			width: max-content;
+		}
 	}
 }
 
