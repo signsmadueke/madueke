@@ -40,9 +40,14 @@
             $devotion_subtitle = str_replace("</b>", "'", $devotion_subtitle);
             $devotion_body = str_replace("</b>", "'", $devotion_body); ?>
 
-                <section id="devotional-header">
+                <section id="devotional-header" class="desktop">
                     <img src="assets/images/devotionals/<?= $devotion_subimage; ?>" alt="<?= $devotion_title; ?>">
                     <img class="shadow" src="assets/images/devotionals/<?= $devotion_subimage; ?>">
+                </section>
+
+                <section id="devotional-header" class="mobile">
+                    <img src="assets/images/devotionals/<?= $devotion_image; ?>" alt="<?= $devotion_title; ?>">
+                    <img class="shadow" src="assets/images/devotionals/<?= $devotion_image; ?>">
                 </section>
 
                 <section id="devotional-details">
@@ -55,8 +60,16 @@
                 </section>
 
                 <section id="devotional-post">
-                    <h3><?= $devotion_subtitle; ?></h3>
-                    <div><?= $devotion_body; ?></div>
+                    <?= $devotion_body; ?>
+                </section>
+
+                <section class="book-promotion">
+                    <div>
+                        <h1>Free Book</h1>
+                        <div class="promo">
+                            <h1></h1>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="devotion-comments">
@@ -72,7 +85,6 @@
                     })();
                     </script>
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                                
                 </section>
 <?php } } ?>
 <section id="other-devotionals">

@@ -662,7 +662,7 @@ li {
   font-size: 18px;
   line-height: 35px;
   font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 span {
@@ -1268,6 +1268,10 @@ body.sidebar-opened .copyright {
       align-items: center;
 }
 
+#navigation nav ul li {
+  font-weight: 600;
+}
+
 #navigation nav a {
   padding: 15px 30px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1757,6 +1761,7 @@ body.sidebar-opened .copyright {
 #book-details .book-image img {
   width: 100%;
   height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #book-details .book-image .shadow {
@@ -2754,6 +2759,26 @@ body.sidebar-opened .copyright {
   position: relative;
 }
 
+#devotional-header.desktop {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  #devotional-header.desktop {
+    display: none;
+  }
+}
+
+#devotional-header.mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  #devotional-header.mobile {
+    display: block;
+  }
+}
+
 #devotional-header img {
   width: 100%;
   border-radius: 10px;
@@ -2832,27 +2857,63 @@ body.sidebar-opened .copyright {
 #devotional-post {
   display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 50px;
   width: 100%;
   max-width: 900px;
   -ms-grid-column-align: center;
       justify-self: center;
+  text-align: justify;
   padding: 0px 0 100px 0;
 }
 
-#devotional-post div p {
-  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+#devotional-post .block {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+#devotional-post .block h3 {
+  border-top: 1px solid rgba(68, 68, 68, 0.2);
+  padding-top: 20px;
+}
+
+#devotional-post .points {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  padding: 30px;
+  background: rgba(68, 68, 68, 0.05);
+  border: 1px solid rgba(68, 68, 68, 0.2);
   text-align: justify;
 }
 
-#devotional-post h3 {
-  text-align: center;
+#devotional-post .points ul {
+  list-style-type: square;
+  padding-left: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
 }
 
-@media (max-width: 576px) {
-  #devotional-post h3 {
-    text-align: left;
-  }
+#devotional-post .points ul li {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#devotional-post ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+#devotional-post ol li {
+  line-height: 30px;
+}
+
+#devotional-post h3 {
+  text-align: justify;
 }
 
 #other-devotionals {
