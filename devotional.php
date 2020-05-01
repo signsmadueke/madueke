@@ -69,6 +69,7 @@
                         <div class="book-horizontal">
                             <div class="image">
                                 <img src="assets/images/books/book5.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                                <img class="shadow" src="assets/images/books/book5.jpg" alt="Book Cover of Quarantined for God's Deliverance">
                             </div>
                             <div class="details">
                                 <h3>Quarantined for God's Deliverance</h3>
@@ -86,6 +87,7 @@
                         <div class="book-horizontal">
                             <div class="image">
                                 <img src="assets/images/books/book1.jpg" alt="Book Cover of 21/40 Nights of Decrees and Your Enemies Will Surrender">
+                                <img class="shadow" src="assets/images/books/book1.jpg" alt="Book Cover of 21/40 Nights of Decrees and Your Enemies Will Surrender">
                             </div>
                             <div class="details">
                                 <h3>21/40 Nights of Decrees and Your Enemies Will Surrender</h3>
@@ -99,6 +101,7 @@
                         <div class="book-horizontal">
                             <div class="image">
                                 <img src="assets/images/books/book9.jpg" alt="Book Cover of A Jump From Evil Altar">
+                                <img class="shadow" src="assets/images/books/book9.jpg" alt="Book Cover of A Jump From Evil Altar">
                             </div>
                             <div class="details">
                                 <h3>A Jump From Evil Altar</h3>
@@ -112,6 +115,7 @@
                         <div class="book-horizontal">
                             <div class="image">
                                 <img src="assets/images/books/book6.jpg" alt="Book Cover of Prayers For Mercy">
+                                <img class="shadow" src="assets/images/books/book6.jpg" alt="Book Cover of Prayers For Mercy">
                             </div>
                             <div class="details">
                                 <h3>Prayers For Mercy</h3>

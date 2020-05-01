@@ -2476,7 +2476,8 @@ body.sidebar-opened .copyright {
 #contacts a:hover {
   background: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  filter: blur(1px);
 }
 
 #now-playing {
@@ -2904,7 +2905,7 @@ body.sidebar-opened .copyright {
 
 #devotional-post ol {
   list-style-type: decimal;
-  padding-left: 20px;
+  padding-left: 30px;
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
@@ -2927,7 +2928,7 @@ body.sidebar-opened .copyright {
 #book-promotion .promotion {
   display: -ms-grid;
   display: grid;
-  grid-gap: 75px;
+  grid-gap: 50px;
 }
 
 .book-horizontal {
@@ -2954,11 +2955,26 @@ body.sidebar-opened .copyright {
 .book-horizontal .image {
   height: 300px;
   width: auto;
+  position: relative;
 }
 
 .book-horizontal .image img {
   width: auto;
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.book-horizontal .image .shadow {
+  -webkit-filter: blur(10px) opacity(0.5);
+  filter: blur(10px) opacity(0.5);
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @media (max-width: 576px) {
@@ -2988,7 +3004,7 @@ body.sidebar-opened .copyright {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
-  max-height: 120px;
+  max-height: 150px;
   position: relative;
 }
 
@@ -3010,6 +3026,22 @@ body.sidebar-opened .copyright {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  padding: 17px 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.book-horizontal .details .button:hover {
+  background-color: rgba(68, 68, 68, 0.05);
+  -webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(68, 68, 68, 0.3);
+}
+
+.book-horizontal .details .button span {
+  font-size: 13px;
+  color: #444444;
+  font-weight: 700;
 }
 
 #other-devotionals {
