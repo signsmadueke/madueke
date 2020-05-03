@@ -1927,7 +1927,8 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .channels .formats .format .buy-btn svg {
-  height: 30px;
+  max-height: 30px;
+  width: 100%;
 }
 
 #book-details .details .channels .formats .format .name {
