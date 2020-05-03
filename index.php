@@ -23,11 +23,11 @@
 <section id="bestsellers">
 	
     <div class="title">
-        <h1>Recent Books</h1>
+        <h2>Recent Books</h2>
         
-        <a href="books" class="btn btn-spaced btn-view">
-            <span>More Books</span>
-            <img class="svg" src="assets/images/icons/arrow-right.svg">
+        <a href="books" class="btn btn-chevron btn-view">
+            <span>All Books</span>
+            <img class="svg" src="assets/images/icons/chevron-right.svg">
         </a>
     </div>
 	
@@ -44,13 +44,14 @@
                     $htmltoplaintext = strip_tags($book_description);
                     ?>
                     <a href="freebook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                        <div class="line"></div>
                         <div class="book-details">
                             <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
                             <div class="book-description"><?= $htmltoplaintext; ?></div>
-                            <div class="btn btn-spaced btn-view">
+                            <div class="btn btn-chevron btn-view">
                                 <span>View Details</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
-                                    <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none" class="svg replaced-svg">
+                                    <path d="M1.52395 10.917C1.40956 11.0277 1.22409 11.0277 1.1097 10.917L0.0857946 9.92607C-0.028598 9.81536 -0.028598 9.63587 0.0857946 9.52517L4.24502 5.5L0.0857946 1.47484C-0.0285979 1.36413 -0.0285983 1.18464 0.0857941 1.07394L1.1097 0.0830293C1.22409 -0.0276765 1.40956 -0.0276764 1.52395 0.0830293L6.91421 5.29955C7.0286 5.41026 7.0286 5.58975 6.91421 5.70045L1.52395 10.917Z" fill="#444444"></path>
                                 </svg>
                             </div>
                         </div>
@@ -70,13 +71,14 @@
                     $htmltoplaintext = strip_tags($book_description);
                     ?>
                     <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                        <div class="line"></div>
                         <div class="book-details">
                             <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
                             <div class="book-description"><?= $htmltoplaintext; "..." ?></div>
-                            <div class="btn btn-spaced btn-view">
+                            <div class="btn btn-chevron btn-view">
                                 <span>View Details</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
-                                    <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none" class="svg replaced-svg">
+                                    <path d="M1.52395 10.917C1.40956 11.0277 1.22409 11.0277 1.1097 10.917L0.0857946 9.92607C-0.028598 9.81536 -0.028598 9.63587 0.0857946 9.52517L4.24502 5.5L0.0857946 1.47484C-0.0285979 1.36413 -0.0285983 1.18464 0.0857941 1.07394L1.1097 0.0830293C1.22409 -0.0276765 1.40956 -0.0276764 1.52395 0.0830293L6.91421 5.29955C7.0286 5.41026 7.0286 5.58975 6.91421 5.70045L1.52395 10.917Z" fill="#444444"></path>
                                 </svg>
                             </div>
                         </div>

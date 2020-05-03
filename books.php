@@ -36,13 +36,14 @@
                 $htmltoplaintext = strip_tags($book_description);
                 ?>
                 <a alt="<?= $book_titledisplay; ?>" href="freebook?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>); opacity: 0;">
+                    <div class="line"></div>
                     <div class="book-details">
                         <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
                         <div class="book-description"><?= $htmltoplaintext; ?></div>
-                        <div class="btn btn-spaced btn-view">
+                        <div class="btn btn-chevron btn-view">
                             <span>View Details</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
-                                <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 11" fill="none" class="svg replaced-svg">
+                                <path d="M5.8903 0.0830292C5.77591 -0.0276764 5.59044 -0.0276764 5.47605 0.0830292L0.0857947 5.29955C-0.0285979 5.41025 -0.0285984 5.58974 0.0857942 5.70045L5.47605 10.917C5.59044 11.0277 5.77591 11.0277 5.8903 10.917L6.91421 9.92606C7.0286 9.81536 7.0286 9.63587 6.91421 9.52516L2.75498 5.5L6.91421 1.47483C7.0286 1.36413 7.0286 1.18464 6.91421 1.07393L5.8903 0.0830292Z" fill="#444444"></path>
                             </svg>
                         </div>
                     </div>
@@ -62,13 +63,14 @@
                 $htmltoplaintext = strip_tags($book_description);
                 ?>
                 <a alt="<?= $book_title; ?>" href="book?book=<?= $book_link; ?>" class="book" style="background-image: url(assets/images/books/<?= $book_image; ?>); opacity: 0;">
+                    <div class="line"></div>
                     <div class="book-details">
                         <h3 class="book-name" title="<?= $book_title; ?>"><?= $book_title; ?></h3>
                         <div class="book-description"><?= $htmltoplaintext; "..." ?></div>
-                        <div class="btn btn-spaced btn-view">
+                        <div class="btn btn-chevron btn-view">
                             <span>View Details</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 12" fill="none" class="svg replaced-svg">
-                                <path d="M18.7659 5.50584L13.6747 0.414673C13.3623 0.102254 12.8558 0.102254 12.5433 0.414673C12.2309 0.727093 12.2309 1.23362 12.5433 1.54604L16.2688 5.27153H0.200195V6.87153H16.2688L12.5433 10.597C12.2309 10.9094 12.2309 11.416 12.5433 11.7284C12.8558 12.0408 13.3623 12.0408 13.6747 11.7284L18.7659 6.63721C19.0783 6.32479 19.0783 5.81826 18.7659 5.50584Z" fill="#444444"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 11" fill="none" class="svg replaced-svg">
+                                <path d="M5.8903 0.0830292C5.77591 -0.0276764 5.59044 -0.0276764 5.47605 0.0830292L0.0857947 5.29955C-0.0285979 5.41025 -0.0285984 5.58974 0.0857942 5.70045L5.47605 10.917C5.59044 11.0277 5.77591 11.0277 5.8903 10.917L6.91421 9.92606C7.0286 9.81536 7.0286 9.63587 6.91421 9.52516L2.75498 5.5L6.91421 1.47483C7.0286 1.36413 7.0286 1.18464 6.91421 1.07393L5.8903 0.0830292Z" fill="#444444"></path>
                             </svg>
                         </div>
                     </div>

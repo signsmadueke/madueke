@@ -30,9 +30,9 @@ $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>
 
-<a href="books" class="btn btn-spaced">
-    <img class="svg" src="assets/images/icons/arrow-left.svg">
-    <span>Back to Books</span>
+<a href="books" class="btn btn-chevron">
+    <img class="svg" src="assets/images/icons/chevron-left.svg">
+    <span>All Books</span>
 </a>
 
 <section id="book-details">
@@ -44,56 +44,62 @@ require_once 'inc/header.php';
             $book_description = str_replace("</b>", "'", $book_description); ?>
 
             <div class="book-image animate reveal">
-                <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
-                <img class="shadow" src="assets/images/books/<?= $book_image; ?>">
+                <div class="image">
+                    <img src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>">
+                </div>
+                <div class="shadow">
+                    <img src="assets/images/books/<?= $book_image; ?>">
+                </div>
             </div>
             <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->
 
-            <div class="details animate reveal">
-                <div class="description">
-                    <h1 class="animate reveal"><?= $book_title; ?></h1>
-                    <div class="text animate reveal"><?= $book_description; ?></div>
-                    <a class="expand-description animate reveal" href="javascript:void(0)"><span class="read-more">Read More</span><span class="read-less">Read Less</span> <img class="svg" src="assets/images/icons/chevron-left.svg"></a>
-                </div>
+            <div class="details">
+                <h1 class="book-title animate reveal"><?= $book_title; ?></h1>
 
                 <div class="channels animate reveal">
-                    <p><strong>Formats</strong></p>
+                    <h6 class="title">Book Formats</h6>
+
                     <div class="formats">
                         <div class="format">
+                            <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
+                            
                             <p class="name">Ebook</p>
                             
-                            <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
-
                             <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="buy-btn" >
                                 <img class="svg" src="assets/images/formats/kindle.svg">
                             </a>
                         </div>
                     
                         <div class="format">
-                            <p class="name">Paperback</p>
-                            
                             <h1 class="price">&#36;<?= $book_paperback_price; ?></h1>
+                            
+                            <p class="name">Paperback</p>
 
                             <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="buy-btn" >
-                                <img class="svg" src="assets/images/formats/amazon.svg">
-                            </a>
+                            <img class="svg" src="assets/images/formats/amazon.svg">
+                        </a>
                         </div>
                     </div>
                 </div>
 
+                <div class="description animate reveal">
+                    <h6 class="title">Book Description</h6>
+                    <div class="text"><?= $book_description; ?></div>
+                    <a class="expand-description btn btn-chevron" href="javascript:void(0)"><span class="read-more">Read More</span><span class="read-less">Read Less</span> <img class="svg" src="assets/images/icons/chevron-left.svg"></a>
+                </div>
+
                 <div class="attributes animate reveal">
-                    <div class="pages">
-                        <img src="assets/images/icons/pages.svg">
-                        <p><?= $total_book_page; ?><span> pages</span></p>
-                    </div>
+                    <h6 class="title">Book Details</h6>
 
-                    <!-- <div class="dimensions">
-                        <img src="assets/images/icons/dimension.svg">
-                        <p title="Width, Spine & Height"><?= $book_measurement; ?><span> inches</span></p>
-                    </div> -->
+                    <div class="book-attributes">
+                        <div class="pages">
+                            <img src="assets/images/icons/pages.svg">
+                            <p><?= $total_book_page; ?><span> pages</span></p>
+                        </div>
 
-                    <div class="pages">
-                        <p><span>ISBN: </span><?= $book_isbn; ?></p>
+                        <div class="pages">
+                            <p><span>ISBN: </span><?= $book_isbn; ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,8 +116,8 @@ require_once 'inc/header.php';
 
 
             <a href="book?book=<?= $book_link; ?>" class="prev-book">
-                <div class="btn btn-spaced">
-                    <img class="svg" src="assets/images/icons/arrow-left.svg">
+                <div class="btn btn-chevron">
+                    <img class="svg" src="assets/images/icons/chevron-left.svg">
                     <span>Previous Book</span>
                 </div>
                 <div class="prev-book-details">
@@ -133,9 +139,9 @@ require_once 'inc/header.php';
              ?>
 
             <a href="book?book=<?= $book_link; ?>" class="next-book">
-                <div class="btn btn-spaced">
+                <div class="btn btn-chevron">
                     <span>Next Book</span>
-                    <img class="svg" src="assets/images/icons/arrow-right.svg">
+                    <img class="svg" src="assets/images/icons/chevron-right.svg">
                 </div>
 
                 <div class="next-book-details">

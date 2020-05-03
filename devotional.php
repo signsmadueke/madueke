@@ -66,16 +66,21 @@
                 <section id="book-promotion">
                     <div class="promotion">
                         <h1>Free Books</h1>
-                        <div class="book-horizontal">
-                            <div class="image">
-                                <img src="assets/images/books/book5.jpg" alt="Book Cover of Quarantined for God's Deliverance">
-                                <img class="shadow" src="assets/images/books/book5.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                        <div class="book-horizontal animate reveal">
+                            <div class="book-image">
+                                <div class="image">
+                                    <img src="assets/images/books/book5.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                                </div>
+                                <div class="shadow">
+                                    <img src="assets/images/books/book5.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                                </div>
                             </div>
                             <div class="details">
                                 <h3>Quarantined for God's Deliverance</h3>
                                 <p>Plagues do not just happen without reason. When the Egyptians became steeped in evil and iniquity against the people of God, plagues were sent to humble them. Plagues are more horrifying and humiliating than shooting wars. They are a sign that something is terribly wrong. Man has deployed the revealed knowledge of God (science and technology) to wrong uses, destroying and polluting the earth, playing god with genomics and even attempting to slap its creator in the face. There is no depth of decadence that man has not plumbed in a vain attempt to normalize evil and abnormality. Plagues are a time of cleansing, cleansing the earth of pollutants and iniquity. For a child of God, it is a time to put things right in your relationship with God. This is what this book, Quarantined for Deliverance, is about. With over 75 deliverance prayer points, you will be purged to be in order to be saved. When the 10 plagues were unleashed on the Egyptians, the children of God were unaffected. God does not change. He will deliver his people. His promises never fail. Quarantined for Deliverance will help those who have gone astray retrace their steps while there's yet time. This book is for families, communities and nations to pray for deliverance from this terrible scourge.</p>
-                                <a href="freebook?book=quarantined-for-god</b>s-deliverance" class="button">
+                                <a href="freebook?book=quarantined-for-god</b>s-deliverance" class="btn btn-chevron">
                                     <span>Buy Now</span>
+                                    <img class="svg" src="assets/images/icons/chevron-right.svg">
                                 </a>
                             </div>
                         </div>
@@ -84,44 +89,59 @@
                     <div class="promotion">
                         <h1>Best Selling Books</h1>
 
-                        <div class="book-horizontal">
-                            <div class="image">
-                                <img src="assets/images/books/book1.jpg" alt="Book Cover of 21/40 Nights of Decrees and Your Enemies Will Surrender">
-                                <img class="shadow" src="assets/images/books/book1.jpg" alt="Book Cover of 21/40 Nights of Decrees and Your Enemies Will Surrender">
+                        <div class="book-horizontal animate reveal">
+                            <div class="book-image">
+                                <div class="image">
+                                    <img src="assets/images/books/book1.jpg" alt="Book Cover of 21/40 Nights of Decrees and Your Enemies Will Surrender">
+                                </div>
+                                <div class="shadow">
+                                    <img src="assets/images/books/book1.jpg" alt="Book Cover of 21/40 Nights of Decrees and Your Enemies Will Surrender">
+                                </div>
                             </div>
                             <div class="details">
                                 <h3>21/40 Nights of Decrees and Your Enemies Will Surrender</h3>
                                 <p>This book is a collection of powerful prayer points divided in two parts. The first part is made up of 21 prayer topics or decrees and the second, 40 decrees. It covers every conceivable problem a christian believer faces in their christian walk of faith, and gives prayer topics that provide answers to these problems.</p>
-                                <a href="book?book=21/40-nights-of-decrees-and-your-enemies-will-surrender" class="button">
+                                <a href="book?book=21/40-nights-of-decrees-and-your-enemies-will-surrender" class="btn btn-chevron">
                                     <span>Buy Now</span>
+                                    <img class="svg" src="assets/images/icons/chevron-right.svg">
                                 </a>
                             </div>
                         </div>
 
-                        <div class="book-horizontal">
-                            <div class="image">
-                                <img src="assets/images/books/book9.jpg" alt="Book Cover of A Jump From Evil Altar">
-                                <img class="shadow" src="assets/images/books/book9.jpg" alt="Book Cover of A Jump From Evil Altar">
+                        <div class="book-horizontal animate reveal">
+                            <div class="book-image">
+                                <div class="image">
+                                    <img src="assets/images/books/book9.jpg" alt="Book Cover of A Jump From Evil Altar">
+                                </div>
+                                <div class="shadow">
+                                    <img src="assets/images/books/book9.jpg" alt="Book Cover of A Jump From Evil Altar">
+                                </div>
                             </div>
                             <div class="details">
                                 <h3>A Jump From Evil Altar</h3>
                                 <p>The Lord is with many believers today but they do not know. many people of God today are still serving under great bondage. There is much great potential deposited in many believers today but these believers are still living in sin.An altar can be built to destroy an individual, a family, a group or even a whole nation. Once your enemies know what God has spoken concerning your life, marriage, business, academics, work, files containing what God has said about them are on evil altars and need to be withdrawn.</p>
-                                <a href="book?book=a-jump-from-evil-altar" class="button">
+                                <a href="book?book=a-jump-from-evil-altar" class="btn btn-chevron">
                                     <span>Buy Now</span>
+                                    <img class="svg" src="assets/images/icons/chevron-right.svg">
                                 </a>
                             </div>
                         </div>
                         
-                        <div class="book-horizontal">
-                            <div class="image">
-                                <img src="assets/images/books/book6.jpg" alt="Book Cover of Prayers For Mercy">
-                                <img class="shadow" src="assets/images/books/book6.jpg" alt="Book Cover of Prayers For Mercy">
+                        <div class="book-horizontal animate reveal">
+                            <div class="book-image">
+                                <div class="image">
+                                    <img src="assets/images/books/book6.jpg" alt="Book Cover of Prayers For Mercy">
+                                </div>
+                                <div class="shadow">
+                                    <img src="assets/images/books/book6.jpg" alt="Book Cover of Prayers For Mercy">
+                                </div>
                             </div>
                             <div class="details">
                                 <h3>Prayers For Mercy</h3>
                                 <p>The journey to greatness can be very difficult outside the mercy of God. Do you know about God's mercy? Mercy can be translated as kindness, loving-kindness, good, goodness, pity, and compassion. It is a deep and tender feeling of compassion. God's mercy entails His having a deep and tender feeling of compassion towards us. It is being compassionate and aroused by the sight of weakness or suffering. It means to bend or stoop in kindness or loyalty to an inferior person, to favor or bestow something to him and to be considerate often when it is not expected or deserved. In this all-new message, Prayer Madueke teaches you practical keys on how:. The prayer of Mercy can change the situation. Mercy opens heaven on our prayer; mercy prevails over the judgment of the enemies. Mercy draws the attention of God to us. Mercy makes God forgive our sins and show us kindness. Mercy opens the door for miracles. The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness. The mercy of God is the anchor of deliverance for humanity. Get this book to know everything you need to know about God's Mercy!</p>
-                                <a href="book?book=prayers-for-mercy" class="button">
+                                <a href="book?book=prayers-for-mercy" class="btn btn-chevron">
                                     <span>Buy Now</span>
+                                    <img class="svg" src="assets/images/icons/chevron-right.svg">
                                 </a>
                             </div>
                         </div>
@@ -152,8 +172,8 @@
                 $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
 
                     <a href="devotional?devotion=<?= $devotion_link; ?>" class="prev-devotional">
-                        <div class="btn btn-spaced">
-                            <img class="svg" src="assets/images/icons/arrow-left.svg">
+                        <div class="btn btn-chevron">
+                            <img class="svg" src="assets/images/icons/chevron-left.svg">
                             <span>Previous Devotionals</span>
                         </div>
                         <div class="prev-devotional-details">
@@ -177,9 +197,9 @@
                 $devotion_link = strtolower(str_replace(" ", "-", $devotion_title)); ?>
 
                     <a href="devotional?devotion=<?= $devotion_link; ?>" class="next-devotional">
-                        <div class="btn btn-spaced">
+                        <div class="btn btn-chevron">
                             <span>Next Devotionals</span>
-                            <img class="svg" src="assets/images/icons/arrow-right.svg">
+                            <img class="svg" src="assets/images/icons/chevron-right.svg">
                         </div>
                         <div class="next-devotional-details">
                             <div class="name">
