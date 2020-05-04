@@ -2264,8 +2264,8 @@ body.sidebar-opened .copyright {
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.35s ease-in;
-  transition: all 0.35s ease-in;
+  -webkit-transition: all 0.35s ease-in !important;
+  transition: all 0.35s ease-in !important;
 }
 
 .modal.is-visible {
@@ -2277,8 +2277,8 @@ body.sidebar-opened .copyright {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s !important;
+          transition-delay: 0.2s !important;
 }
 
 .modal .modal-dialog {
@@ -2296,8 +2296,8 @@ body.sidebar-opened .copyright {
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
           transform: translate(0px, 100px);
-  -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
-  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15) !important;
+  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15) !important;
 }
 
 .modal .modal-dialog .modal-content {

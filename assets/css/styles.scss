@@ -2103,7 +2103,7 @@ body.sidebar-opened {
 	cursor: pointer;
 	visibility: hidden;
 	opacity: 0;
-	transition: all 0.35s ease-in;
+	transition: all 0.35s ease-in !important;
 
 	&.is-visible {
 		visibility: visible;
@@ -2112,7 +2112,7 @@ body.sidebar-opened {
 		.modal-dialog {
 			opacity: 1;
 			transform: none;
-			transition-delay: 0.2s;
+			transition-delay: 0.2s !important
 		}
 	}
 
@@ -2129,7 +2129,7 @@ body.sidebar-opened {
 		grid-auto-flow: row;
 		opacity: 0;
 		transform: translate(0px, 100px);
-		transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+		transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15) !important;
 
 		.modal-content {
 			padding: 100px;
