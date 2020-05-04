@@ -1,7 +1,19 @@
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: 'Bookerly';
+  src: url("../fonts/Bookerly/BookerlyDisplay-Rg.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Bookerly';
+  src: url("../fonts/Bookerly/BookerlyDisplay-Rg.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Bookerly';
+  src: url("../fonts/Bookerly/BookerlyDisplay-Bd.woff2") format("woff2");
+  font-weight: bold;
 }
 
 @font-face {
@@ -20,42 +32,6 @@
   font-family: 'Gilroy';
   src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
   font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'CircularStd';
-  src: url("../fonts/Circular_Std/CircularStd-Book.ttf") format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'CircularStd';
-  src: url("../fonts/Circular_Std/CircularStd-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'CircularStd';
-  src: url("../fonts/Circular_Std/CircularStd-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'PalatinoLinotype';
-  src: url("../fonts/Palatino_Linotype/pala.ttf") format("truetype");
-  font-weight: 400;
 }
 
 @font-face {
@@ -215,10 +191,10 @@ html [type="button"] {
 body {
   margin: 0;
   font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-rendering: geometricPrecision;
   margin: 0;
-  line-height: 35px;
+  line-height: 30px;
   font-weight: 500;
   letter-spacing: 0.3px;
 }
@@ -586,7 +562,7 @@ h1 {
   margin: 0;
   line-height: 47px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: "PlayfairDisplay", sans-serif;
   font-size: 35px;
 }
 
@@ -649,8 +625,8 @@ p {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  font-size: 18px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 30px;
   font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
@@ -659,7 +635,7 @@ li {
   text-rendering: geometricPrecision;
   color: #222222;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px;
   font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 500;
@@ -832,6 +808,7 @@ button.button {
   letter-spacing: 0;
   outline: 0;
   border: 1px solid #222222;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover,
@@ -1735,6 +1712,8 @@ body.sidebar-opened .copyright {
   }
   #book-details .book-title {
     text-align: center !important;
+    font-size: 25px;
+    line-height: 35px;
   }
   #book-details .title {
     text-align: left !important;
@@ -1813,7 +1792,7 @@ body.sidebar-opened .copyright {
 #book-details .details .title {
   font-family: 'Gilroy';
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 35px;
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
   padding-bottom: 5px;
@@ -1940,8 +1919,9 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .channels .formats .format .price {
-  font-weight: 700;
-  font-size: 30px;
+  font-family: 'Bookerly';
+  font-weight: 900;
+  font-size: 35px;
   line-height: 30px;
 }
 
@@ -2041,9 +2021,9 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 30px;
+  grid-gap: 20px;
   justify-items: start;
-  padding: 10px 30px;
+  padding: 20px;
   border: 1px solid rgba(68, 68, 68, 0.1);
   text-align: left;
 }
@@ -2069,6 +2049,10 @@ body.sidebar-opened .copyright {
     -ms-grid-columns: none;
         grid-template-columns: none;
   }
+}
+
+#other-books .prev-book .btn-chevron {
+  padding: 0;
 }
 
 @media (max-width: 800px) {
@@ -2124,7 +2108,7 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .prev-book .prev-book-details .name div {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: hidden;
   height: 72px;
@@ -2149,9 +2133,9 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 30px;
+  grid-gap: 20px;
   justify-items: end;
-  padding: 10px 30px;
+  padding: 20px;
   border: 1px solid rgba(68, 68, 68, 0.1);
   text-align: right;
 }
@@ -2177,6 +2161,10 @@ body.sidebar-opened .copyright {
     -ms-grid-columns: none;
         grid-template-columns: none;
   }
+}
+
+#other-books .next-book .btn-chevron {
+  padding: 0;
 }
 
 @media (max-width: 800px) {
@@ -2232,7 +2220,7 @@ body.sidebar-opened .copyright {
 }
 
 #other-books .next-book .next-book-details .name div {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: hidden;
   height: 72px;
@@ -2254,80 +2242,89 @@ body.sidebar-opened .copyright {
 }
 
 .modal {
-  overflow: auto;
   position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0px;
+  top: 0;
+  left: 0;
   right: 0;
-  top: 0px;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   z-index: 3;
   padding: 50px;
-  opacity: 0;
+  cursor: pointer;
   visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
 }
 
-.modal .modal-body {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-}
-
-.modal.show {
-  opacity: 1;
+.modal.is-visible {
   visibility: visible;
+  opacity: 1;
 }
 
-.modal.show .modal-body {
-  -webkit-transform: translate(0px, 100px);
-          transform: translate(0px, 100px);
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+.modal.is-visible .modal-dialog {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
-.modal .modal-body {
-  background: #FFFFFF;
+.modal .modal-dialog {
+  position: relative;
   max-width: 800px;
-  min-height: auto;
+  max-height: 80vh;
+  overflow: auto;
+  cursor: default;
+  background: #FFFFFF;
   margin: 50px auto;
   display: -ms-grid;
   display: grid;
   grid-gap: 0px;
   grid-auto-flow: row;
+  opacity: 0;
+  -webkit-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+  -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
 }
 
-.modal .modal-body .modal-content {
+.modal .modal-dialog .modal-content {
   padding: 100px;
 }
 
-.modal .modal-body .close {
-  padding: 20px 22px;
+.modal .modal-dialog .modal-header {
   -ms-grid-column-align: end;
       justify-self: end;
-  background-color: transparent;
-  border-color: transparent;
 }
 
-.modal .modal-body .close:hover {
+.modal .modal-dialog .modal-header .close {
+  padding: 20px 22px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #222222;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal .modal-dialog .modal-header .close:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-color: transparent;
 }
 
-.modal .modal-body .close svg, .modal .modal-body .close img {
-  height: 15px;
-}
-
-.modal .modal-body .close svg path {
-  fill: #222222;
-}
-
 @media (max-width: 768px) {
-  .modal .modal-body .close {
+  .modal .modal-dialog .modal-header .close {
     padding: 10px 15px;
   }
 }
@@ -2336,7 +2333,7 @@ body.sidebar-opened .copyright {
   .modal {
     padding: 30px;
   }
-  .modal .modal-body .modal-content {
+  .modal .modal-dialog .modal-content {
     padding: 30px;
   }
 }
@@ -2416,7 +2413,7 @@ body.sidebar-opened .copyright {
 #download-book-modal .form {
   display: -ms-grid;
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
 }
 
 #download-book-modal .form .form-use {
@@ -2934,7 +2931,8 @@ body.sidebar-opened .copyright {
 }
 
 #devotional-post ol li {
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 #devotional-post h3 {
@@ -3076,8 +3074,8 @@ body.sidebar-opened .copyright {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(255, 255, 255, 0)), to(#FFFFFF));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), to(#FFFFFF));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #FFFFFF 100%);
 }
 
 .book-horizontal .details .button {
@@ -3666,7 +3664,8 @@ body.sidebar-opened .copyright {
     font-size: 10px;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

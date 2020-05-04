@@ -1,8 +1,26 @@
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
-	font-weight: 300;
+	font-family: 'Bookerly';
+	src: url('../fonts/Bookerly/BookerlyDisplay-Rg.woff') format('woff');
+	font-weight: normal;
 }
+
+@font-face {
+	font-family: 'Bookerly';
+	src: url('../fonts/Bookerly/BookerlyDisplay-Rg.woff2') format('woff2');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bookerly';
+	src: url('../fonts/Bookerly/BookerlyDisplay-Bd.woff2') format('woff2');
+	font-weight: bold;
+}
+
+// @font-face {
+// 	font-family: 'Gilroy';
+// 	src: url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+// 	font-weight: 300;
+// }
 
 @font-face {
 	font-family: 'Gilroy';
@@ -22,41 +40,41 @@
 	font-weight: 600;
 }
 
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
-	font-weight: 700;
-}
+// @font-face {
+// 	font-family: 'Gilroy';
+// 	src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+// 	font-weight: 700;
+// }
 
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
-	font-weight: 900;
-}
+// @font-face {
+// 	font-family: 'Gilroy';
+// 	src: url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+// 	font-weight: 900;
+// }
 
-@font-face {
-	font-family: 'CircularStd';
-	src: url('../fonts/Circular_Std/CircularStd-Book.ttf') format('truetype');
-	font-weight: 400;
-}
+// @font-face {
+// 	font-family: 'CircularStd';
+// 	src: url('../fonts/Circular_Std/CircularStd-Book.ttf') format('truetype');
+// 	font-weight: 400;
+// }
 
-@font-face {
-	font-family: 'CircularStd';
-	src: url('../fonts/Circular_Std/CircularStd-Medium.ttf') format('truetype');
-	font-weight: 500;
-}
+// @font-face {
+// 	font-family: 'CircularStd';
+// 	src: url('../fonts/Circular_Std/CircularStd-Medium.ttf') format('truetype');
+// 	font-weight: 500;
+// }
 
-@font-face {
-	font-family: 'CircularStd';
-	src: url('../fonts/Circular_Std/CircularStd-Bold.ttf') format('truetype');
-	font-weight: 700;
-}
+// @font-face {
+// 	font-family: 'CircularStd';
+// 	src: url('../fonts/Circular_Std/CircularStd-Bold.ttf') format('truetype');
+// 	font-weight: 700;
+// }
 
-@font-face {
-	font-family: 'PalatinoLinotype';
-	src: url('../fonts/Palatino_Linotype/pala.ttf') format('truetype');
-	font-weight: 400;
-}
+// @font-face {
+// 	font-family: 'PalatinoLinotype';
+// 	src: url('../fonts/Palatino_Linotype/pala.ttf') format('truetype');
+// 	font-weight: 400;
+// }
 
 @font-face {
 	font-family: 'PlayfairDisplay';
@@ -161,10 +179,10 @@ html {
 body {
 	margin: 0;
 	font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	text-rendering: geometricPrecision;
 	margin: 0;
-	line-height: 35px;
+	line-height: 30px;
 	font-weight: 500;
 	letter-spacing: 0.3px;
 }
@@ -534,7 +552,8 @@ h1 {
 	margin: 0;
 	line-height: 47px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: "PlayfairDisplay",
+	sans-serif;
 	font-size: 35px;
 }
 
@@ -597,8 +616,8 @@ p {
 	text-rendering: geometricPrecision;
 	color: #222222;
 	margin: 0;
-	font-size: 18px;
-	line-height: 35px;
+	font-size: 16px;
+	line-height: 30px;
 	font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-weight: 500;
 }
@@ -607,7 +626,7 @@ li {
 	text-rendering: geometricPrecision;
 	color: #222222;
 	margin: 0;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 35px;
 	font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-weight: 500;
@@ -665,15 +684,15 @@ span {
 	&:hover {
 		grid-gap: 15px;
 		
-		span {
-			// opacity: 1;
-		}
+		// span {
+		// 	opacity: 1;
+		// }
 
-		svg {
-			path {
-				// opacity: 1;
-			}
-		}
+		// svg {
+		// 	path {
+		// 		opacity: 1;
+		// 	}
+		// }
 	}
 
 	// @media (max-width: 1000px) {
@@ -772,6 +791,7 @@ button.button {
 	letter-spacing: 0;
 	outline: 0;
 	border: 1px solid #222222;
+	cursor: pointer;
 
 	&:hover {
 		background-color: #111111;
@@ -1604,6 +1624,8 @@ body.sidebar-opened {
 
 		.book-title {
 			text-align: center !important;
+			font-size: 25px;
+			line-height: 35px;
 		}
 
 		.title {
@@ -1676,7 +1698,7 @@ body.sidebar-opened {
 		.title {
 			font-family: 'Gilroy';
 			font-weight: 600;
-			font-size: 20px;
+			font-size: 16px;
 			line-height: 35px;
 			border-bottom: 1px solid rgba(68, 68, 68, 0.1);
 			padding-bottom: 5px;
@@ -1796,9 +1818,9 @@ body.sidebar-opened {
 					}
 	
 					.price {
-						// font-family: 'Gilroy';
-						font-weight: 700;
-						font-size: 30px;
+						font-family: 'Bookerly';
+						font-weight: 900;
+						font-size: 35px;
 						line-height: 30px;
 					}
 				}
@@ -1885,9 +1907,9 @@ body.sidebar-opened {
 	.prev-book {
 		display: grid;
 		grid-auto-flow: row;
-		grid-gap: 30px;
+		grid-gap: 20px;
 		justify-items: start;
-		padding: 10px 30px;
+		padding: 20px;
 		border: 1px solid rgba(68, 68, 68, 0.1);
 		text-align: left;
 
@@ -1910,6 +1932,8 @@ body.sidebar-opened {
 		}
 
 		.btn-chevron {
+			padding: 0;
+
 			@media (max-width: 800px) {
 				padding: 0;
 				grid-template-columns: none;
@@ -1948,7 +1972,7 @@ body.sidebar-opened {
 				}
 
 				div {
-					font-size: 16px;
+					font-size: 14px;
 					line-height: 24px;
 					overflow: hidden;
 					height: 72px;
@@ -1975,9 +1999,9 @@ body.sidebar-opened {
 	.next-book {
 		display: grid;
 		grid-auto-flow: row;
-		grid-gap: 30px;
+		grid-gap: 20px;
 		justify-items: end;
-		padding: 10px 30px;
+		padding: 20px;
 		border: 1px solid rgba(68, 68, 68, 0.1);
 		text-align: right;
 		
@@ -2000,6 +2024,8 @@ body.sidebar-opened {
 		}
 		
 		.btn-chevron {
+			padding: 0;
+			
 			@media (max-width: 800px) {
 				padding: 0;
 				grid-template-columns: none;
@@ -2038,7 +2064,7 @@ body.sidebar-opened {
 				}
 
 				div {
-					font-size: 16px;
+					font-size: 14px;
 					line-height: 24px;
 					overflow: hidden;
 					height: 72px;
@@ -2062,68 +2088,72 @@ body.sidebar-opened {
 }
 
 .modal {
-	overflow: auto;
 	position: fixed;
-	width: 100%;
-	height: 100%;
-	left: 0px;
+	top: 0;
+	left: 0;
 	right: 0;
-	top: 0px;
 	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(20px);
 	z-index: 3;
 	padding: 50px;
-	opacity: 0;
+	cursor: pointer;
 	visibility: hidden;
+	opacity: 0;
+	transition: all 0.35s ease-in;
 
-	.modal-body {
-		transform: translate(0px, 0px);
-		transition-delay: 1s;
-	}
-
-	&.show {
-		opacity: 1;
+	&.is-visible {
 		visibility: visible;
+		opacity: 1;
 
-		.modal-body {
-			transform: translate(0px, 100px);
-			transition-delay: 1s;
+		.modal-dialog {
+			opacity: 1;
+			transform: none;
+			transition-delay: 0.2s;
 		}
 	}
 
-	.modal-body {
-		background: #FFFFFF;
+	.modal-dialog {
+		position: relative;
 		max-width: 800px;
-		min-height: auto;
+		max-height: 80vh;
+		overflow: auto;
+		cursor: default;
+		background: #FFFFFF;
 		margin: 50px auto;
 		display: grid;
 		grid-gap: 0px;
 		grid-auto-flow: row;
+		opacity: 0;
+		transform: translate(0px, 100px);
+		transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
 
 		.modal-content {
 			padding: 100px;
 		}
 
-		.close {
-			padding: 20px 22px;
+		.modal-header {
 			justify-self: end;
-			background-color: transparent;
-			border-color: transparent;
 
-			&:hover {
-				background-color: rgba(0, 0, 0, 0.1);
+			.close {
+				padding: 20px 22px;
+				background-color: transparent;
 				border-color: transparent;
-			}
+				color: #222222;
+				font-size: 20px;
+				font-weight: 600;
 
-			svg, img {
-				height: 15px;
-			}
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.1);
+					border-color: transparent;
+				}
 
-			svg {path {fill: #222222}}
-
-			@media (max-width: 768px) {
-				padding: 10px 15px;
+				@media (max-width: 768px) {
+					padding: 10px 15px;
+				}
 			}
 		}
 	}
@@ -2131,7 +2161,7 @@ body.sidebar-opened {
 	@media (max-width: 768px) {
 		padding: 30px;
 
-		.modal-body {
+		.modal-dialog {
 			.modal-content {
 				padding: 30px;
 			}
@@ -2263,7 +2293,7 @@ body.sidebar-opened {
 	
 	.form {
 		display: grid;
-		grid-gap: 50px;
+		grid-gap: 30px;
 
 		.form-use {
 			display: grid;
@@ -2736,7 +2766,8 @@ body.sidebar-opened {
 		grid-gap: 20px;
 
 		li {
-			line-height: 30px;
+			font-size: 15px;
+			line-height: 25px;
 		}
 	}
 
@@ -2865,7 +2896,7 @@ body.sidebar-opened {
 				width: 100%;
 				height: 100%;
 				z-index: 1;
-				background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 100%);
+				background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #FFFFFF 100%);
 			}
 		}
 
@@ -2881,7 +2912,7 @@ body.sidebar-opened {
 				border: 1px solid rgba(68, 68, 68, 0.3);
 			}
 
-			span {;
+			span {
 				color: #444444;
 				letter-spacing: 0;
 				text-transform: capitalize;
@@ -3439,6 +3470,7 @@ body.sidebar-opened {
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 16px;
+		line-height: 30px;
 	}
 }

@@ -58,7 +58,7 @@ require_once 'inc/header.php';
                 <div class="channels animate reveal">
                     <h6 class="title">Free Download</h6>
                     <div class="formats">
-                        <a href="javascript:void(0)" id="download-btn" class="w-icon button">
+                        <a data-open="download-book-modal" class="w-icon button">
                             <img class="svg" src="assets/images/icons/download.svg">
                             <span>Download PDF</span>
                         </a>
@@ -155,8 +155,10 @@ require_once 'inc/header.php';
 </section>
 
 <section id="download-book-modal" class="modal">
-    <div class="modal-body">
-        <button title="Close" class="close button"><img class="svg" src="assets/images/icons/x.svg"></button>
+    <div class="modal-dialog">
+        <header class="modal-header">
+            <button title="Close" data-close class="close button">✕</button>
+        </header>
         <div class="form modal-content">
             <div class="form-use">
                 <h1>Download Quarantined for God’s Deliverance</h1>
@@ -200,7 +202,6 @@ require_once 'inc/header.php';
             <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         </div>
     </div>
-
 </section>
 
 <?php
