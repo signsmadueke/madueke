@@ -35,6 +35,12 @@
 }
 
 @font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
   font-family: 'PlayfairDisplay';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -994,9 +1000,9 @@ body.container.contact {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-  -ms-grid-rows: max-content 50px max-content max-content 1fr max-content;
-      grid-template-rows: -webkit-max-content 50px -webkit-max-content -webkit-max-content 1fr -webkit-max-content;
-      grid-template-rows: max-content 50px max-content max-content 1fr max-content;
+  -ms-grid-rows: max-content 30px max-content max-content 1fr max-content;
+      grid-template-rows: -webkit-max-content 30px -webkit-max-content -webkit-max-content 1fr -webkit-max-content;
+      grid-template-rows: max-content 30px max-content max-content 1fr max-content;
   width: 100%;
   min-height: 100vh;
   background: white;
@@ -1017,14 +1023,15 @@ body.container.contact {
 #sidebar nav ul {
   display: -ms-grid;
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 20px;
 }
 
 #sidebar ul a {
   font-weight: 700;
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 30px;
   display: block;
+  letter-spacing: -0.5px;
 }
 
 #sidebar ul li {
@@ -1068,6 +1075,10 @@ body.container.contact {
 
 #sidebar .menu {
   display: block;
+}
+
+body.sidebar-opened {
+  overflow: hidden;
 }
 
 body.sidebar-opened #sidebar {
@@ -1142,7 +1153,7 @@ body.sidebar-opened .copyright {
 
 #sidebar-space {
   width: 100%;
-  height: 50px;
+  height: 30px;
 }
 
 #social svg path {
@@ -1364,8 +1375,8 @@ body.sidebar-opened .copyright {
       justify-self: start;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   opacity: 0.6;
 }
 
@@ -1472,8 +1483,8 @@ body.sidebar-opened .copyright {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-top: 148%;
-  -webkit-box-shadow: 0px 20px 36px -10px rgba(0, 0, 0, 0.8), inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.1);
-          box-shadow: 0px 20px 36px -10px rgba(0, 0, 0, 0.8), inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
   border-radius: 3px 5px 5px 3px;
 }
 
@@ -1605,8 +1616,8 @@ body.sidebar-opened .copyright {
 }
 
 .book:hover {
-  -webkit-box-shadow: 0px 20px 15px -10px rgba(0, 0, 0, 0.8), inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.1);
-          box-shadow: 0px 20px 15px -10px rgba(0, 0, 0, 0.8), inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 20px 15px -10px rgba(0, 0, 0, 0.8), inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 20px 15px -10px rgba(0, 0, 0, 0.8), inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
 }
 
 .book:hover:before {
@@ -1740,8 +1751,8 @@ body.sidebar-opened .copyright {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15);
-          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
   border-radius: 3px 5px 5px 3px;
 }
 
@@ -2995,8 +3006,8 @@ body.sidebar-opened .copyright {
   bottom: 0;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.1), inset -5px 5px 2px rgba(255, 255, 255, 0.15);
-          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.1), inset -5px 5px 2px rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px 0px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15), inset 0px -3px 5px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.05);
   border-radius: 3px 5px 5px 3px;
 }
 

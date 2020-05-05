@@ -40,11 +40,11 @@
 	font-weight: 600;
 }
 
-// @font-face {
-// 	font-family: 'Gilroy';
-// 	src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
-// 	font-weight: 700;
-// }
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
 
 // @font-face {
 // 	font-family: 'Gilroy';
@@ -960,7 +960,7 @@ body.container {
 #sidebar {
 	display: grid;
 	grid-gap: 30px;
-	grid-template-rows: max-content 50px max-content max-content 1fr max-content;
+	grid-template-rows: max-content 30px max-content max-content 1fr max-content;
 	width: 100%;
 	min-height: 100vh;
 	background: white;
@@ -978,16 +978,17 @@ body.container {
 	nav {
 		ul {
 			display: grid;
-			grid-gap: 25px;
+			grid-gap: 20px;
 		}
 	}
 
 	ul {
 		a {
 			font-weight: 700;
-			font-size: 45px;
-			line-height: 45px;
+			font-size: 30px;
+			line-height: 30px;
 			display: block;
+			letter-spacing: -0.5px;
 		}
 
 		li {
@@ -1043,6 +1044,8 @@ body.container {
 }
 
 body.sidebar-opened {
+	overflow: hidden;
+	
 	#sidebar {
 		transform: none;
 
@@ -1106,7 +1109,7 @@ body.sidebar-opened {
 
 #sidebar-space {
 	width: 100%;
-	height: 50px;
+	height: 30px;
 }
 
 #social {
@@ -1312,8 +1315,8 @@ body.sidebar-opened {
 	justify-self: start;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 12px;
+	line-height: 12px;
 	opacity: 0.6;
 }
 
@@ -1395,10 +1398,11 @@ body.sidebar-opened {
 	flex-direction: column;
 	justify-content: flex-end;
 	padding-top: 148%;
-	box-shadow: 0px 20px 36px -10px rgba(0, 0, 0, 0.8),
-		inset 13px 0px 2px rgba(255, 255, 255, 0.05),
-		inset 5px -5px 5px rgba(0, 0, 0, 0.3),
-		inset -5px 5px 2px rgba(255, 255, 255, 0.1);
+	box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05),
+	inset 5px 0px 5px rgba(0, 0, 0, 0.3),
+	inset -5px 5px 2px rgba(255, 255, 255, 0.15),
+	inset 0px -3px 5px rgba(0, 0, 0, 0.1),
+	inset 0px 3px 5px rgba(0, 0, 0, 0.05);
 	border-radius: 3px 5px 5px 3px;
 
 	.line {
@@ -1523,8 +1527,10 @@ body.sidebar-opened {
 	&:hover {
 		box-shadow: 0px 20px 15px -10px rgba(0, 0, 0, 0.8),
 		inset 13px 0px 2px rgba(255, 255, 255, 0.05),
-		inset 5px -5px 5px rgba(0, 0, 0, 0.3),
-		inset -5px 5px 2px rgba(255, 255, 255, 0.1);
+		inset 5px 0px 5px rgba(0, 0, 0, 0.3),
+		inset -5px 5px 2px rgba(255, 255, 255, 0.15),
+		inset 0px -3px 5px rgba(0, 0, 0, 0.1),
+		inset 0px 3px 5px rgba(0, 0, 0, 0.05);
 
 		&:before {
 			padding-top: 0;
@@ -1651,7 +1657,11 @@ body.sidebar-opened {
 				bottom: 0;
 				width: 100%;
 				height: 100%;
-				box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.3), inset -5px 5px 2px rgba(255, 255, 255, 0.15);
+				box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05),
+				inset 5px 0px 5px rgba(0, 0, 0, 0.3),
+				inset -5px 5px 2px rgba(255, 255, 255, 0.15),
+				inset 0px -3px 5px rgba(0, 0, 0, 0.1),
+				inset 0px 3px 5px rgba(0, 0, 0, 0.05);
 				border-radius: 3px 5px 5px 3px;
 			}
 
@@ -2822,7 +2832,11 @@ body.sidebar-opened {
 				bottom: 0;
 				width: 100%;
 				height: 100%;
-				box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05), inset 5px -5px 5px rgba(0, 0, 0, 0.1), inset -5px 5px 2px rgba(255, 255, 255, 0.15);
+				box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05),
+				inset 5px 0px 5px rgba(0, 0, 0, 0.3),
+				inset -5px 5px 2px rgba(255, 255, 255, 0.15),
+				inset 0px -3px 5px rgba(0, 0, 0, 0.1),
+				inset 0px 3px 5px rgba(0, 0, 0, 0.05);
 				border-radius: 3px 5px 5px 3px;
 			}
 
