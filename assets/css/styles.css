@@ -1058,11 +1058,11 @@ body.container.contact {
   -ms-grid-columns: max-content max-content max-content max-content;
       grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
       grid-template-columns: max-content max-content max-content max-content;
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
 
 #sidebar #social svg {
-  height: 25px;
+  height: 20px;
 }
 
 #sidebar #social svg path {

@@ -1020,11 +1020,11 @@ body.container {
 		ul {
 			display: grid;
 			grid-template-columns: max-content max-content max-content max-content;
-			grid-gap: 30px;
+			grid-gap: 20px;
 		}
 
 		svg {
-			height: 25px;
+			height: 20px;
 
 			path {
 				fill: #222222;
@@ -1045,7 +1045,7 @@ body.container {
 
 body.sidebar-opened {
 	overflow: hidden;
-	
+
 	#sidebar {
 		transform: none;
 
