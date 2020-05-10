@@ -180,17 +180,12 @@
 
 *::-moz-selection {
   background-color: rgba(0, 0, 0, 0.1) !important;
-  color: black !important;
-  filter: brightness(100);
-  opacity: 1;
+  color: #222222 !important;
 }
 
 *::selection {
   background-color: rgba(0, 0, 0, 0.1) !important;
-  color: black !important;
-  -webkit-filter: brightness(100);
-          filter: brightness(100);
-  opacity: 1;
+  color: #222222 !important;
 }
 
 html {
@@ -3720,6 +3715,14 @@ body.sidebar-opened .copyright {
   grid-gap: 20px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  #gift-form form .form-inputs .name {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    grid-auto-flow: row;
+  }
 }
 
 #gift-form form .form-bottom {

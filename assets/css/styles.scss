@@ -3472,6 +3472,11 @@ body.sidebar-opened {
 				display: grid;
 				grid-gap: 20px;
 				grid-template-columns: 1fr 1fr;
+
+				@media (max-width: 800px) {
+					grid-template-columns: none;
+					grid-auto-flow: row;
+				}
 			}
 		}
 

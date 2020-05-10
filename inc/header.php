@@ -73,6 +73,9 @@
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
                 <a href="books">Books</a>
             </li>
+            <li class="<?php if ($title == "Free Gift"){echo "active";} ?>">
+                <a href="free-gift.php">Free Gift</a>
+            </li>
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
             </li> -->
@@ -127,6 +130,9 @@
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
                 <a href="books">Books</a>
+            </li>
+            <li class="<?php if ($title == "Free Gift"){echo "active";} ?>">
+                <a href="free-gift.php">Free Gift</a>
             </li>
             <!-- <li class="<?php if ($title == "Podcasts"){echo "active";} ?>">
                 <a href="podcasts">Podcasts</a>
