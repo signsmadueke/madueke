@@ -1127,6 +1127,11 @@ body.sidebar-opened #sidebar nav li:nth-child(5) {
           animation-delay: .9s;
 }
 
+body.sidebar-opened #sidebar nav li:nth-child(6) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 body.sidebar-opened #social li {
   -webkit-animation: slideIn .5s ease forwards;
           animation: slideIn .5s ease forwards;
