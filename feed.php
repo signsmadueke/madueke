@@ -14,13 +14,13 @@
     */
     $channel = array("title"        => "Prayer Madueke",
                      "description"  => "Prayer M. Madueke, Christian Author of over 100 books on Amazon.",
-                     "link"         => "http://www.madueke.com",
+                     "link"         => "https://www.madueke.com",
                      "copyright"    => "Copyright (C) 2020 Prayer Madueke. All rights reserved.");
     
     // $items = array(
     //     array("title"       => "$devotion_title",
     //           "description" => "This is the description of the first example.",
-    //           "link"        => "http://www.example.com/example1.html",
+    //           "link"        => "https://www.example.com/example1.html",
     //           "pubDate"     => date("D, d M Y H:i:s O", mktime(22, 10, 0, 12, 29, 2008)))
     // );
     
@@ -44,7 +44,7 @@
         $output .= "<item>";
         $output .= "<title>" . $item["devotion_title"] . "</title>";
         $output .= "<description>" . $devotion_body . "</description>";
-        $output .= "<link>" . "http://www.madueke.com/devotional?devotion=$devotion_link" . "</link>";
+        $output .= "<link>" . "https://www.madueke.com/devotional?devotion=$devotion_link" . "</link>";
         $output .= "<pubDate>" . date("D, d M Y H:i:s T", strtotime($item['datePosted'])) . "</pubDate>";
         $output .= "</item>";
     }
