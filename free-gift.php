@@ -6,14 +6,14 @@
 ?>
 
 <section id="gift-title">
-    <div class="text">
+    <div class="text animate reveal">
         <h1>Book Gift Pack</h1>
         <p>These powerful books are sold on Amazon. But here, you get them for free.</p>
     </div>
 </section>
 
 <section id="gifts">
-    <div class="gift">
+    <div class="gift animate reveal">
         <div class="image">
             <img src="assets/images/books/book22.jpg" alt="Book Cover of Quarantined for God's Deliverance">
         </div>
@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <div class="gift">
+    <div class="gift animate reveal">
         <div class="image">
             <img src="assets/images/books/book21.jpg" alt="Book Cover of Quarantined for God's Deliverance">
         </div>
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div class="gift">
+    <div class="gift animate reveal">
         <div class="image">
             <img src="assets/images/books/book20.jpg" alt="Book Cover of Quarantined for God's Deliverance">
         </div>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div class="gift">
+    <div class="gift animate reveal">
         <div class="image">
             <img src="assets/images/books/book19.jpg" alt="Book Cover of Quarantined for God's Deliverance">
         </div>
@@ -51,13 +51,13 @@
 </section>
 
 <section id="gift-title">
-    <div class="text">
+    <div class="text animate reveal">
         <h1>Where do I send the books?</h1>
         <p>Fill the form below and you’ll get the download link in your email.<br>So make sure your email address is correct.</p>
     </div>
 </section>
 
-<section id="gift-form">
+<section id="gift-form" class="animate reveal">
     <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class="form-inputs">
             <div class="name">

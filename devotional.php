@@ -22,11 +22,16 @@
         if ($response2) {
             $otherdevotionsDesc = $response2;
         }
+    } else {
+        redirect_to("devotionals");
+    }
+
+    foreach ($devotions as $description_text) {
+        $page_description = substr($description_text['devotion_body'], 0, 200) . "...";
     }
 
 
     $title = $devotion_link;
-    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

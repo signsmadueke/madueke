@@ -3,7 +3,8 @@ require_once "admin/includes/functions/config.php";
 if (isset($_GET['book'])) {
     $bookName = $_GET['book'];
     $book_link = ucwords(str_replace("-", " ", $bookName));
-    $book_link = str_replace("</b>", "'", $book_link);
+    // $book_link = str_replace("</b>", "'", $book_link);
+    $book_link = str_replace("'", "</b>", $book_link);
 
     $result = whereQuote("books", "book_title", "$book_link");
     if ($result) {
@@ -23,9 +24,11 @@ if (isset($_GET['book'])) {
     redirect_to("books");
 }
 
+    foreach ($books as $description_text) {
+        $page_description = substr($description_text['book_description'], 0, 200) . "...";
+    }
+
 $title = $book_link;
-// $meta_description = $book_description;
-$page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>

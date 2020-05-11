@@ -73,6 +73,17 @@ function decrypt($dbpass, $password) {
     }
 }
 
+function fetch($table) {
+    $sql = "SELECT * FROM $table";
+    $query = returnQuery($sql);
+
+    if ($query) {
+        return $query;
+    } else {
+        return false;
+    }
+}
+
 function fetchAll($table, $preferredOrder = null, $limit1 = null, $limit2 = null) {
 
     if (!is_null($limit1) && !is_null($limit2) && !is_null($preferredOrder)) {
