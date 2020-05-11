@@ -1,6 +1,6 @@
 <?php
     $title = 'Free Gift';
-    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
+    $page_description = 'Get powerful books by Prayer M. Madueke for free.';
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

@@ -8,7 +8,7 @@
 
 
     $title = 'Devotionals';
-    $page_description = 'Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
+    $page_description = 'Devotionals, Prayers & Prophetic Declarations by Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>
@@ -47,7 +47,7 @@
                             <p><span>by </span><?= $devotion_author; ?></p>
                         </div>
                         <div class="devotional-date">
-                            <p><span>Posted on </span><?= $datePosted; ?></p>
+                            <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                         </div>
                         <a href="devotional?devotion=<?= $devotion_link; ?>" class="description">
                             <div><?= $htmltoplaintext; ?></div>

@@ -37,7 +37,7 @@ if (!empty($devotionals)) {
                     <p><span>by </span><?= $devotion_author; ?></p>
                 </div>
                 <div class="devotional-date">
-                    <p><span>Posted on </span><?= $datePosted; ?></p>
+                    <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </div>
                 <a href="devotional?devotion=<?= $devotion_link; ?>" class="description">
                     <div><?= $htmltoplaintext; ?></div>

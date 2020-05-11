@@ -34,12 +34,16 @@
     
     foreach ($items as $item) {
         $devotion_link = strtolower((str_replace(" ", "-", $item['devotion_title'])));
+        $devotion_body = str_replace("</b>", "'", $item["devotion_body"]);
+        $devotion_body = trim(preg_replace('/\s+/', ' ', $devotion_body));
+        $devotion_body = strip_tags($devotion_body);
+        $devotion_body = substr($devotion_body, 0, 1000) . "...";
         $source = $item['datePosted'];
         $date = new DateTime($source);
         
         $output .= "<item>";
         $output .= "<title>" . $item["devotion_title"] . "</title>";
-        $output .= "<description>" . $item["devotion_body"] . "</description>";
+        $output .= "<description>" . $devotion_body . "</description>";
         $output .= "<link>" . "http://www.madueke.com/devotional?devotion=$devotion_link" . "</link>";
         $output .= "<pubDate>" . date("D, d M Y H:i:s T", strtotime($item['datePosted'])) . "</pubDate>";
         $output .= "</item>";

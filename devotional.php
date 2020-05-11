@@ -27,7 +27,10 @@
     }
 
     foreach ($devotions as $description_text) {
-        $page_description = substr($description_text['devotion_body'], 0, 200) . "...";
+        $page_description = str_replace("</b>", "'", $description_text['devotion_body']);
+        $page_description = trim(preg_replace('/\s+/', ' ', $page_description));
+        $page_description = strip_tags($page_description);
+        $page_description = substr($page_description, 0, 1000) . "...";
     }
 
 
@@ -61,7 +64,7 @@
                         <img src="assets/images/madueke/icon.png" alt="Prayer Madueke">
                         <p><span>by </span><?= $devotion_author; ?></p>
                     </div>
-                    <p><span>Posted on </span><?= $datePosted; ?></p>
+                    <p><span>Posted on </span><?= date("D, d M Y", strtotime($datePosted)); ?></p>
                 </section>
 
                 <section id="devotional-post">
