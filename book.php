@@ -31,6 +31,10 @@ if (isset($_GET['book'])) {
         $page_description = substr($page_description, 0, 1000) . "...";
     }
 
+    foreach ($books as $image) {
+        $page_image = "books/" . $image['book_image'];
+    }
+
 $title = $book_link;
 $extraBodyClasses = '';
 require_once 'inc/header.php';

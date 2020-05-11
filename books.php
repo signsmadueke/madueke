@@ -14,6 +14,7 @@
 
     $title = 'Books';
     $page_description = 'Books by Prayer M. Madueke, Christian Author of over 100 books on Amazon. ';
+    $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
 ?>

@@ -33,6 +33,10 @@
         $page_description = substr($page_description, 0, 1000) . "...";
     }
 
+    foreach ($devotions as $image) {
+        $page_image = "devotionals/" . $image['devotion_image'];
+    }
+
 
     $title = $devotion_link;
     $extraBodyClasses = '';

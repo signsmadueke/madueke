@@ -1,6 +1,7 @@
 <?php
     $title = 'Donate';
     $page_description = 'Become a Ministry Partner, Donate to Prayer M. Madueke';
+    $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

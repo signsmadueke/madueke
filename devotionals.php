@@ -9,6 +9,7 @@
 
     $title = 'Devotionals';
     $page_description = 'Devotionals, Prayers & Prophetic Declarations by Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
+    $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

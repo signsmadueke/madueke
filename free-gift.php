@@ -1,6 +1,7 @@
 <?php
     $title = 'Free Gift';
     $page_description = 'Get powerful books by Prayer M. Madueke for free.';
+    $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

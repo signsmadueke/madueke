@@ -9,31 +9,31 @@
     <meta name="keywords" 
         content="Prayer, Madueke, Prayer M. Madueke, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, prayer madueke, prayer rain, blessing prayer, prayer book, spiritual exercises."
     >
-    <meta name=”robots” content="index, follow">
+    <meta name="robots" content="index, follow">
 
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Prayer M. Madueke">
+    <meta property="og:title" content="<?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon">
     <meta property="og:type" content="website">
     <meta property="og:url" content="index">
     <meta property="og:site_name" content="Prayer M. Madueke">
-    <meta property="og:image" content="assets/images/madueke/prayermadueke.jpg">
-    <meta property="og:description" content="Prayer M. Madueke, Christian Author of over 100 books on Amazon">
+    <meta property="og:image" content="assets/images/<?= $page_image; ?>">
+    <meta property="og:description" content="<?= $page_description; ?>">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@prayermadueke">
-    <meta name="twitter:image:alt" content="Prayer M. Madueke">
+    <meta name="twitter:image:alt" content="<?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon">
     <meta name="twitter:creator" content="@prayermadueke">
-    <meta name="twitter:title" content="Prayer M. Madueke">
-    <meta name="twitter:image" content="assets/images/madueke/prayermadueke.jpg">
-    <meta name="twitter:description" content="Prayer M. Madueke, Christian Author of over 100 books on Amazon">
+    <meta name="twitter:title" content="<?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon">
+    <meta name="twitter:image" content="assets/images/<?= $page_image; ?>">
+    <meta name="twitter:description" content="<?= $page_description; ?>">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css"/>
 
     <link rel="icon" href="favicon.png">
-    <meta name="theme-color" content="#222222">
+    <meta name="theme-color" content="#000000">
     <title><?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon</title>
 
         
