@@ -1832,7 +1832,6 @@ body.sidebar-opened .copyright {
 
 #book-details .book-image .image img {
   border-radius: 3px 5px 5px 3px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #book-details .book-image img {
@@ -2330,7 +2329,7 @@ body.sidebar-opened .copyright {
           justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   z-index: 3;
   padding: 50px;
   cursor: pointer;
@@ -2572,7 +2571,7 @@ body.sidebar-opened .copyright {
 #contacts a:hover {
   background: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 #now-playing {
@@ -2580,7 +2579,7 @@ body.sidebar-opened .copyright {
   min-height: 150px;
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
   border: 1px solid rgba(68, 68, 68, 0.1);
   padding: 30px;
   display: -ms-grid;
