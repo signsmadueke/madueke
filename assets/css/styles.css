@@ -874,6 +874,52 @@ button.button span {
   color: white;
 }
 
+input[type="submit"].outline,
+a.button.outline,
+button.button.outline {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+input[type="submit"].outline span,
+a.button.outline span,
+button.button.outline span {
+  color: #222222;
+  margin-right: 22px;
+}
+
+input[type="submit"].outline svg,
+input[type="submit"].outline img,
+a.button.outline svg,
+a.button.outline img,
+button.button.outline svg,
+button.button.outline img {
+  height: 16px !important;
+  width: auto !important;
+}
+
+input[type="submit"].outline:hover,
+a.button.outline:hover,
+button.button.outline:hover {
+  background: #222222;
+  border: 1px solid #444444;
+}
+
+input[type="submit"].outline:hover span,
+a.button.outline:hover span,
+button.button.outline:hover span {
+  color: #ffffff;
+}
+
+input[type="submit"].outline:hover svg path,
+a.button.outline:hover svg path,
+button.button.outline:hover svg path {
+  fill: #ffffff;
+}
+
 body.modal-opened {
   overflow: hidden;
 }

@@ -60,6 +60,10 @@ require_once 'inc/header.php';
                 <div class="shadow">
                     <img src="assets/images/books/<?= $book_image; ?>">
                 </div>
+                <a href="https://read.amazon.com/litb/<?= $book_kindle_asin; ?>" target="_blank" class="w-icon button outline">
+                    <img class="svg" src="assets/images/icons/eye.svg">
+                    <span>Preview Book</span>
+                </a>
             </div>
             <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->
 
@@ -85,9 +89,19 @@ require_once 'inc/header.php';
                             
                             <p class="name">Paperback</p>
 
-                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="buy-btn" >
-                            <img class="svg" src="assets/images/formats/amazon.svg">
-                        </a>
+                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" target="_blank" class="buy-btn" >
+                                <img class="svg" src="assets/images/formats/amazon.svg">
+                            </a>
+                        </div>
+
+                        <div class="format">
+                            <h1 class="price">&#36;<?= $book_kindle_price; ?></h1>
+                            
+                            <p class="name">Ebook</p>
+                            
+                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" target="_blank" class="buy-btn" >
+                                <img class="svg" src="assets/images/formats/kindle.svg">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -110,6 +124,56 @@ require_once 'inc/header.php';
                         <div class="pages">
                             <p><span>ISBN: </span><?= $book_isbn; ?></p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="download-book-modal" class="modal">
+                <div class="modal-dialog">
+                    <header class="modal-header">
+                        <button title="Close" data-close class="close button">✕</button>
+                    </header>
+                    <div class="form modal-content">
+                        <div class="form-use">
+                            <h1>Download <?= $book_title; ?></h1>
+                        </div>
+
+                        <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=33ca07b1a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div class="form-inputs">
+                                <div class="name">
+                                    <div class="mc-field-group">
+                                        <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
+                                        <label for="mce-FNAME">First Name</label>
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
+                                        <label for="mce-LNAME">Last Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="mc-field-group">
+                                    <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
+                                    <label for="mce-EMAIL">Email Address</label>
+                                </div>
+                            </div>
+
+                            <div class="form-bottom">
+                                <input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="button">
+
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_a1ded7fdc64b5e8e70cbf9c53_7956285b20" tabindex="-1" value="">
+                                </div>
+                            </div>
+                        </form>
+
+                        <p class="disclaimer">We're committed to your privacy. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                     </div>
                 </div>
             </div>
@@ -163,56 +227,6 @@ require_once 'inc/header.php';
                 </div>
             </a>
         <?php } } ?>
-</section>
-
-<section id="download-book-modal" class="modal">
-    <div class="modal-dialog">
-        <header class="modal-header">
-            <button title="Close" data-close class="close button">✕</button>
-        </header>
-        <div class="form modal-content">
-            <div class="form-use">
-                <h1>Download Quarantined for God’s Deliverance</h1>
-            </div>
-
-            <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=33ca07b1a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="form-inputs">
-                    <div class="name">
-                        <div class="mc-field-group">
-                            <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
-                            <label for="mce-FNAME">First Name</label>
-                        </div>
-                        <div class="mc-field-group">
-                            <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
-                            <label for="mce-LNAME">Last Name</label>
-                        </div>
-                    </div>
-
-                    <div class="mc-field-group">
-                        <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
-                        <label for="mce-EMAIL">Email Address</label>
-                    </div>
-                </div>
-
-                <div class="form-bottom">
-                    <input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="button">
-
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_a1ded7fdc64b5e8e70cbf9c53_7956285b20" tabindex="-1" value="">
-                    </div>
-                </div>
-            </form>
-
-            <p class="disclaimer">We're committed to your privacy. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-            <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        </div>
-    </div>
 </section>
 
 <?php

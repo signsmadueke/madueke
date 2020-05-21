@@ -60,6 +60,10 @@ require_once 'inc/header.php';
                 <div class="shadow">
                     <img src="assets/images/books/<?= $book_image; ?>">
                 </div>
+                <a href="https://read.amazon.com/litb/<?= $book_kindle_asin; ?>" target="_blank" class="w-icon button outline">
+                    <img class="svg" src="assets/images/icons/eye.svg">
+                    <span>Preview Book</span>
+                </a>
             </div>
             <!-- <img class="book-image animate reveal" src="assets/images/books/<?= $book_image; ?>" alt= "Book Cover of <?= $book_title; ?>"> -->
 
@@ -75,7 +79,7 @@ require_once 'inc/header.php';
                             
                             <p class="name">Ebook</p>
                             
-                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" class="buy-btn" >
+                            <a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" target="_blank" class="buy-btn" >
                                 <img class="svg" src="assets/images/formats/kindle.svg">
                             </a>
                         </div>
@@ -85,7 +89,7 @@ require_once 'inc/header.php';
                             
                             <p class="name">Paperback</p>
 
-                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" class="buy-btn" >
+                            <a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" target="_blank" class="buy-btn" >
                             <img class="svg" src="assets/images/formats/amazon.svg">
                         </a>
                         </div>

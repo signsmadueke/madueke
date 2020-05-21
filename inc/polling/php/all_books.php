@@ -8,7 +8,7 @@ if ($result) {
     $books = $result;
 }
 
-$result2 = fetchAllDesc("freebooks", "book_id", 0, 1);
+$result2 = fetchAllDesc("freebooks", "book_id", 0, 2);
 if ($result2) {
     $freebooks = $result2;
 }

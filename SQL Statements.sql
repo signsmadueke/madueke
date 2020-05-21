@@ -507,3 +507,45 @@ VALUES
         -- Date Added
         '2020-04-09'
     );
+
+INSERT INTO freebooks
+    (
+        book_title,
+        book_author,
+        book_image,
+        book_description,
+        total_book_page,
+        book_isbn,
+        book_kindle_price,
+        book_paperback_price,
+        book_paperback_asin,
+        book_kindle_asin,
+        date_added
+    )
+VALUES
+    (
+        -- Book Name
+        'Urgent Prayers for President Trump & World Leaders',
+        -- Author Name
+        'Prayer M Madueke',
+        -- Image Name
+        'book23.jpg',
+        -- Book Description
+        "
+        Unusual times require unusual leaders. The world is sitting on the brink of disaster. There is a battle of supremacy being waged between the forces of good and evil. This is the age of information and misinformation. The laws handed down to man by God are being systematically perverted by the agents of Satan. They have but one horrifying goal: bringing mankind to doom. However, God never leaves his children without hope. When necessary, God can raise the unexpected into positions of leadership. America is a nation whose democracy was founded on Godly principles and laws. In these unusual times, these principles have been under ferocious attack by forces of evil often masquerading as campaigners for various clearly unnatural rights. The goal is to reduce America and the world to Sodom and Gomorrah and thereby cause the world to be destroyed by the wrath of God.<br>God raised Donald Trump an unusual leader to bring America back from the brink. His numerous actions since assuming office leaves no one in doubt that his ascendance to the throne of America’s presidency is divine. He has rolled back the effects of so many ungodly laws and in some cases got them revoked.<br>Donald Trump is not perfect but no one except our creator is. God does not use the perfect and prepared but rather uses the available and ready at heart. <br>This collection of prayers points is dedicated to raising leaders all over the world who will work for the kingdom of God. I believe President Donald Trump of the United States of America is one of them. He deserves our prayer to serve a second term as president.<br>I cordially invite you to pray for his re-election to a second term as President of the United States of America. In addition, his government needs to employ a special prayer squad to pray daily for his re-election.
+        ",
+        -- Number of Pages
+        187,
+        -- ISBN
+        '9798645581558',
+        -- Kindle Price
+        3.99,
+        -- Paperback Price
+        9.99,
+        -- Paperback ASIN
+        '146624416X',
+        -- Ebook ASIN
+        'B088HFXDH8',
+        -- Date Added
+        '2020-04-09'
+    );

@@ -91,7 +91,26 @@
                                 <h3>Quarantined for God's Deliverance</h3>
                                 <p>Plagues do not just happen without reason. When the Egyptians became steeped in evil and iniquity against the people of God, plagues were sent to humble them. Plagues are more horrifying and humiliating than shooting wars. They are a sign that something is terribly wrong. Man has deployed the revealed knowledge of God (science and technology) to wrong uses, destroying and polluting the earth, playing god with genomics and even attempting to slap its creator in the face. There is no depth of decadence that man has not plumbed in a vain attempt to normalize evil and abnormality. Plagues are a time of cleansing, cleansing the earth of pollutants and iniquity. For a child of God, it is a time to put things right in your relationship with God. This is what this book, Quarantined for Deliverance, is about. With over 75 deliverance prayer points, you will be purged to be in order to be saved. When the 10 plagues were unleashed on the Egyptians, the children of God were unaffected. God does not change. He will deliver his people. His promises never fail. Quarantined for Deliverance will help those who have gone astray retrace their steps while there's yet time. This book is for families, communities and nations to pray for deliverance from this terrible scourge.</p>
                                 <a href="freebook?book=quarantined-for-god</b>s-deliverance" class="btn btn-chevron">
-                                    <span>Buy Now</span>
+                                    <span>Download Now</span>
+                                    <img class="svg" src="assets/images/icons/chevron-right.svg">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="book-horizontal animate reveal">
+                            <div class="book-image">
+                                <div class="image">
+                                    <img src="assets/images/books/book23.jpg" alt="Book Cover of Urgent Prayers for President Trump & World Leaders">
+                                </div>
+                                <div class="shadow">
+                                    <img src="assets/images/books/book23.jpg" alt="Book Cover of Urgent Prayers for President Trump & World Leaders">
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h3>Urgent Prayers for President Trump & World Leaders</h3>
+                                <p>Unusual times require unusual leaders. The world is sitting on the brink of disaster. There is a battle of supremacy being waged between the forces of good and evil. This is the age of information and misinformation. The laws handed down to man by God are being systematically perverted by the agents of Satan. They have but one horrifying goal: bringing mankind to doom. However, God never leaves his children without hope. When necessary, God can raise the unexpected into positions of leadership. America is a nation whose democracy was founded on Godly principles and laws. In these unusual times, these principles have been under ferocious attack by forces of evil often masquerading as campaigners for various clearly unnatural rights. The goal is to reduce America and the world to Sodom and Gomorrah and thereby cause the world to be destroyed by the wrath of God.<br>God raised Donald Trump an unusual leader to bring America back from the brink. His numerous actions since assuming office leaves no one in doubt that his ascendance to the throne of America’s presidency is divine. He has rolled back the effects of so many ungodly laws and in some cases got them revoked.<br>Donald Trump is not perfect but no one except our creator is. God does not use the perfect and prepared but rather uses the available and ready at heart. <br>This collection of prayers points is dedicated to raising leaders all over the world who will work for the kingdom of God. I believe President Donald Trump of the United States of America is one of them. He deserves our prayer to serve a second term as president.<br>I cordially invite you to pray for his re-election to a second term as President of the United States of America. In addition, his government needs to employ a special prayer squad to pray daily for his re-election.</p>
+                                <a href="freebook?book=urgent-prayers-for-president-trump-and-world-leaders" class="btn btn-chevron">
+                                    <span>Download Now</span>
                                     <img class="svg" src="assets/images/icons/chevron-right.svg">
                                 </a>
                             </div>
