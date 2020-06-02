@@ -3099,7 +3099,6 @@ body.sidebar-opened .copyright {
   width: auto;
   height: 100%;
   border-radius: 3px 5px 5px 3px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .book-horizontal .book-image .shadow {
@@ -3715,7 +3714,6 @@ body.sidebar-opened .copyright {
 
 #gifts .gift .image img {
   border-radius: 3px 5px 5px 3px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #gifts .gift img {
