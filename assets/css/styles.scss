@@ -1,3 +1,5 @@
+// @import url('https://fonts.googleapis.com/css?family=Playfair Display');
+
 @font-face {
 	font-family: 'Bookerly';
 	src: url('../fonts/Bookerly/BookerlyDisplay-Rg.woff') format('woff');
@@ -40,11 +42,11 @@
 	font-weight: 600;
 }
 
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
-	font-weight: 700;
-}
+// @font-face {
+// 	font-family: 'Gilroy';
+// 	src: url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+// 	font-weight: 700;
+// }
 
 // @font-face {
 // 	font-family: 'Gilroy';
@@ -77,22 +79,84 @@
 // }
 
 @font-face {
-	font-family: 'PlayfairDisplay';
+	font-family: 'Playfair Display';
 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
 	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'PlayfairDisplay';
+	font-family: 'Playfair Display';
 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
 	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'PlayfairDisplay';
+	font-family: 'Playfair Display';
 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Black.ttf') format('truetype');
 	font-weight: 900;
+	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+// @font-face {
+// 	font-family: 'Playfair Display';
+// 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Variable.ttf') format('truetype');
+// }
+
+// @font-face {
+// 	font-family: 'Playfair Display';
+// 	src: url('../fonts/Playfair_Display/PlayfairDisplay-italic-Variable.ttf') format('truetype');
+// }
+
+// @supports (font-variation-settings: 'wdth' 200) {
+//   @font-face {
+//     font-family: 'Playfair Display';
+// 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Variable.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+
+//   #font-PlayfairDisplay {
+//     font-family: 'Playfair Display';
+//     font-variation-settings: 'wdth' 400, 'wght' 98;
+//   }
+// }
+
+// @supports (font-variation-settings: 'wdth' 200) {
+//   @font-face {
+//     font-family: 'Playfair Display';
+// 	src: url('../fonts/Playfair_Display/PlayfairDisplay-Italic-Variable.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: italic;
+//   }
+
+//   #font-PlayfairDisplay {
+//     font-family: 'Playfair Display';
+//     font-variation-settings: 'wdth' 400, 'wght' 98;
+//   }
+// }
 
 @keyframes slideIn {
 	0% {
@@ -558,7 +622,7 @@ h1 {
 	margin: 0;
 	line-height: 47px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: -0.6px;
 	font-size: 35px;
 }
@@ -570,7 +634,7 @@ h2 {
 	margin: 0;
 	line-height: 30px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: -0.6px;
 	font-size: 30px;
 }
@@ -582,7 +646,7 @@ h3 {
 	margin: 0;
 	line-height: 25px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: -0.6px;
 	font-size: 25px;
 }
@@ -594,7 +658,7 @@ h4 {
 	margin: 0;
 	line-height: 20px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: -0.6px;
 	font-size: 20px;
 }
@@ -606,7 +670,7 @@ h5 {
 	margin: 0;
 	line-height: 15px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: -0.6px;
 	font-size: 15px;
 }
@@ -618,7 +682,7 @@ h6 {
 	margin: 0;
 	line-height: 10px;
 	font-weight: bold;
-	font-family: "PlayfairDisplay", sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 	letter-spacing: -0.6px;
 	font-size: 10px;
 }
@@ -1532,7 +1596,7 @@ body.sidebar-opened {
 			z-index: 1;
 			margin-top: 10px;
 			color: white;
-			font-family: 'PlayfairDisplay';
+			font-family: 'Playfair Display';
 			font-weight: 700;
 			font-size: 17px;
 			line-height: 23px;
@@ -1728,8 +1792,8 @@ body.sidebar-opened {
 
 	#books {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(230px, 400px));
-		grid-gap: 50px;
+		grid-template-columns: repeat(4, 1fr) !important;
+		grid-gap: 30px;
 		align-items: start;
 
 		.buk {
@@ -1816,7 +1880,19 @@ body.sidebar-opened {
 				h3 {
 					font-size: 25px;
 					line-height: 33px;
-					text-transform: capitalize;
+					// font-weight: 500;
+					// font-family: 'Bookerly';
+					height: 80px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+
+					@media (max-width: 1000px) {
+						font-family: 'Gilroy';
+						font-size: 16px !important;
+						line-height: 24px !important;
+						font-weight: 600;
+						letter-spacing: 0;
+					}
 
 					&:hover {
 						opacity: 0.7 !important;
@@ -3892,6 +3968,21 @@ body.sidebar-opened {
 
 		grid-template-columns: 1fr !important;
 	}
+
+	#bestsellers {
+		#books {
+			grid-template-columns: repeat(3, 1fr) !important;
+			// grid-template-columns: repeat(auto-fit, minmax(calc(50% - 15px), calc(50% - 15px))) !important;
+		}
+	}
+
+	#all-books {
+		#books {
+			grid-template-columns: repeat(3, 1fr) !important;
+			// grid-template-columns: repeat(auto-fit, minmax(calc(50% - 15px), calc(50% - 15px))) !important
+			grid-gap: 30px !important;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -3907,13 +3998,15 @@ body.sidebar-opened {
 @media (max-width: 576px) {
 	#bestsellers {
 		#books {
-			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
+			grid-template-columns: repeat(2, 1fr) !important;
+			// grid-template-columns: repeat(auto-fit, minmax(calc(50% - 15px), calc(50% - 15px))) !important;
 		}
 	}
 
 	#all-books {
 		#books {
-			grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
+			grid-template-columns: repeat(2, 1fr) !important;
+			// grid-template-columns: repeat(auto-fit, minmax(calc(50% - 15px), calc(50% - 15px))) !important
 			grid-gap: 30px !important;
 		}
 	}

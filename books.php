@@ -25,7 +25,7 @@
     
     <h1 class="section-title animated reveal">Books</h1>
 
-    <form class="search form-inline animated reveal">
+    <!-- <form class="search form-inline animated reveal">
         <button class="btn" type="submit">
             <img class="svg" src="assets/images/icons/search.svg">
         </button>
@@ -36,7 +36,7 @@
         <button class="btn" type="reset">
             <img class="svg" src="assets/images/icons/close.svg">
         </button>
-    </form>
+    </form> -->
     
     <div id="books">
         <?php

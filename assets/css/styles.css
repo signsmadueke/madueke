@@ -35,27 +35,45 @@
 }
 
 @font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
+  font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
   font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @-webkit-keyframes slideIn {
@@ -578,7 +596,7 @@ h1 {
   margin: 0;
   line-height: 47px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.6px;
   font-size: 35px;
 }
@@ -590,7 +608,7 @@ h2 {
   margin: 0;
   line-height: 30px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.6px;
   font-size: 30px;
 }
@@ -602,7 +620,7 @@ h3 {
   margin: 0;
   line-height: 25px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.6px;
   font-size: 25px;
 }
@@ -614,7 +632,7 @@ h4 {
   margin: 0;
   line-height: 20px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.6px;
   font-size: 20px;
 }
@@ -626,7 +644,7 @@ h5 {
   margin: 0;
   line-height: 15px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.6px;
   font-size: 15px;
 }
@@ -638,7 +656,7 @@ h6 {
   margin: 0;
   line-height: 10px;
   font-weight: bold;
-  font-family: "PlayfairDisplay", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.6px;
   font-size: 10px;
 }
@@ -1652,7 +1670,7 @@ body.sidebar-opened .copyright {
   z-index: 1;
   margin-top: 10px;
   color: white;
-  font-family: 'PlayfairDisplay';
+  font-family: 'Playfair Display';
   font-weight: 700;
   font-size: 17px;
   line-height: 23px;
@@ -1890,9 +1908,9 @@ body.sidebar-opened .copyright {
 #all-books #books {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(230px, 400px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(230px, 400px));
-  grid-gap: 50px;
+  -ms-grid-columns: (1fr)[4] !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+  grid-gap: 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1987,7 +2005,19 @@ body.sidebar-opened .copyright {
 #all-books #books .buk .book-details h3 {
   font-size: 25px;
   line-height: 33px;
-  text-transform: capitalize;
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1000px) {
+  #all-books #books .buk .book-details h3 {
+    font-family: 'Gilroy';
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
 }
 
 #all-books #books .buk .book-details h3:hover {
@@ -4149,6 +4179,15 @@ body.sidebar-opened .copyright {
   #footer #social {
     display: none;
   }
+  #bestsellers #books {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+  #all-books #books {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 30px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4163,12 +4202,12 @@ body.sidebar-opened .copyright {
 
 @media (max-width: 576px) {
   #bestsellers #books {
-    -ms-grid-columns: (minmax(250px, 100%))[auto-fit] !important;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
   }
   #all-books #books {
-    -ms-grid-columns: (minmax(100%, 100%))[auto-fit] !important;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     grid-gap: 30px !important;
   }
   body.dark {
