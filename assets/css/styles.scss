@@ -1882,7 +1882,7 @@ body.sidebar-opened {
 					line-height: 33px;
 					// font-weight: 500;
 					// font-family: 'Bookerly';
-					height: 80px;
+					height: 66px;
 					overflow: hidden;
 					text-overflow: ellipsis;
 
@@ -3605,6 +3605,9 @@ body.sidebar-opened {
 	}
 
 	@media (max-width: 576px) {
+		max-width: none;
+		justify-self: start;
+
 		h2 {
 			text-align: left;
 		}

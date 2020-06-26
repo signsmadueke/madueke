@@ -2005,7 +2005,7 @@ body.sidebar-opened .copyright {
 #all-books #books .buk .book-details h3 {
   font-size: 25px;
   line-height: 33px;
-  height: 80px;
+  height: 66px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -3827,6 +3827,11 @@ body.sidebar-opened .copyright {
 }
 
 @media (max-width: 576px) {
+  #donation-offline {
+    max-width: none;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
   #donation-offline h2 {
     text-align: left;
   }
