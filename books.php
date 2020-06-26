@@ -131,6 +131,8 @@
 </section>
 
 <script src="inc/polling/js/all_books.js"></script>
+<script src="inc/polling/js/search.js"></script>
+
 <?php
     require_once 'inc/footer.php';
 ?>
