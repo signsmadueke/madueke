@@ -1578,8 +1578,8 @@ body.sidebar-opened .copyright {
 #bestsellers #books {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(230px, 30.6%))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(230px, 30.6%));
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1910,7 +1910,7 @@ body.sidebar-opened .copyright {
   display: grid;
   -ms-grid-columns: (1fr)[4] !important;
       grid-template-columns: repeat(4, 1fr) !important;
-  grid-gap: 30px;
+  grid-gap: 50px 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1929,12 +1929,6 @@ body.sidebar-opened .copyright {
   width: 100%;
   height: auto;
   position: relative;
-}
-
-#all-books #books .buk .book-image:hover .shadow {
-  opacity: 0.7;
-  -webkit-transform: scale(0.92);
-          transform: scale(0.92);
 }
 
 #all-books #books .buk .book-image .image {
@@ -1997,7 +1991,7 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
 }
@@ -2005,18 +1999,37 @@ body.sidebar-opened .copyright {
 #all-books #books .buk .book-details h3 {
   font-size: 25px;
   line-height: 33px;
-  height: 66px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 66px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 @media (max-width: 1000px) {
   #all-books #books .buk .book-details h3 {
-    font-family: 'Gilroy';
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 24px !important;
-    font-weight: 600;
+    max-height: 48px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-weight: 500;
     letter-spacing: 0;
+    font-style: italic;
+  }
+  #all-books #books .buk .book-details h3 .btn-chevron {
+    padding: 0;
+  }
+  #all-books #books .buk .book-details h3 .btn-chevron span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222222;
+  }
+  #all-books #books .buk .book-details h3 .btn-chevron svg {
+    height: 8px;
   }
 }
 
@@ -2024,8 +2037,40 @@ body.sidebar-opened .copyright {
   opacity: 0.7 !important;
 }
 
+#all-books #books .buk .book-details .btn-chevron {
+  padding: 0;
+  opacity: 0.3;
+}
+
 #all-books #books .buk .book-details .btn-chevron:hover {
-  grid-gap: 15px !important;
+  grid-gap: 10px !important;
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  #all-books #books .buk .book-details .btn-chevron {
+    padding: 0;
+  }
+  #all-books #books .buk .book-details .btn-chevron span {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #222222;
+  }
+  #all-books #books .buk .book-details .btn-chevron svg {
+    height: 8px;
+  }
+}
+
+#all-books #books .buk:hover .book-image .shadow {
+  opacity: 0.7;
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+}
+
+#all-books #books .buk:hover .btn-chevron {
+  grid-gap: 10px !important;
+  opacity: 1;
 }
 
 #all-books #books .book .book-name {
@@ -4184,14 +4229,9 @@ body.sidebar-opened .copyright {
   #footer #social {
     display: none;
   }
-  #bestsellers #books {
-    -ms-grid-columns: (1fr)[3] !important;
-        grid-template-columns: repeat(3, 1fr) !important;
-  }
   #all-books #books {
     -ms-grid-columns: (1fr)[3] !important;
         grid-template-columns: repeat(3, 1fr) !important;
-    grid-gap: 30px !important;
   }
 }
 
@@ -4206,14 +4246,9 @@ body.sidebar-opened .copyright {
 }
 
 @media (max-width: 576px) {
-  #bestsellers #books {
-    -ms-grid-columns: (1fr)[2] !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-  }
   #all-books #books {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
-    grid-gap: 30px !important;
   }
   body.dark {
     background-image: url("../images/madueke/Prayer-M.-Madueke-sm.jpg") !important;
