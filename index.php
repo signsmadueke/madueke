@@ -44,7 +44,7 @@
                     $book_link = strtolower(str_replace(" ", "-", $book_title));
                     $htmltoplaintext = strip_tags($book_description);
                     ?>
-                    <a href="http://localhost/madueke/freebook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                    <a href="freebook?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                         <div class="line"></div>
                         <div class="book-details">
                             <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
@@ -71,7 +71,7 @@
                     $book_link = str_replace("'", "</b>", $book_link);
                     $htmltoplaintext = strip_tags($book_description);
                     ?>
-                    <a alt="<?= $book_titledisplay; ?>" href="http://localhost/madueke/book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
+                    <a alt="<?= $book_titledisplay; ?>" href="book?book=<?= $book_link; ?>" class="book animated reveal" style="background-image: url(assets/images/books/<?= $book_image; ?>)">
                         <div class="line"></div>
                         <div class="book-details">
                             <h3 class="book-name" title="<?= $book_titledisplay; ?>"><?= $book_titledisplay; ?></h3>
