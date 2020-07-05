@@ -33,8 +33,10 @@
     <link rel="stylesheet" href="assets/css/styles.css"/>
 
     <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon.png" />
     <meta name="theme-color" content="#000000">
-    <title><?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon</title>
+    <title><?php echo $title . " — " . $tagline; ?></title>
 
         
     <!-- Global site tag (gtag.js) - Google Analytics -->

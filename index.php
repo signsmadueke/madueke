@@ -12,6 +12,7 @@
 
 
     $title = 'Prayer M. Madueke';
+    $tagline = "Christian Author of over 100 books on Amazon";
     $page_description = 'Christian Author of over 100 books on Amazon.';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = 'dark';

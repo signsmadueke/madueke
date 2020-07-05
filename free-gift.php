@@ -1,5 +1,6 @@
 <?php
     $title = 'Free Gift';
+    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
     $page_description = 'Get powerful books by Prayer M. Madueke for free.';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';

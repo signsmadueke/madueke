@@ -13,6 +13,7 @@
 
 
     $title = 'Books';
+    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
     $page_description = 'Books by Prayer M. Madueke, Christian Author of over 100 books on Amazon. ';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
