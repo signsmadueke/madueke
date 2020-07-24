@@ -72,7 +72,7 @@
                 <a href="/">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                <a href="books">Books</a>
+                <a href="https://store.madueke.com">Books</a>
             </li>
             <!-- <li class="<?php if ($title == "Free Gift"){echo "active";} ?>">
                 <a href="free-gift.php">Free Gift</a>
@@ -130,7 +130,7 @@
                 <a href="/">Home</a>
             </li>
             <li class="<?php if ($title == "Books"){echo "active";} ?>">
-                <a href="books">Books</a>
+                <a href="https://store.madueke.com">Books</a>
             </li>
             <!-- <li class="<?php if ($title == "Free Gift"){echo "active";} ?>">
                 <a href="free-gift.php">Free Gift</a>
