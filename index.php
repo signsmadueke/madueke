@@ -27,26 +27,26 @@
     <div class="title">
         <h2>Best Selling Books</h2>
         
-        <a href="books" class="btn btn-chevron btn-link">
+        <a href="https://store.madueke.com" class="btn btn-chevron btn-link">
             <span>Visit bookstore</span>
             <img class="svg" src="assets/images/icons/arrow-top-right.svg">
         </a>
     </div>
 	
 	<div id="books">
-        <a alt="40 Prayer Giants" href="store.madueke.com/books/40-prayer-giants" class="book animated reveal" style="background-image: url(assets/images/books/40-prayer-giants.jpg)">
+        <a alt="40 Prayer Giants" href="https://store.madueke.com/books/40-prayer-giants" class="book animated reveal" style="background-image: url(assets/images/books/40-prayer-giants.jpg)">
             <div class="line"></div>
         </a>
 
-        <a alt="Alone With God" href="store.madueke.com/books/alone-with-God" class="book animated reveal" style="background-image: url(assets/images/books/alone-with-God.jpg)">
+        <a alt="Alone With God" href="https://store.madueke.com/books/alone-with-God" class="book animated reveal" style="background-image: url(assets/images/books/alone-with-God.jpg)">
             <div class="line"></div>
         </a>
 
-        <a alt="Command the Morning" href="store.madueke.com/books/command-the-morning" class="book animated reveal" style="background-image: url(assets/images/books/command-the-morning.jpg)">
+        <a alt="Command the Morning" href="https://store.madueke.com/books/command-the-morning" class="book animated reveal" style="background-image: url(assets/images/books/command-the-morning.jpg)">
             <div class="line"></div>
         </a>
 
-        <a alt="Breaking Evil Yokes" href="store.madueke.com/books/breaking-evil-yokes" class="book animated reveal" style="background-image: url(assets/images/books/breaking-evil-yokes.jpg)">
+        <a alt="Breaking Evil Yokes" href="https://store.madueke.com/books/breaking-evil-yokes" class="book animated reveal" style="background-image: url(assets/images/books/breaking-evil-yokes.jpg)">
             <div class="line"></div>
         </a>
     </div>
