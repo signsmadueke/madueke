@@ -3045,9 +3045,9 @@ body.sidebar-opened {
 		background: rgba(0, 0, 0, 0.5);
 		text-align: center;
 
-		h1 {
-			font-family: 'Playfair Display';
-		}
+		// h1 {
+		// 	font-family: 'Playfair Display';
+		// }
 
 		&:hover {
 			background: rgba(0, 0, 0, 0.8);
@@ -3896,17 +3896,28 @@ body.sidebar-opened {
 		grid-gap: 10px;
 		text-align: center;
 
+		h1 {
+			text-align: center;
+			font-family: 'Playfair Display';
+			font-size: 35px;
+			line-height: 45px;
+		}
+
 		p {
 			line-height: 30px;
 		}
 	}
 
-	@media (max-width: 576px) {
+	@media (max-width: 800px) {
 		max-width: none;
 		justify-self: start;
 
 		.text {
 			text-align: left;
+
+			h1 {
+				text-align: left;
+			}
 		}
 	}
 }
@@ -3920,6 +3931,10 @@ body.sidebar-opened {
 
 	h2 {
 		text-align: center;
+		font-family: 'Playfair Display';
+		font-size: 35px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 
 	.methods {
@@ -3939,7 +3954,7 @@ body.sidebar-opened {
 		}
 	}
 
-	@media (max-width: 576px) {
+	@media (max-width: 800px) {
 		max-width: none;
 		justify-self: start;
 
@@ -3971,6 +3986,10 @@ body.sidebar-opened {
 
 	h2 {
 		text-align: center;
+		font-family: 'Playfair Display';
+		font-size: 35px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
 
 	.methods {
@@ -3989,10 +4008,6 @@ body.sidebar-opened {
 			border: 1px solid rgba(34, 34, 34, 0.2);
 
 			p {
-				font-size: 12px;
-				line-height: 15px;
-				letter-spacing: 0.3em;
-				text-transform: uppercase;
 				font-weight: 600;
 			}
 
@@ -4009,7 +4024,7 @@ body.sidebar-opened {
 		}
 	}
 
-	@media (max-width: 576px) {
+	@media (max-width: 800px) {
 		h2 {
 			text-align: left;
 		}
