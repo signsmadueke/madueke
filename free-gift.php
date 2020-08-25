@@ -63,43 +63,43 @@
 <section id="boxset-hero">
     <div class="text animate reveal">
         <h1>The Complete Life-Changing<br>Christian Bookset</h1>
-        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+        <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 
     <div id="gifts">
         <div class="gift animate reveal">
             <div class="image">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book22.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book22.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
             <div class="shadow">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book22.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book22.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
         </div>
 
         <div class="gift animate reveal">
             <div class="image">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book21.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book21.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
             <div class="shadow">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book21.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book21.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
         </div>
 
         <div class="gift animate reveal">
             <div class="image">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book19.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book19.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
             <div class="shadow">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book19.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book19.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
         </div>
 
         <div class="gift animate reveal">
             <div class="image">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book20.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book20.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
             <div class="shadow">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/books/book20.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book20.jpg" alt="Book Cover of Quarantined for God's Deliverance">
             </div>
         </div>
     </div>
@@ -113,11 +113,11 @@
 <section id="about-author">
     <div class="text animate reveal">
         <h1>About the Author</h1>
-        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+        <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 
     <div class="about">
-        <img class="" src="<?php bloginfo('template_directory');?>/assets/images/madueke/madueke2.jpg">
+        <img class="" src="assets/images/madueke/madueke2.jpg">
         <div class="content">
             <h3>Prayer M. Madueke</h3>
             <p>Prayer Madueke is a Spiritual Warrior in the Lord’s Vineyard and founder of Prayer Emancipation Missions. An accomplished author, speaker, and expert on spiritual warfare and deliverance, he has published well over 100 books on every area of successful Christian living.<br><br>He is an acclaimed family and relationship counselor with several titles dealing with those critical areas in the lives of the children of God. He is blessed with a beautiful wife and 5 God-fearing children.<br><br>He travels to several countries each year speaking and conducting deliverance, breaking the yokes of demonic oppression, and setting captives free.</p>
@@ -125,17 +125,17 @@
                 <ul>
                     <li>
                         <a href="https://facebook.com/prayermadueke">
-                            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
+                            <img class="svg" src="assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
                         </a>
                     </li>
                     <li>
                         <a href="https://instagram.com/prayermadueke">
-                            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
+                            <img class="svg" src="assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/prayermadueke">
-                            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
+                            <img class="svg" src="assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
                         </a>
                     </li>
                 </ul>
@@ -147,47 +147,47 @@
 <section id="editorial-reviews">
     <div class="text animate reveal">
         <h1>Editorial Reviews</h1>
-        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+        <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 
     <div id="reviews">
         <div class="review animate reveal">
-            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/chris-akosa.jpg">
+            <img class="picture" src="assets/images/reviewers/chris-akosa.jpg">
             <div class="name">
                 <h6>Rev. Chris Akosa</h6>
                 <p>Founder, Abundant Life Global Outreach</p>
             </div>
-            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <img class="svg decor" src="assets/images/icons/decor.svg">
             <p class="comment">Great books from an amazing teacher. Prayer Madueke really brings to life the power we release into our lives and the world when we partner with the Creator to speak forth His word. So good! So empowering.</p>
         </div>
 
         <div class="review animate reveal">
-            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/ken-uloh.jpg">
+            <img class="picture" src="assets/images/reviewers/ken-uloh.jpg">
             <div class="name">
                 <h6>Bishop Ken Dominics Uloh</h6>
                 <p>Bishop, Divine Grace Liberation Assembly Worldwide</p>
             </div>
-            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <img class="svg decor" src="assets/images/icons/decor.svg">
             <p class="comment">These magnificent books by Prayer Madueke, will empower believers with the tools to boldly release decrees that will unlock the blessings of heaven, align hearts with the Word of God, and bring change to their lives. Bravo!</p>
         </div>
 
         <div class="review animate reveal">
-            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/okey-mofunanya.jpg">
+            <img class="picture" src="assets/images/reviewers/okey-mofunanya.jpg">
             <div class="name">
                 <h6>Pastor Okey Mofunanya</h6>
                 <p>SATGO in charge of Security, RCCG Worldwide</p>
             </div>
-            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <img class="svg decor" src="assets/images/icons/decor.svg">
             <p class="comment">Prayer Madueke has found the keys to releasing the blessing of the Father through the spoken Word to create supernatural breakthroughs in the name of Jesus and by the power of the Spirit. Get ready for the most dramatic answers to prayer ever!</p>
         </div>
 
         <div class="review animate reveal">
-            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/robert-duru.jpg">
+            <img class="picture" src="assets/images/reviewers/robert-duru.jpg">
             <div class="name">
                 <h6>Pastor Robert Duru</h6>
                 <p>General Overseer, JRC CHURCH</p>
             </div>
-            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <img class="svg decor" src="assets/images/icons/decor.svg">
             <p class="comment">Powerful books for those wishing to draw nearer to God and to see their lives transformed. I highly recommend these resources as you will never be the same again. Five stars for an excellently written book.</p>
         </div>
     </div>
@@ -196,17 +196,17 @@
 <section id="amazon-reviews">
     <div class="text animate reveal">
         <h1>What my readers on Amazon are saying</h1>
-        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+        <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 
     <div id="reviews">
-        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/1.png">
+        <img class="review animate reveal" src="assets/images/reviews/1.png">
 
-        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/2.png">
+        <img class="review animate reveal" src="assets/images/reviews/2.png">
 
-        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/3.png">
+        <img class="review animate reveal" src="assets/images/reviews/3.png">
 
-        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/4.png">
+        <img class="review animate reveal" src="assets/images/reviews/4.png">
     </div>
 </section>
 
@@ -221,7 +221,7 @@
             <button title="Close" data-close class="close button">✕</button>
         </header>
         <div class="modal-hero">
-            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/books/boxset1.png">
+            <img class="svg decor" src="assets/images/books/boxset1.png">
         </div>
         <div class="form modal-content">
             <div class="form-use">
@@ -277,17 +277,17 @@
         <ul>
 			<li>
                 <a href="https://facebook.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg'; ?>" height="15px" alt="Facebook">
+                    <img class="svg" src="assets/images/icons/social/facebook.svg'; ?>" height="15px" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="https://instagram.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg'; ?>" height="15px" alt="Instagram">
+                    <img class="svg" src="assets/images/icons/social/instagram.svg'; ?>" height="15px" alt="Instagram">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg'; ?>" height="15px" alt="Twitter">
+                    <img class="svg" src="assets/images/icons/social/twitter.svg'; ?>" height="15px" alt="Twitter">
                 </a>
             </li>
         </ul>
