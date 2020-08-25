@@ -58,7 +58,7 @@
     </script>
 </head>
 
-<body class="container <?php echo $extraBodyClasses; ?>">
+<body class="<?php echo $extraBodyClasses; ?>">
 
 <section id="boxset-hero">
     <div class="text animate reveal">
