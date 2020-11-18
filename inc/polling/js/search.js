@@ -12,6 +12,10 @@ search.addEventListener("keyup", function(e) {
     }).catch((e) => {
         document.getElementById("books").innerHTML = "Please check your inputs!!";
     });
+
+    if (search.value.length == 0) {
+        document.getElementById("books").innerHTML = "Type in your search!";
+    }
 });
 
 search.addEventListener("blur", function(e) {
