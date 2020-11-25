@@ -1,3 +1,6 @@
 admin/includes/functions
 admin/includes/functions/config.php
 .htaccess
+inc/.DS_Store
+assets/.DS_Store
+.DS_Store
