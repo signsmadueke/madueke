@@ -567,7 +567,7 @@ h2 {
 	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
-	font-size: 45px;
+	font-size: 40px;
 	line-height: 65px;
 	font-weight: bold;
 	font-family: 'Minion Pro';
@@ -579,7 +579,7 @@ h3 {
 	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
-	font-size: 35px;
+	font-size: 30px;
 	line-height: 50px;
 	font-weight: bold;
 	font-family: 'Minion Pro';
@@ -604,7 +604,7 @@ h5 {
 	color: #222222;
 	margin: 0;
 	font-size: 20px;
-	line-height: 35px;
+	line-height: 20px;
 	font-weight: bold;
 	font-family: 'Minion Pro';
 	letter-spacing: -0.6px;
@@ -5058,7 +5058,7 @@ body.sidebar-opened {
 			display: none !important;
 		}
 
-		grid-template-columns: 1fr auto !important;              f
+		grid-template-columns: 1fr auto !important;
 
 		.nav-space {
 			display: none;
