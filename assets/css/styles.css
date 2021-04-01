@@ -1491,7 +1491,7 @@ body.sidebar-opened .copyright {
 }
 
 .menu {
-  padding: 6.25px 12.5px;
+  padding: 6.25px 0px 6.25px 12.5px;
   display: none;
   z-index: 2;
 }
@@ -4331,17 +4331,31 @@ body.sidebar-opened .copyright {
   }
 }
 
+body.container.donate {
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
 #donation-title {
-  max-width: 800px;
+  max-width: 1000px;
+  width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
   grid-gap: 30px;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
-  padding: 50px 0px;
+  padding: 100px 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #EAFFBC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 #donation-title .text {
@@ -4350,6 +4364,7 @@ body.sidebar-opened .copyright {
   grid-auto-flow: row;
   grid-gap: 10px;
   text-align: center;
+  max-width: 700px;
 }
 
 #donation-title .text h1 {
@@ -4368,6 +4383,7 @@ body.sidebar-opened .copyright {
     max-width: none;
     -ms-grid-column-align: start;
         justify-self: start;
+    padding: 60px 30px;
   }
   #donation-title .text {
     text-align: left;
@@ -4378,7 +4394,7 @@ body.sidebar-opened .copyright {
 }
 
 #donation-offline {
-  max-width: 800px;
+  max-width: 1000px;
   -ms-grid-column-align: center;
       justify-self: center;
   display: -ms-grid;
@@ -4391,8 +4407,6 @@ body.sidebar-opened .copyright {
   text-align: center;
   font-family: 'Playfair Display';
   font-size: 35px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #donation-offline .methods {
@@ -4407,10 +4421,13 @@ body.sidebar-opened .copyright {
   display: grid;
   grid-auto-flow: row;
   grid-gap: 30px;
+  padding: 100px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 #donation-offline .methods .method img, #donation-offline .methods .method svg {
-  height: 38.5px;
+  height: 40px;
   width: auto;
 }
 
@@ -4426,6 +4443,9 @@ body.sidebar-opened .copyright {
   #donation-offline .methods {
     grid-auto-flow: row;
   }
+  #donation-offline .methods .method {
+    padding: 60px 30px;
+  }
   #donation-offline .methods .method img,
   #donation-offline .methods .method svg {
     height: auto;
@@ -4434,7 +4454,7 @@ body.sidebar-opened .copyright {
 }
 
 #donation-online {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -4448,8 +4468,6 @@ body.sidebar-opened .copyright {
   text-align: center;
   font-family: 'Playfair Display';
   font-size: 35px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #donation-online .methods {
@@ -4466,14 +4484,17 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 20px;
+  grid-gap: 10px;
   padding: 20px 40px;
   background-color: #FFFFFF;
-  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 8px;
 }
 
 #donation-online .methods .method p {
   font-weight: 600;
+  color: #ffffff;
+  line-height: 23px;
+  font-weight: 18px;
 }
 
 #donation-online .methods .method img,
@@ -4483,9 +4504,32 @@ body.sidebar-opened .copyright {
 }
 
 #donation-online .methods .method:hover {
-  background-color: rgba(34, 34, 34, 0.05);
-  -webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+#donation-online .methods .method.paypal {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #3B7BBF;
+  -webkit-box-shadow: 0px 10px 30px rgba(59, 123, 191, 0.35);
+          box-shadow: 0px 10px 30px rgba(59, 123, 191, 0.35);
+}
+
+#donation-online .methods .method.cashapp {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #00D64B;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 214, 75, 0.35);
+          box-shadow: 0px 10px 30px rgba(0, 214, 75, 0.35);
+}
+
+#donation-online .methods .method.flutterwave {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FF5C00;
+  -webkit-box-shadow: 0px 10px 30px rgba(255, 92, 0, 0.35);
+          box-shadow: 0px 10px 30px rgba(255, 92, 0, 0.35);
+}
+
+#donation-online .methods .method.paystack {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #011B33;
+  -webkit-box-shadow: 0px 10px 30px rgba(1, 27, 51, 0.35);
+          box-shadow: 0px 10px 30px rgba(1, 27, 51, 0.35);
 }
 
 @media (max-width: 800px) {
@@ -4508,12 +4552,14 @@ body.sidebar-opened .copyright {
 #donation-endnote {
   margin-top: 25px;
   padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 800px;
   width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
   text-align: center;
   border-top: 1px solid rgba(34, 34, 34, 0.2);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.2);
 }
 
 #boxset-hero {

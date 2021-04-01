@@ -3,7 +3,7 @@
     $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
     $page_description = 'Become a Ministry Partner, Donate to Prayer M. Madueke';
     $page_image = "madueke/prayermadueke.jpg";
-    $extraBodyClasses = '';
+    $extraBodyClasses = 'donate';
     require_once 'inc/header.php';
 ?>
 
@@ -19,23 +19,22 @@
     
     <div class="methods">
         <div class="method">
+            <img class="svg" src="assets/images/donate/banks/boa.svg" alt="">
+            <p>
+				<strong>Donate in Dollars</strong><br>
+            	Bank Name: Bank of America<br>
+            	Account Name: Roseline C Madueke<br>
+            	Account Number: 483079070578
+			</p>
+        </div>
+
+        <div class="method">
             <img class="svg" src="assets/images/donate/banks/accessbank.svg" alt="">
             <p>
 				<strong>Donate in Naira</strong><br>
             	Bank Name: Access Bank<br>
             	Account Name: Prayer Emancipation Missions<br>
             	Account Number: 0692638220
-			</p>
-        </div>
-
-        <div class="method">
-            <img class="svg" src="assets/images/donate/banks/boa.svg" alt="">
-            <p>
-				<strong>Donate in Dollars</strong><br>
-            	Bank Name: Bank of America<br>
-            	Account Name: Roseline C Madueke<br>
-            	Account Number: 483079070578<br>
-            	Routing Number (RTN): 021000322
 			</p>
         </div>
     </div>
@@ -45,24 +44,24 @@
     <h2>Donate Online</h2>
     
     <div class="methods">
-		<a href="https://dashboard.flutterwave.com/donate/wggsovnpufgm" class="method">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40madueke.com&item_name=Donate+to+Prayer+Madueke+Ministries&currency_code=USD&source=url" class="method paypal" target="_blank">
             <p>Donate Internationally via</p>
-            <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
-        </a>
-
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40madueke.com&item_name=Donate+to+Prayer+Madueke+Ministries&currency_code=USD&source=url" class="method">
-            <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
         </a>
 
-        <a href="https://paystack.com/pay/prayermadueke" class="method">
-            <p>Donate in NGN via</p>
-            <img class="svg" src="assets/images/donate/payments/paystack.svg" alt="">
-        </a>
-
-        <a href="https://cash.app/$prayermadueke" class="method">
+        <a href="https://cash.app/$prayermadueke" class="method cashapp" target="_blank">
             <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/cashapp.svg" alt="">
+        </a>
+
+		<a href="https://dashboard.flutterwave.com/donate/wggsovnpufgm" class="method flutterwave" target="_blank">
+            <p>Donate in USD via</p>
+            <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
+        </a>
+
+        <a href="https://paystack.com/pay/prayermadueke" class="method paystack" target="_blank">
+            <p>Donate in NGN via</p>
+            <img class="svg" src="assets/images/donate/payments/paystack.svg" alt="">
         </a>
     </div>
 </section>
