@@ -104,38 +104,38 @@
         </div>
     </div>
 
-    <div class="cta"><a href="#boxset-cta" class="button">Get boxset now!</a></div>
+    <div class="cta animate reveal"><a href="#boxset-cta" class="button">Get bookset now!</a></div>
 </section>
 
 <!-- <section id="sticky-cta">
-    <h3 class="">Get this Life-Changing Boxset today!</h3>
-    <button data-open="download-boxset" class="button cta">Get boxset now!</button>
+    <h3 class="">Get this Life-Changing Bookset today!</h3>
+    <button data-open="download-boxset" class="button cta">Get bookset now!</button>
 </section> -->
 
 <section id="about-author">
     <div class="text animate reveal">
-        <h1>About the Author</h1>
-        <img class="svg decor" src="assets/images/icons/decor.svg">
+        <h1 class="animate reveal">About the Author</h1>
+        <img class="svg decor animate reveal" src="assets/images/icons/decor.svg">
     </div>
 
     <div class="about">
-        <img class="" src="assets/images/madueke/madueke2.jpg">
+        <img class="animate reveal" src="assets/images/madueke/madueke2.jpg">
         <div class="content">
-            <h3>Prayer M. Madueke</h3>
-            <p>Prayer Madueke is a Spiritual Warrior in the Lord’s Vineyard and founder of Prayer Emancipation Missions. An accomplished author, speaker, and expert on spiritual warfare and deliverance, he has published well over 100 books on every area of successful Christian living.<br><br>He is an acclaimed family and relationship counselor with several titles dealing with those critical areas in the lives of the children of God. He is blessed with a beautiful wife and 5 God-fearing children.<br><br>He travels to several countries each year speaking and conducting deliverance, breaking the yokes of demonic oppression, and setting captives free.</p>
+            <h3 class="animate reveal">Prayer M. Madueke</h3>
+            <p class="animate reveal">Prayer Madueke is a Spiritual Warrior in the Lord’s Vineyard and founder of Prayer Emancipation Missions. An accomplished author, speaker, and expert on spiritual warfare and deliverance, he has published well over 100 books on every area of successful Christian living.<br><br>He is an acclaimed family and relationship counselor with several titles dealing with those critical areas in the lives of the children of God. He is blessed with a beautiful wife and 5 God-fearing children.<br><br>He travels to several countries each year speaking and conducting deliverance, breaking the yokes of demonic oppression, and setting captives free.</p>
             <div id="social">
                 <ul>
-                    <li>
+                    <li class="animate reveal">
                         <a href="https://facebook.com/prayermadueke">
                             <img class="svg" src="assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
                         </a>
                     </li>
-                    <li>
+                    <li class="animate reveal">
                         <a href="https://instagram.com/prayermadueke">
                             <img class="svg" src="assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
                         </a>
                     </li>
-                    <li>
+                    <li class="animate reveal">
                         <a href="https://twitter.com/prayermadueke">
                             <img class="svg" src="assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
                         </a>
@@ -148,8 +148,8 @@
 
 <section id="editorial-reviews">
     <div class="text animate reveal">
-        <h1>Editorial Reviews</h1>
-        <img class="svg decor" src="assets/images/icons/decor.svg">
+        <h1 class="animate reveal">Editorial Reviews</h1>
+        <img class="svg decor animate reveal" src="assets/images/icons/decor.svg">
     </div>
 
     <div id="reviews">
@@ -213,33 +213,33 @@
 </section>
 
 <section id="boxset-cta">
-    <div class="text animate reveal">
-        <h1>Get this Life-Changing<br>Bookset today!</h1>
-        <img class="svg decor" src="assets/images/icons/decor.svg">
+    <div class="text">
+        <h1 class="animate reveal">Get this Life-Changing<br>Bookset today!</h1>
+        <img class="svg decor animate reveal" src="assets/images/icons/decor.svg">
     </div>
 
     <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class="form-inputs">
             <div class="name">
-                <div class="mc-field-group">
+                <div class="mc-field-group animate reveal">
                     <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
                     <label for="mce-FNAME">First Name</label>
                 </div>
-                <div class="mc-field-group">
+                <div class="mc-field-group animate reveal">
                     <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
                     <label for="mce-LNAME">Last Name</label>
                 </div>
             </div>
 
-            <div class="mc-field-group">
+            <div class="mc-field-group animate reveal">
                 <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
                 <label for="mce-EMAIL">Email Address</label>
             </div>
         </div>
 
         <div class="form-bottom">
-            <input type="submit" value="Send my free boxset!" name="subscribe" id="mc-embedded-subscribe" class="button">
-            <p class="disclaimer">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
+            <input type="submit" value="Send my free bookset!" name="subscribe" id="mc-embedded-subscribe" class="button animate reveal">
+            <p class="disclaimer animate reveal">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
 
             <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -289,7 +289,7 @@
                 </div>
 
                 <div class="form-bottom">
-                    <input type="submit" value="Send my free boxset!" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <input type="submit" value="Send my free bookset!" name="subscribe" id="mc-embedded-subscribe" class="button">
                     <p class="disclaimer">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
 
                     <div id="mce-responses" class="clear">

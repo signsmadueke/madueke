@@ -391,7 +391,7 @@ select {
 	outline: 0;
 	-webkit-appearance: none;
 	appearance: none;
-	border-radius: 0;
+	border-radius: 5px;
 	cursor: pointer;
 
 	&:hover {
@@ -1761,6 +1761,7 @@ body.sidebar-opened {
 		display: grid;
 		grid-template-columns: max-content 1fr max-content;
 		border: 1px solid rgba(68, 68, 68, 0.2);
+		border-radius: 5px;
 
 		@media (max-width: 768px) {
 			display: block;
@@ -1772,9 +1773,9 @@ body.sidebar-opened {
 		}
 
 		input:not([type="submit"]) {
+			padding: 15px 25px;
 			border: none;
 			background-color: transparent;
-			padding: 15px 25px;
 			color: #444444;
 			font-size: 16px;
 			line-height: 16px;
@@ -1782,51 +1783,85 @@ body.sidebar-opened {
 			outline: 0;
 			padding-top: 40px !important;
 			-webkit-appearance: none;
-			border-radius: 0;
-
+	
 			&::placeholder {
+				color: #444444;
 				opacity: 0;
 				font-weight: 500;
 				letter-spacing: 0;
 				text-transform: none;
 				font-size: 16px;
 				line-height: 16px;
-				user-select: none;
 			}
-
+	
 			&:hover {
 				background-color: transparent;
 				border: none;
 			}
-
+	
 			&:focus {
 				background-color: transparent;
 				border: none;
-
+				
 				&+label {
-					padding-top: none;
-					font-size: none;
+					padding-top: 15px;
+					font-size: 14px;
 				}
 			}
-
+	
 			&:active {
+				background-color: transparent;
+				border: none;
+	
+				&+label {
+					padding-top: 15px;
+					font-size: 14px;
+				}
+			}
+	
+			&:valid {
 				background-color: transparent;
 				border: none;
 
 				&+label {
-					padding-top: none;
-					font-size: none;
+					padding-top: 15px;
+					font-size: 14px;
 				}
 			}
-
-			&:valid {
-				&+label {
-					padding-top: none;
-					font-size: none;
+	
+			&.compact {
+				padding: 10px 15px !important;
+				padding-top: 30px;
+			
+				&:focus {
+					&+label {
+						padding-top: 10px;
+						padding-left: 5px;
+						font-size: inherit;
+						transform: scale(0.8);
+					}
+				}
+			
+				&:active {
+					&+label {
+						padding-top: 10px;
+						padding-left: 5px;
+						font-size: inherit;
+						transform: scale(0.8);
+					}
+				}
+			
+				&:valid {
+					&+label {
+						padding-top: 10px;
+						padding-left: 5px;
+						font-size: inherit;
+						transform: scale(0.8);
+					}
 				}
 			}
 		}
-
+	
 		&.compact {
 			input:not([type="submit"]) {
 				padding: 10px 15px !important;
@@ -1859,13 +1894,27 @@ body.sidebar-opened {
 					}
 				}
 			}
-
+	
 			label {
 				padding: 22px 15px;
 			}
 		}
+	
+		label {
+			padding: 30px 25px;
+			color: #444444;
+			opacity: 0.5;
+			font-weight: 500;
+			letter-spacing: 0;
+			text-transform: none;
+			font-size: 16px;
+			line-height: 16px;
+			cursor: text;
+			position: absolute;
+			user-select: none;
+			outline: 0;
+		}
 
-		
 		.form-control {
 			position: relative;
 			display: grid;
@@ -2130,10 +2179,16 @@ body.sidebar-opened {
 		height: auto;
 		position: relative;
 
+		.button {
+			width: 100% !important;
+			text-align: center;		
+		}
+
 		.image {
 			position: relative;
 			line-height: 0;
 			border-radius: 3px 5px 5px 3px;
+			margin-bottom: 50px;
 
 			&:before {
 				content: '';
@@ -3935,7 +3990,7 @@ body.container.donate {
 	padding: 100px 10px;
 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #EAFFBC;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
+	border-radius: 5px;
 
 	.text {
 		display: grid;
@@ -3966,6 +4021,8 @@ body.container.donate {
 
 			h1 {
 				text-align: left;
+				font-size: 25px;
+    			line-height: 35px;
 			}
 		}
 	}
@@ -3995,7 +4052,7 @@ body.container.donate {
 			grid-gap: 30px;
 			padding: 100px 50px;
 			border: 1px solid rgba(0, 0, 0, 0.2);
-			border-radius: 8px;
+			border-radius: 5px;
 
 			img, svg {
 				height: 40px;
@@ -4007,9 +4064,12 @@ body.container.donate {
 	@media (max-width: 800px) {
 		max-width: none;
 		justify-self: start;
+		width: 100%;
 
 		h2 {
 			text-align: left;
+			font-size: 25px;
+    		line-height: 35px;
 		}
 
 		.methods {
@@ -4054,7 +4114,7 @@ body.container.donate {
 			grid-gap: 10px;
 			padding: 20px 40px;
 			background-color: #FFFFFF;
-			border-radius: 8px;
+			border-radius: 5px;
 
 			p {
 				font-weight: 600;
@@ -4099,6 +4159,8 @@ body.container.donate {
 	@media (max-width: 800px) {
 		h2 {
 			text-align: left;
+			font-size: 25px;
+    		line-height: 35px;
 		}
 
 		.methods {
@@ -4147,6 +4209,7 @@ body.container.donate {
 	grid-auto-flow: row;
 	grid-gap: 75px;
 	grid-auto-rows: max-content;
+	position: relative;
 	// border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 	&:after {
@@ -4190,6 +4253,7 @@ body.container.donate {
 		.button {
 			padding: 20px 60px !important;
 			justify-self: center;
+			// font-weight: 900;
 
 			@media (max-width: 576px) {
 				width: 100%;
@@ -4745,7 +4809,10 @@ body.container.donate {
 }
 
 #sticky-cta {
-	position: relative;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	width: 100%;
 	text-align: center;
 	justify-self: center;
