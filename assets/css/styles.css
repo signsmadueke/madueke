@@ -4533,6 +4533,7 @@ body.container.donate {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
+      grid-template-areas: "paypal paypal" "flutterwave paystack";
 }
 
 #donation-online .methods .method {
@@ -4566,27 +4567,31 @@ body.container.donate {
 }
 
 #donation-online .methods .method.paypal {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #3B7BBF;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #2997D8;
   -webkit-box-shadow: 0px 10px 30px rgba(59, 123, 191, 0.35);
           box-shadow: 0px 10px 30px rgba(59, 123, 191, 0.35);
-}
-
-#donation-online .methods .method.cashapp {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #00D64B;
-  -webkit-box-shadow: 0px 10px 30px rgba(0, 214, 75, 0.35);
-          box-shadow: 0px 10px 30px rgba(0, 214, 75, 0.35);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: paypal;
 }
 
 #donation-online .methods .method.flutterwave {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FF5C00;
   -webkit-box-shadow: 0px 10px 30px rgba(255, 92, 0, 0.35);
           box-shadow: 0px 10px 30px rgba(255, 92, 0, 0.35);
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: flutterwave;
 }
 
 #donation-online .methods .method.paystack {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #011B33;
   -webkit-box-shadow: 0px 10px 30px rgba(1, 27, 51, 0.35);
           box-shadow: 0px 10px 30px rgba(1, 27, 51, 0.35);
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: paystack;
 }
 
 @media (max-width: 800px) {
