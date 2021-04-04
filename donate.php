@@ -14,6 +14,31 @@
     </div>
 </section>
 
+<section id="sidebar-space"></section>
+
+<section id="donation-online">
+    <h2>Donate Online</h2>
+    
+    <div class="methods">
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40madueke.com&item_name=Donate+to+Prayer+Madueke+Ministries&currency_code=USD&source=url" class="method paypal" target="_blank">
+            <p>Donate Internationally via</p>
+            <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
+        </a>
+
+		<a href="https://dashboard.flutterwave.com/donate/wggsovnpufgm" class="method flutterwave" target="_blank">
+            <p>Donate in USD via</p>
+            <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
+        </a>
+
+        <a href="https://paystack.com/pay/prayermadueke" class="method paystack" target="_blank">
+            <p>Donate in NGN via</p>
+            <img class="svg" src="assets/images/donate/payments/paystack.svg" alt="">
+        </a>
+    </div>
+</section>
+
+<section id="sidebar-space"></section>
+
 <section id="donation-offline">
     <h2>Donate Offline</h2>
     
@@ -37,27 +62,6 @@
             	Account Number: 0692638220
 			</p>
         </div>
-    </div>
-</section>
-
-<section id="donation-online">
-    <h2>Donate Online</h2>
-    
-    <div class="methods">
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40madueke.com&item_name=Donate+to+Prayer+Madueke+Ministries&currency_code=USD&source=url" class="method paypal" target="_blank">
-            <p>Donate Internationally via</p>
-            <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
-        </a>
-
-		<a href="https://dashboard.flutterwave.com/donate/wggsovnpufgm" class="method flutterwave" target="_blank">
-            <p>Donate in USD via</p>
-            <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
-        </a>
-
-        <a href="https://paystack.com/pay/prayermadueke" class="method paystack" target="_blank">
-            <p>Donate in NGN via</p>
-            <img class="svg" src="assets/images/donate/payments/paystack.svg" alt="">
-        </a>
     </div>
 </section>
 
