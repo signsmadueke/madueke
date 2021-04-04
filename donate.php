@@ -49,11 +49,6 @@
             <img class="svg" src="assets/images/donate/payments/paypal.svg" alt="">
         </a>
 
-        <a href="https://cash.app/$prayermadueke" class="method cashapp" target="_blank">
-            <p>Donate in USD via</p>
-            <img class="svg" src="assets/images/donate/payments/cashapp.svg" alt="">
-        </a>
-
 		<a href="https://dashboard.flutterwave.com/donate/wggsovnpufgm" class="method flutterwave" target="_blank">
             <p>Donate in USD via</p>
             <img class="svg" src="assets/images/donate/payments/flutterwave.svg" alt="">
