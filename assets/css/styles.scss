@@ -4172,8 +4172,12 @@ body.container.donate {
 			grid-auto-flow: row;
 			grid-template-columns: none;
 			grid-gap: 30px;
+			grid-template-areas: "paypal paypal"
+			"flutterwave flutterwave"
+			"paystack paystack";
 
 			.method {
+				padding: 15px 30px;
 
 				img,
 				svg {

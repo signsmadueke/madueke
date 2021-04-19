@@ -4605,6 +4605,10 @@ body.container.donate {
     -ms-grid-columns: none;
         grid-template-columns: none;
     grid-gap: 30px;
+        grid-template-areas: "paypal paypal" "flutterwave flutterwave" "paystack paystack";
+  }
+  #donation-online .methods .method {
+    padding: 15px 30px;
   }
   #donation-online .methods .method img,
   #donation-online .methods .method svg {
