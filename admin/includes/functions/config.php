@@ -3,7 +3,7 @@ session_start();
 
 define("HOST", "localhost");
 define("USER", "root");
-define("PASSWORD", "root");
+define("PASSWORD", "");
 define("DBNAME", "madueke");
 
 $link = mysqli_connect(HOST, USER, PASSWORD, DBNAME);
