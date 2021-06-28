@@ -12,9 +12,9 @@
     }
 
 
-    $title = 'Books';
-    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
-    $page_description = 'Books by Prayer M. Madueke, Christian Author of over 100 books on Amazon. ';
+    $title = 'Books — Prayer M. Madueke';
+    $tagline = "Christian Author & Speaker";
+    $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';

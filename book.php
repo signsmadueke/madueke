@@ -35,8 +35,8 @@ if (isset($_GET['book'])) {
         $page_image = "books/" . $image['book_image'];
     }
 
-$title = $book_link;
-$tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
+    $title = $book_link;
+    $tagline = "Prayer M. Madueke — Christian Author & Speaker";
 $extraBodyClasses = '';
 require_once 'inc/header.php';
 ?>

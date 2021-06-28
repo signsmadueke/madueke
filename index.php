@@ -12,8 +12,8 @@
 
 
     $title = 'Prayer M. Madueke';
-    $tagline = "Christian Author of over 100 books on Amazon";
-    $page_description = 'Christian Author of over 100 books on Amazon.';
+    $tagline = "Christian Author & Speaker";
+    $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = 'dark';
     require_once 'inc/header.php';
@@ -34,19 +34,19 @@
     </div>
 	
 	<div id="books">
-        <a alt="40 Prayer Giants" href="https://store.madueke.com/books/40-prayer-giants" class="book animated reveal" style="background-image: url(assets/images/books/40-prayer-giants.jpg)">
+        <a alt="21/40 Nights of Decrees and Your Enemies Will Surrender" href="https://store.madueke.com/books/21-40-nights-of-decrees-and-your-enemies-will-surrender" class="book animated reveal" style="background-image: url(assets/images/books/home/21-40-nights-of-decrees-and-your-enemies-will-surrender.jpg)">
             <div class="line"></div>
         </a>
 
-        <a alt="Alone With God" href="https://store.madueke.com/books/alone-with-God" class="book animated reveal" style="background-image: url(assets/images/books/alone-with-God.jpg)">
+        <a alt="35-special-dangerous-decrees" href="https://store.madueke.com/books/35-special-dangerous-decrees" class="book animated reveal" style="background-image: url(assets/images/books/home/35-special-dangerous-decrees.jpg)">
             <div class="line"></div>
         </a>
 
-        <a alt="Command the Morning" href="https://store.madueke.com/books/command-the-morning" class="book animated reveal" style="background-image: url(assets/images/books/command-the-morning.jpg)">
+        <a alt="Monitoring Spirits" href="https://store.madueke.com/books/monitoring-spirits" class="book animated reveal" style="background-image: url(assets/images/books/home/monitoring-spirits.jpg)">
             <div class="line"></div>
         </a>
 
-        <a alt="Breaking Evil Yokes" href="https://store.madueke.com/books/breaking-evil-yokes" class="book animated reveal" style="background-image: url(assets/images/books/breaking-evil-yokes.jpg)">
+        <a alt="Breaking Evil Yokes" href="https://store.madueke.com/books/evil-summon" class="book animated reveal" style="background-image: url(assets/images/books/home/evil-summon.jpg)">
             <div class="line"></div>
         </a>
     </div>

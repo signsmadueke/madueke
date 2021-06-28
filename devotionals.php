@@ -7,9 +7,9 @@
     }
 
 
-    $title = 'Devotionals';
-    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
-    $page_description = 'Devotionals, Prayers & Prophetic Declarations by Prayer M. Madueke, Christian Author of over 100 books on Amazon.';
+    $title = 'Devotionals — Prayer M. Madueke';
+    $tagline = "Christian Author & Speaker";
+    $page_description = 'Devotionals, Prayers & Prophetic Declarations by Prayer M. Madueke, Christian Author & Speaker.';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
     require_once 'inc/header.php';

@@ -1,6 +1,6 @@
 <?php
-    $title = 'Donate';
-    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
+    $title = 'Donate — Prayer M. Madueke';
+    $tagline = "Christian Author & Speaker";
     $page_description = 'Become a Ministry Partner, Donate to Prayer M. Madueke';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = 'donate';

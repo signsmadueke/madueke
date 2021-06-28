@@ -39,7 +39,7 @@
 
 
     $title = $devotion_link;
-    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
+    $tagline = "Prayer M. Madueke — Christian Author & Speaker";
     $extraBodyClasses = '';
     require_once 'inc/header.php';
 ?>

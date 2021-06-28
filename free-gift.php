@@ -1,7 +1,7 @@
 <?php
     $title = 'Free Gift';
-    $tagline = "Prayer M. Madueke, Christian Author of over 100 books on Amazon";
-    $page_description = 'Get powerful books by Prayer M. Madueke for free.';
+    $tagline = "Christian Author & Speaker";
+    $page_description = 'A leading christian author, speaker, and expert on spiritual warfare and deliverance. His 100+ books cover every area of successful christian living.';
     $page_image = "madueke/prayermadueke.jpg";
     $extraBodyClasses = '';
 ?>
@@ -10,32 +10,34 @@
 <html lang="en">
 
 <head>
+    <title><?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="Prayer M. Madueke">
     <meta name="description" content="<?= $page_description; ?>">
-    <meta name="keywords" 
-        content="Prayer, Madueke, Prayer M. Madueke, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, prayer madueke, prayer rain, blessing prayer, prayer book, spiritual exercises."
-    >
+    <meta name="keywords" content="Prayer, Madueke, Prayer M. Madueke, Prayer Madueke, Christian Author, Christian, Author, Amazon, Religion, Spirituality, christianbook, devotion, faith, olukoya, prayer, prayer madueke, prayer rain, blessing prayer, prayer book, spiritual exercises.">
     <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
 
     <!-- Open Graph -->
-    <meta property="og:title" content="<?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon">
+    <meta property="og:title" content="<?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?>">
+    <meta property="og:description" content="<?php echo $page_description; ?>">
+    <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="index">
+    <meta property="article:publisher" content="https://www.facebook.com/prayermadueke/">
     <meta property="og:site_name" content="Prayer M. Madueke">
     <meta property="og:image" content="assets/images/<?= $page_image; ?>">
-    <meta property="og:description" content="<?= $page_description; ?>">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@prayermadueke">
-    <meta name="twitter:image:alt" content="<?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon">
+    <meta name="twitter:description" content="<?php echo $page_description; ?>">
+    <meta name="twitter:image:alt" content="<?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?>">
     <meta name="twitter:creator" content="@prayermadueke">
-    <meta name="twitter:title" content="<?php echo $title; ?> — Prayer M. Madueke, Christian Author of over 100 books on Amazon">
+    <meta name="twitter:title" content="<?php echo $title; ?> — Prayer M. Madueke, <?php echo $tagline; ?>">
     <meta name="twitter:image" content="assets/images/<?= $page_image; ?>">
-    <meta name="twitter:description" content="<?= $page_description; ?>">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css"/>
@@ -44,7 +46,6 @@
     <link rel="apple-touch-icon" sizes="120x120" href="favicon.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="favicon.png" />
     <meta name="theme-color" content="#000000">
-    <title><?php echo $title . " — " . $tagline; ?></title>
 
         
     <!-- Global site tag (gtag.js) - Google Analytics -->
