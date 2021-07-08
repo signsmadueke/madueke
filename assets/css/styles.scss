@@ -1,19 +1,10 @@
-// @import url('https://fonts.googleapis.com/css?family=Playfair Display');
+// @font-face {
+// 	font-family: 'Gilroy';
+// 	src: url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+// 	font-weight: 400;
+// 	font-display: swap;
 
-@font-face {
-	font-family: 'Minion Pro';
-	src: url('../fonts/Minion_Pro/MinionPro-Bold.otf') format('opentype');
-	font-weight: bold;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-display: swap;
-
-}
+// }
 
 @font-face {
 	font-family: 'Gilroy';
@@ -23,25 +14,17 @@
 
 }
 
-@font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
-	font-weight: 600;
-	font-display: swap;
+// @font-face {
+// 	font-family: 'Gilroy';
+// 	src: url('../fonts/Gilroy/Gilroy-SemiBold.ttf') format('truetype');
+// 	font-weight: 700;
+// 	font-display: swap;
 
-}
-
-@font-face {
-	font-family: 'Playfair Display';
-	src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-display: swap;
-	font-style: normal;
-}
+// }
 
 @font-face {
-	font-family: 'Playfair Display';
-	src: url('../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
+	font-family: 'Domaine';
+	src: url('../fonts/Domaine/DomaineDispNar-Semibold.otf') format('truetype');
 	font-weight: 700;
 	font-display: swap;
 	font-style: normal;
@@ -555,7 +538,7 @@ h1 {
 	font-variant-numeric: lining-nums;
 	color: #222222;
 	margin: 0;
-	font-family: 'Minion Pro';
+	font-family: 'Domaine';
 	letter-spacing: -0.6px;
 	font-size: 50px;
 	line-height: 75px;
@@ -570,7 +553,7 @@ h2 {
 	font-size: 40px;
 	line-height: 65px;
 	font-weight: bold;
-	font-family: 'Minion Pro';
+	font-family: 'Domaine';
 	letter-spacing: -0.6px;
 }
 
@@ -582,7 +565,7 @@ h3 {
 	font-size: 30px;
 	line-height: 50px;
 	font-weight: bold;
-	font-family: 'Minion Pro';
+	font-family: 'Domaine';
 	letter-spacing: -0.6px;
 }
 
@@ -594,7 +577,7 @@ h4 {
 	font-size: 25px;
 	line-height: 40px;
 	font-weight: bold;
-	font-family: 'Minion Pro';
+	font-family: 'Domaine';
 	letter-spacing: -0.6px;
 }
 
@@ -606,7 +589,7 @@ h5 {
 	font-size: 20px;
 	line-height: 20px;
 	font-weight: bold;
-	font-family: 'Minion Pro';
+	font-family: 'Domaine';
 	letter-spacing: -0.6px;
 }
 
@@ -618,13 +601,13 @@ h6 {
 	font-size: 15px;
 	line-height: 25px;
 	font-weight: bold;
-	font-family: 'Minion Pro';
+	font-family: 'Domaine';
 	letter-spacing: -0.6px;
 }
 
 .lined-title {
 	font-family: 'Gilroy';
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 35px;
 	border-bottom: 1px solid rgba(68, 68, 68, 0.1);
@@ -691,7 +674,7 @@ span {
 	display: grid;
 
 	span {
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 16px;
 		line-height: 21px;
 		color: #222222;
@@ -1325,7 +1308,7 @@ body.sidebar-opened {
 }
 
 .logo-name {
-	font-family: 'Playfair Display';
+	font-family: 'Domaine';
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 700;
@@ -1337,7 +1320,7 @@ body.sidebar-opened {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 14px;
-	letter-spacing: 0.5em;
+	letter-spacing: 0.3em;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
@@ -1647,7 +1630,7 @@ body.sidebar-opened {
 			z-index: 1;
 			margin-top: 10px;
 			color: white;
-			font-family: 'Playfair Display';
+			font-family: 'Domaine';
 			font-weight: 700;
 			font-size: 17px;
 			line-height: 23px;
@@ -1754,7 +1737,7 @@ body.sidebar-opened {
 	.section-title {
 		font-size: 45px;
 		line-height: 45px;
-		font-family: 'Playfair Display';
+		font-family: 'Domaine';
 	}
 
 	.form-inline {
@@ -2054,7 +2037,7 @@ body.sidebar-opened {
 							padding: 0;
 
 							span {
-								font-weight: 600;
+								font-weight: 500;
 								font-size: 12px;
 								line-height: 18px;
 								color: #222222;
@@ -2084,7 +2067,7 @@ body.sidebar-opened {
 						padding: 0;
 
 						span {
-							font-weight: 600;
+							font-weight: 500;
 							font-size: 12px;
 							line-height: 18px;
 							color: #222222;
@@ -2247,7 +2230,7 @@ body.sidebar-opened {
 
 		.title {
 			font-family: 'Gilroy';
-			font-weight: 600;
+			font-weight: 500;
 			font-size: 16px;
 			line-height: 35px;
 			border-bottom: 1px solid rgba(68, 68, 68, 0.1);
@@ -2347,6 +2330,7 @@ body.sidebar-opened {
 						display: grid;
 						max-width: 250px;
 						justify-content: center;
+						border-radius: 5px !important;
 						
 						&:hover {
 							background-color: rgba(68, 68, 68, 0.05);
@@ -2360,7 +2344,7 @@ body.sidebar-opened {
 					}
 	
 					.name {
-						font-weight: 600;
+						font-weight: 500;
 						font-size: 12px;
 						line-height: 15px;
 						letter-spacing: 2px;
@@ -2368,7 +2352,7 @@ body.sidebar-opened {
 					}
 	
 					.price {
-						font-family: 'Minion Pro';
+						font-family: 'Domaine';
 						font-weight: 900;
 						font-size: 35px;
 						line-height: 30px;
@@ -2461,6 +2445,7 @@ body.sidebar-opened {
 		justify-items: start;
 		padding: 20px;
 		border: 1px solid rgba(68, 68, 68, 0.1);
+		border-radius: 10px !important;
 		text-align: left;
 
 		&:hover {
@@ -2528,7 +2513,7 @@ body.sidebar-opened {
 					height: 72px;
 					position: relative;
 					max-width: 300px;
-					font-weight: 600;
+					font-weight: 500;
 					opacity: 0.8;
 				}
 				
@@ -2540,6 +2525,8 @@ body.sidebar-opened {
 			img {
 				width: 75px;
 				border: 1px solid rgba(68, 68, 68, 0.2);
+				box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+				border-radius: 5px;
 			}
 		}
 
@@ -2553,6 +2540,7 @@ body.sidebar-opened {
 		justify-items: end;
 		padding: 20px;
 		border: 1px solid rgba(68, 68, 68, 0.1);
+		border-radius: 10px !important;
 		text-align: right;
 		
 		&:hover {
@@ -2620,7 +2608,7 @@ body.sidebar-opened {
 					height: 72px;
 					position: relative;
 					max-width: 300px;
-					font-weight: 600;
+					font-weight: 500;
 					opacity: 0.8;
 				}
 
@@ -2632,6 +2620,8 @@ body.sidebar-opened {
 			img {
 				width: 75px;
 				border: 1px solid rgba(68, 68, 68, 0.2);
+				box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+				border-radius: 5px;
 			}
 		}
 	}
@@ -3139,7 +3129,7 @@ body.sidebar-opened {
 		text-align: center;
 
 		// h1 {
-		// 	font-family: 'Playfair Display';
+		// 	font-family: 'Domaine';
 		// }
 
 		&:hover {
@@ -3283,7 +3273,7 @@ body.sidebar-opened {
 	.section-title {
 		font-size: 45px;
 		line-height: 45px;
-		font-family: 'Playfair Display';
+		font-family: 'Domaine';
 	}
 
 	.devotionals {
@@ -3342,7 +3332,7 @@ body.sidebar-opened {
 			font-size: 25px;
 			line-height: 33px;
 			text-transform: capitalize;
-			font-family: 'Playfair Display';
+			font-family: 'Domaine';
 		}
 
 		.devotional-author {
@@ -3362,7 +3352,7 @@ body.sidebar-opened {
 			
 			p {
 				font-size: 16px;
-				font-weight: 600;
+				font-weight: 500;
 	
 				span {
 					opacity: 0.5;
@@ -3373,7 +3363,7 @@ body.sidebar-opened {
 		.devotional-date {
 			p {
 				font-size: 16px;
-				font-weight: 600;
+				font-weight: 500;
 
 				span {
 					opacity: 0.5;
@@ -3465,7 +3455,7 @@ body.sidebar-opened {
 	grid-auto-rows: max-content;
 
 	.devotional-name {
-		font-family: 'Playfair Display';
+		font-family: 'Domaine';
 	}
 		
 	.devotional-author {
@@ -3485,7 +3475,7 @@ body.sidebar-opened {
 
 	p {
 		font-size: 16px;
-		font-weight: 600;
+		font-weight: 500;
 
 		span {
 			opacity: 0.5;
@@ -3565,7 +3555,7 @@ body.sidebar-opened {
 		line-height: 30px;
 		border-bottom: 1px solid rgba(68, 68, 68, 0.2);
 		padding-bottom: 20px;
-		font-family: 'Playfair Display';
+		font-family: 'Domaine';
 	}
 }
 
@@ -3578,7 +3568,7 @@ body.sidebar-opened {
 		grid-gap: 50px;
 		
 		h1 {
-			font-family: 'Playfair Display';
+			font-family: 'Domaine';
 			border-bottom: 1px solid rgba(68, 68, 68, 0.2);
 			padding-bottom: 20px;
 			font-size: 40px;
@@ -3717,7 +3707,7 @@ body.sidebar-opened {
 				letter-spacing: 0;
 				text-transform: capitalize;
 				font-size: 15px;
-				font-weight: 600;
+				font-weight: 500;
 			}
 		}
 	}
@@ -3785,7 +3775,7 @@ body.sidebar-opened {
 				text-align: left;
 				
 				h3 {
-					font-family: 'Playfair Display';
+					font-family: 'Domaine';
 					text-overflow: ellipsis;
 					overflow: hidden;
 					line-height: 30px;
@@ -3878,7 +3868,7 @@ body.sidebar-opened {
 				text-align: right;
 
 				h3 {
-					font-family: 'Playfair Display';
+					font-family: 'Domaine';
 					text-overflow: ellipsis;
 					overflow: hidden;
 					line-height: 30px;
@@ -3931,7 +3921,7 @@ body.sidebar-opened {
 		grid-gap: 10px;
 
 		h1 {
-			font-family: 'Playfair Display';
+			font-family: 'Domaine';
 			font-variant-numeric: lining-nums;
 			letter-spacing: -0.6px;
 			font-size: 35px;
@@ -4001,7 +3991,7 @@ body.container.donate {
 
 		h1 {
 			text-align: center;
-			font-family: 'Playfair Display';
+			font-family: 'Domaine';
 			font-size: 35px;
 			line-height: 45px;
 		}
@@ -4037,7 +4027,7 @@ body.container.donate {
 
 	h2 {
 		text-align: center;
-		font-family: 'Playfair Display';
+		font-family: 'Domaine';
 		font-size: 35px;
 	}
 
@@ -4097,7 +4087,7 @@ body.container.donate {
 
 	h2 {
 		text-align: center;
-		font-family: 'Playfair Display';
+		font-family: 'Domaine';
 		font-size: 35px;
 	}
 
@@ -4119,7 +4109,7 @@ body.container.donate {
 			border-radius: 5px;
 
 			p {
-				font-weight: 600;
+				font-weight: 500;
 				color: #ffffff;
 				line-height: 23px;
 				font-weight: 18px;
@@ -4550,7 +4540,7 @@ body.container.donate {
 
 			.name {
 				h6 {
-					font-weight: 600;
+					font-weight: 500;
 					font-size: 17px;
 					line-height: 25px;
 				}
@@ -4677,7 +4667,7 @@ body.container.donate {
 
 			.name {
 				h6 {
-					font-weight: 600;
+					font-weight: 500;
 					font-size: 17px;
 					line-height: 25px;
 				}
@@ -5073,7 +5063,7 @@ body.container.donate {
 
 			.book-name {
 				font-style: normal;
-				font-weight: 600;
+				font-weight: 500;
 				font-size: 15px;
 				line-height: 18px;
 				letter-spacing: 0;

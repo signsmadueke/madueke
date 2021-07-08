@@ -72,7 +72,6 @@ require_once 'inc/header.php';
                 <h1 class="book-title animate reveal"><?= $book_title; ?></h1>
 
                 <div class="channels animate reveal">
-                    <h6 class="title">Book Formats</h6>
 
                     <div class="formats">
                         <div class="format">
