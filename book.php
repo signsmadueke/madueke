@@ -61,7 +61,7 @@ require_once 'inc/header.php';
                 <div class="shadow">
                     <img src="assets/images/books/<?= $book_image; ?>">
                 </div>
-                <a href="https://read.amazon.com/litb/<?= $book_kindle_asin; ?>" target="_blank" class="w-icon button outline">
+                <a href="https://read.amazon.com/kp/embed?asin=<?= $book_kindle_asin; ?>" target="_blank" class="w-icon button outline">
                     <img class="svg" src="assets/images/icons/eye.svg">
                     <span>Preview Book</span>
                 </a>
