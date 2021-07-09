@@ -239,15 +239,19 @@
     <form action="https://madueke.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div class="form-inputs">
             <div class="name">
-                <div class="mc-field-group animate reveal">
-                    <input type="text" autocomplete="on" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
+                <div class="mc-field-group">
+                    <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
                     <label for="mce-FNAME">First Name</label>
                 </div>
-
-                <div class="mc-field-group animate reveal">
-                    <input type="email" autocomplete="on" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
-                    <label for="mce-EMAIL">Email Address</label>
+                <div class="mc-field-group">
+                    <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
+                    <label for="mce-LNAME">Last Name</label>
                 </div>
+            </div>
+
+            <div class="mc-field-group">
+                <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
+                <label for="mce-EMAIL">Email Address</label>
             </div>
         </div>
 
