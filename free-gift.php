@@ -220,13 +220,10 @@
     </div>
 
     <div id="reviews">
-        <img class="review animate reveal" src="assets/images/reviews/1.png">
-
-        <img class="review animate reveal" src="assets/images/reviews/2.png">
-
-        <img class="review animate reveal" src="assets/images/reviews/3.png">
-
-        <img class="review animate reveal" src="assets/images/reviews/4.png">
+        <div class="review"><img class="review-img animate reveal" src="assets/images/reviews/1.png"></div>
+        <div class="review"><img class="review-img animate reveal" src="assets/images/reviews/2.png"></div>
+        <div class="review"><img class="review-img animate reveal" src="assets/images/reviews/3.png"></div>
+        <div class="review"><img class="review-img animate reveal" src="assets/images/reviews/4.png"></div>
     </div>
 </section>
 
